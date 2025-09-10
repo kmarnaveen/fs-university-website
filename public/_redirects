@@ -1,0 +1,15 @@
+# SPA fallback for Next.js App Router
+/*    /index.html   200
+
+# Redirect old paths (add any legacy URL redirects here)
+/old-about    /about    301
+/old-contact  /contact  301
+
+# Force HTTPS (if using custom domain)
+# http://yourdomain.com/*  https://yourdomain.com/:splat  301!
+
+# Handle trailing slashes
+/about    /about/    301
+/admissions    /admissions/    301
+/placements    /placements/    301
+/contact    /contact/    301

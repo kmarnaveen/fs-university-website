@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Enable static export for Netlify
+  output: 'export',
+  
+  // Disable image optimization for static export
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -28,6 +33,20 @@ const nextConfig = {
       },
     ],
   },
+  
+  // Trailing slash for better static hosting compatibility
+  trailingSlash: true,
+  
+  // ESLint configuration
+  eslint: {
+    dirs: ['src'],
+  },
+  
+  // TypeScript configuration
+  typescript: {
+    ignoreBuildErrors: false,
+  },
+  
   experimental: {
     turbo: {
       rules: {
