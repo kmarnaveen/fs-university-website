@@ -1,4 +1,5 @@
-import { Metadata } from 'next';
+"use client";
+
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -14,11 +15,6 @@ import {
   Car,
   Train
 } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'Enquiry - FS University',
-  description: 'Have questions about FS University? Get in touch with our admissions team for personalized guidance and support.',
-};
 
 export default function EnquiryPage() {
   return (
