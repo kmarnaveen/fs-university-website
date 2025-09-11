@@ -6,7 +6,7 @@
   publish = "out"
   
   # Default build command
-  command = "npm ci && npm run build"
+  command = "ls -la && npm --version && node --version && npm install && npm run build"
 
 [build.environment]
   # Node.js version
