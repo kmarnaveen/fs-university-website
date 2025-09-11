@@ -6,7 +6,7 @@
   publish = "out"
   
   # Default build command
-  command = "npm run build"
+  command = "npm ci && npm run build"
 
 [build.environment]
   # Node.js version
@@ -14,6 +14,9 @@
   
   # Next.js specific environment variables
   NEXT_TELEMETRY_DISABLED = "1"
+  
+  # Disable CI checks that might interfere
+  CI = "false"
 
 # Headers for security and performance
 [[headers]]
