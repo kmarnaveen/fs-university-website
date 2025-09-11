@@ -1,0 +1,28 @@
+{
+  "name": "FS University - Excellence in Education",
+  "short_name": "FS University",
+  "description": "Welcome to FS University, where innovation meets tradition. Join our community of learners, researchers, and leaders shaping the future.",
+  "theme_color": "#A02128",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["education", "university"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

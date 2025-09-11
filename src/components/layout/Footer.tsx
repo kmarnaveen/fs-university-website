@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from "next/image";
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { 
@@ -57,36 +58,51 @@ const Footer = () => {
           {/* University Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-              <div className="w-12 h-12 bg-[var(--fsu-crimson)] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">FS</span>
+              <div className="w-12 h-12 relative">
+                <Image
+                  src="/fs-university-logo1.png"
+                  alt="FS University Logo"
+                  width={48}
+                  height={48}
+                  className="object-contain"
+                />
               </div>
               <div>
                 <h2 className="text-xl font-bold">FS University</h2>
                 <p className="text-neutral-100">Excellence in Education</p>
               </div>
             </div>
-            
+
             <p className="text-neutral-100 mb-6 leading-relaxed">
-              Building tomorrow&apos;s leaders today through excellence in education, 
-              research, and community engagement. Join our diverse community of 
-              learners, researchers, and innovators.
+              Building tomorrow&apos;s leaders today through excellence in
+              education, research, and community engagement. Join our diverse
+              community of learners, researchers, and innovators.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-[var(--fsu-gold)]" />
-                <span className="text-neutral-100">
-                  123 University Avenue, Education City, EC 12345
-                </span>
+                <a 
+                  href="https://maps.google.com/maps?q=FS+University,+NH+19,+Agra+Road,+Near+Balaji+Mandir,+Shikohabad,+Firozabad,+Uttar+Pradesh+283135,+India"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-neutral-100 hover:text-[var(--fsu-gold)] transition-colors cursor-pointer"
+                >
+                  NH 19, Agra Road, Near Balaji Mandir, Shikohabad, Firozabad, UP - 283135
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-[var(--fsu-gold)]" />
-                <span className="text-neutral-100">(555) 123-4567</span>
+                <a href="tel:+915694252525" className="text-neutral-100 hover:text-[var(--fsu-gold)] transition-colors">
+                  +91-5694-252525
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-[var(--fsu-gold)]" />
-                <span className="text-neutral-100">info@fsuniversity.edu</span>
+                <a href="mailto:info@fsuniversity.edu.in" className="text-neutral-100 hover:text-[var(--fsu-gold)] transition-colors">
+                  info@fsuniversity.edu.in
+                </a>
               </div>
             </div>
           </div>
@@ -99,7 +115,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <Link 
+                  <Link
                     href={link.href}
                     className="text-neutral-100 hover:text-[var(--fsu-gold)] transition-colors"
                   >
@@ -118,7 +134,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {resources.map((link) => (
                 <li key={link.name}>
-                  <Link 
+                  <Link
                     href={link.href}
                     className="text-neutral-100 hover:text-[var(--fsu-gold)] transition-colors"
                   >
@@ -137,7 +153,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {support.map((link) => (
                 <li key={link.name}>
-                  <Link 
+                  <Link
                     href={link.href}
                     className="text-neutral-100 hover:text-[var(--fsu-gold)] transition-colors"
                   >
@@ -179,7 +195,7 @@ const Footer = () => {
           </div>
 
           {/* Apply CTA */}
-          <Button 
+          <Button
             className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] hover:bg-[#D4A017] font-semibold"
             asChild
           >
