@@ -39,46 +39,8 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000"
 
-# Redirect rules for SPA behavior
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  conditions = {Role = ["admin"]}
-
 # Handle 404s by serving the Next.js 404 page
 [[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404
-
-# Redirect old paths (if any)
-[[redirects]]
-  from = "/old-about"
-  to = "/about"
-  status = 301
-
-# Force HTTPS
-[[redirects]]
-  from = "http://fs-university-website.netlify.app/*"
-  to = "https://fs-university-website.netlify.app/:splat"
-  status = 301
-  force = true
-
-# Branch-specific build settings
-[context.production]
-  command = "npm run build && npm run export"
-
-[context.deploy-preview]
-  command = "npm run build && npm run export"
-
-[context.branch-deploy]
-  command = "npm run build && npm run export"
-
-# Plugin configuration
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-
-# Functions (if needed in the future)
-[functions]
-  directory = "netlify/functions"
