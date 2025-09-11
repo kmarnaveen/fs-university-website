@@ -8,6 +8,11 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
 
+  // TypeScript configuration
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
   // Disable image optimization for static export
   images: {
     unoptimized: true,
@@ -42,17 +47,9 @@ const nextConfig = {
   // Trailing slash for better static hosting compatibility
   trailingSlash: true,
 
-  // TypeScript configuration
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-
+  // Generate standalone output for better deployment
   experimental: {
-    turbo: {
-      rules: {
-        // Add any custom Turbopack rules if needed
-      },
-    },
+    optimizePackageImports: ['lucide-react'],
   },
 };
 
