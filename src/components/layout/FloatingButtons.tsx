@@ -108,57 +108,56 @@ const FloatingButtons = () => {
         })}
       </div>
 
-      {/* Mobile Floating Buttons - Bottom */}
-      <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-40 lg:hidden">
-        <div className="flex flex-wrap gap-2 bg-white shadow-2xl rounded-full p-3 border max-w-[90vw] justify-center">
-          {/* Enquire and Apply - Primary actions */}
-          <Button
-            asChild
-            className="bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-maroon)] text-white px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-200 text-xs font-medium"
-          >
-            <Link href="/enquiry" className="flex items-center space-x-1">
-              <MessageCircle className="w-4 h-4" />
-              <span>Enquire</span>
-            </Link>
-          </Button>
+      {/* Mobile Floating Buttons - Left Side */}
+      <div className="fixed left-0 top-[40%] z-40 lg:hidden flex flex-col space-y-3">
+        {leftButtons.map((action) => {
+          const IconComponent = action.icon;
+          return (
+            <div key={action.id} className="group relative">
+              {/* Mobile Button - Left */}
+              <Button
+                asChild
+                className="bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-maroon)] text-white px-3 py-3 rounded-r-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 border-2 border-white flex items-center space-x-2 min-w-[120px] justify-start"
+              >
+                <Link href={action.href}>
+                  <IconComponent className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-xs font-medium">
+                    {action.id === "enquire" ? "Enquire" : "Classes"}
+                  </span>
+                </Link>
+              </Button>
+            </div>
+          );
+        })}
+      </div>
 
-          <Button
-            asChild
-            className="bg-[var(--fsu-gold)] hover:bg-[#D4A017] text-[var(--fsu-crimson)] px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-200 text-xs font-semibold"
-          >
-            <Link href="/apply" className="flex items-center space-x-1">
-              <GraduationCap className="w-4 h-4" />
-              <span>Apply Now</span>
-            </Link>
-          </Button>
+      {/* Mobile Floating Buttons - Right Side */}
+      <div className="fixed right-0 top-[40%] z-40 lg:hidden flex flex-col space-y-3">
+        {rightButtons.map((action) => {
+          const IconComponent = action.icon;
+          const isApplyButton = action.id === "apply";
 
-          {/* Secondary actions */}
-          <Button
-            asChild
-            className="bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-maroon)] text-white px-3 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-200 text-xs"
-          >
-            <Link
-              href="/academics/calendar"
-              className="flex items-center space-x-1"
-            >
-              <Calendar className="w-4 h-4" />
-              <span>Classes</span>
-            </Link>
-          </Button>
-
-          <Button
-            asChild
-            className="bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-maroon)] text-white px-3 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-200 text-xs"
-          >
-            <Link
-              href="/student-connect"
-              className="flex items-center space-x-1"
-            >
-              <Users className="w-4 h-4" />
-              <span>Students</span>
-            </Link>
-          </Button>
-        </div>
+          return (
+            <div key={action.id} className="group relative">
+              {/* Mobile Button - Right */}
+              <Button
+                asChild
+                className={`${
+                  isApplyButton
+                    ? "bg-[var(--fsu-gold)] hover:bg-[#D4A017] text-[var(--fsu-crimson)]"
+                    : "bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-maroon)] text-white"
+                } px-3 py-3 rounded-l-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 border-2 border-white flex items-center space-x-2 min-w-[140px] justify-end font-semibold`}
+              >
+                <Link href={action.href}>
+                  <span className="text-xs font-medium">
+                    {action.id === "apply" ? "Apply Now" : "Students"}
+                  </span>
+                  <IconComponent className="w-4 h-4 flex-shrink-0" />
+                </Link>
+              </Button>
+            </div>
+          );
+        })}
       </div>
     </>
   );

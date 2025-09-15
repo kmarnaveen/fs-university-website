@@ -41,6 +41,12 @@ const nextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "fsu.edu.in",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 
@@ -49,7 +55,7 @@ const nextConfig = {
 
   // Generate standalone output for better deployment
   experimental: {
-    optimizePackageImports: ['lucide-react'],
+    optimizePackageImports: ["lucide-react"],
   },
 };
 

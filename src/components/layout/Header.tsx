@@ -113,14 +113,20 @@ const Header = () => {
             <div className="flex items-center space-x-4 xl:space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4" />
-                <a href="tel:+915694252525" className="hidden md:inline hover:text-[var(--fsu-gold)] transition-colors">
+                <a
+                  href="tel:+915694252525"
+                  className="hidden md:inline hover:text-[var(--fsu-gold)] transition-colors"
+                >
                   +91-5694-252525
                 </a>
                 <span className="md:hidden">Call Us</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:info@fsuniversity.edu.in" className="hidden md:inline hover:text-[var(--fsu-gold)] transition-colors">
+                <a
+                  href="mailto:info@fsuniversity.edu.in"
+                  className="hidden md:inline hover:text-[var(--fsu-gold)] transition-colors"
+                >
                   info@fsuniversity.edu.in
                 </a>
                 <span className="md:hidden">Email</span>
@@ -249,7 +255,11 @@ const Header = () => {
                   <DropdownMenuLabel>About FS University</DropdownMenuLabel>
                   <DropdownMenuSeparator />
                   {megaMenuData.about.map((item) => (
-                    <DropdownMenuItem key={item.name} asChild>
+                    <DropdownMenuItem
+                      key={item.name}
+                      asChild
+                      className="hover:bg-[var(--fsu-crimson)] hover:text-white focus:bg-[var(--fsu-crimson)] focus:text-white"
+                    >
                       <Link href={item.href} className="w-full">
                         {item.name}
                       </Link>
@@ -273,7 +283,11 @@ const Header = () => {
                   <DropdownMenuLabel>Admissions 2025</DropdownMenuLabel>
                   <DropdownMenuSeparator />
                   {megaMenuData.admissions.map((item) => (
-                    <DropdownMenuItem key={item.name} asChild>
+                    <DropdownMenuItem
+                      key={item.name}
+                      asChild
+                      className="hover:bg-[var(--fsu-crimson)] hover:text-white focus:bg-[var(--fsu-crimson)] focus:text-white"
+                    >
                       <Link href={item.href} className="w-full">
                         {item.name}
                       </Link>
@@ -298,7 +312,11 @@ const Header = () => {
                   <DropdownMenuSeparator />
                   <div className="grid grid-cols-1 gap-1">
                     {megaMenuData.schools.map((item) => (
-                      <DropdownMenuItem key={item.name} asChild>
+                      <DropdownMenuItem
+                        key={item.name}
+                        asChild
+                        className="hover:bg-[var(--fsu-crimson)] hover:text-white focus:bg-[var(--fsu-crimson)] focus:text-white"
+                      >
                         <Link href={item.href} className="w-full">
                           {item.name}
                         </Link>
@@ -323,7 +341,11 @@ const Header = () => {
                   <DropdownMenuLabel>Academic Resources</DropdownMenuLabel>
                   <DropdownMenuSeparator />
                   {megaMenuData.academics.map((item) => (
-                    <DropdownMenuItem key={item.name} asChild>
+                    <DropdownMenuItem
+                      key={item.name}
+                      asChild
+                      className="hover:bg-[var(--fsu-crimson)] hover:text-white focus:bg-[var(--fsu-crimson)] focus:text-white"
+                    >
                       <Link href={item.href} className="w-full">
                         {item.name}
                       </Link>
@@ -347,7 +369,11 @@ const Header = () => {
                   <DropdownMenuLabel>Student Life</DropdownMenuLabel>
                   <DropdownMenuSeparator />
                   {megaMenuData.campusLife.map((item) => (
-                    <DropdownMenuItem key={item.name} asChild>
+                    <DropdownMenuItem
+                      key={item.name}
+                      asChild
+                      className="hover:bg-[var(--fsu-crimson)] hover:text-white focus:bg-[var(--fsu-crimson)] focus:text-white"
+                    >
                       <Link href={item.href} className="w-full">
                         {item.name}
                       </Link>
@@ -371,7 +397,11 @@ const Header = () => {
                   <DropdownMenuLabel>Career Services</DropdownMenuLabel>
                   <DropdownMenuSeparator />
                   {megaMenuData.placements.map((item) => (
-                    <DropdownMenuItem key={item.name} asChild>
+                    <DropdownMenuItem
+                      key={item.name}
+                      asChild
+                      className="hover:bg-[var(--fsu-crimson)] hover:text-white focus:bg-[var(--fsu-crimson)] focus:text-white"
+                    >
                       <Link href={item.href} className="w-full">
                         {item.name}
                       </Link>
@@ -448,16 +478,17 @@ const Header = () => {
           {isMobileMenuOpen && (
             <div className="fixed inset-0 z-50 xl:hidden">
               {/* Background Overlay */}
-              <div 
+              <div
                 className="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300"
                 onClick={() => setIsMobileMenuOpen(false)}
               />
-              
+
               {/* Slide-in Menu */}
-              <div className={`fixed top-0 right-0 h-full w-80 max-w-[90vw] bg-white shadow-2xl transform transition-transform duration-300 ease-out ${
-                isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-              }`}>
-                
+              <div
+                className={`fixed top-0 right-0 h-full w-80 max-w-[90vw] bg-white shadow-2xl transform transition-transform duration-300 ease-out ${
+                  isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+                }`}
+              >
                 {/* Menu Header */}
                 <div className="flex items-center justify-between p-6 border-b border-gray-200 bg-gradient-to-r from-[var(--fsu-crimson)] to-[var(--fsu-maroon)]">
                   <div className="flex items-center space-x-3">
@@ -469,8 +500,12 @@ const Header = () => {
                       className="bg-white rounded-lg p-1"
                     />
                     <div>
-                      <h3 className="text-white font-bold text-lg">FS University</h3>
-                      <p className="text-white/80 text-xs">Excellence in Education</p>
+                      <h3 className="text-white font-bold text-lg">
+                        FS University
+                      </h3>
+                      <p className="text-white/80 text-xs">
+                        Excellence in Education
+                      </p>
                     </div>
                   </div>
                   <Button
@@ -498,19 +533,22 @@ const Header = () => {
                 {/* Menu Content */}
                 <div className="flex-1 overflow-y-auto p-4">
                   <nav className="space-y-2">
-                    
                     {/* About Us */}
                     <div className="border border-gray-200 rounded-xl overflow-hidden">
                       <button
-                        onClick={() => toggleMobileSubmenu('about')}
+                        onClick={() => toggleMobileSubmenu("about")}
                         className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors"
                       >
-                        <span className="font-semibold text-gray-900">About Us</span>
-                        <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform duration-200 ${
-                          expandedMobileMenu === 'about' ? 'rotate-180' : ''
-                        }`} />
+                        <span className="font-semibold text-gray-900">
+                          About Us
+                        </span>
+                        <ChevronDown
+                          className={`w-5 h-5 text-gray-500 transition-transform duration-200 ${
+                            expandedMobileMenu === "about" ? "rotate-180" : ""
+                          }`}
+                        />
                       </button>
-                      {expandedMobileMenu === 'about' && (
+                      {expandedMobileMenu === "about" && (
                         <div className="border-t border-gray-200 bg-gray-50">
                           {megaMenuData.about.map((item, index) => (
                             <Link
@@ -529,15 +567,21 @@ const Header = () => {
                     {/* Admissions */}
                     <div className="border border-gray-200 rounded-xl overflow-hidden">
                       <button
-                        onClick={() => toggleMobileSubmenu('admissions')}
+                        onClick={() => toggleMobileSubmenu("admissions")}
                         className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors"
                       >
-                        <span className="font-semibold text-gray-900">Admissions</span>
-                        <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform duration-200 ${
-                          expandedMobileMenu === 'admissions' ? 'rotate-180' : ''
-                        }`} />
+                        <span className="font-semibold text-gray-900">
+                          Admissions
+                        </span>
+                        <ChevronDown
+                          className={`w-5 h-5 text-gray-500 transition-transform duration-200 ${
+                            expandedMobileMenu === "admissions"
+                              ? "rotate-180"
+                              : ""
+                          }`}
+                        />
                       </button>
-                      {expandedMobileMenu === 'admissions' && (
+                      {expandedMobileMenu === "admissions" && (
                         <div className="border-t border-gray-200 bg-gray-50">
                           {megaMenuData.admissions.map((item, index) => (
                             <Link
@@ -556,15 +600,19 @@ const Header = () => {
                     {/* Schools */}
                     <div className="border border-gray-200 rounded-xl overflow-hidden">
                       <button
-                        onClick={() => toggleMobileSubmenu('schools')}
+                        onClick={() => toggleMobileSubmenu("schools")}
                         className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors"
                       >
-                        <span className="font-semibold text-gray-900">Schools & Programs</span>
-                        <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform duration-200 ${
-                          expandedMobileMenu === 'schools' ? 'rotate-180' : ''
-                        }`} />
+                        <span className="font-semibold text-gray-900">
+                          Schools & Programs
+                        </span>
+                        <ChevronDown
+                          className={`w-5 h-5 text-gray-500 transition-transform duration-200 ${
+                            expandedMobileMenu === "schools" ? "rotate-180" : ""
+                          }`}
+                        />
                       </button>
-                      {expandedMobileMenu === 'schools' && (
+                      {expandedMobileMenu === "schools" && (
                         <div className="border-t border-gray-200 bg-gray-50">
                           {megaMenuData.schools.map((school, index) => (
                             <Link
@@ -588,7 +636,7 @@ const Header = () => {
                     >
                       Campus Life
                     </Link>
-                    
+
                     <Link
                       href="/placements"
                       className="block p-4 text-gray-900 font-semibold hover:bg-gray-50 transition-colors border border-gray-200 rounded-xl"
@@ -596,7 +644,7 @@ const Header = () => {
                     >
                       Placements
                     </Link>
-                    
+
                     <Link
                       href="/news"
                       className="block p-4 text-gray-900 font-semibold hover:bg-gray-50 transition-colors border border-gray-200 rounded-xl"
@@ -604,7 +652,7 @@ const Header = () => {
                     >
                       News & Media
                     </Link>
-                    
+
                     <Link
                       href="/careers"
                       className="block p-4 text-gray-900 font-semibold hover:bg-gray-50 transition-colors border border-gray-200 rounded-xl"
@@ -612,7 +660,7 @@ const Header = () => {
                     >
                       Careers
                     </Link>
-                    
+
                     <Link
                       href="/notice-board"
                       className="block p-4 text-gray-900 font-semibold hover:bg-gray-50 transition-colors border border-gray-200 rounded-xl"
@@ -670,30 +718,40 @@ const Header = () => {
 
                   {/* Contact Information */}
                   <div className="pt-4 border-t border-gray-300">
-                    <h4 className="font-semibold text-gray-900 mb-3 text-sm">Quick Contact</h4>
+                    <h4 className="font-semibold text-gray-900 mb-3 text-sm">
+                      Quick Contact
+                    </h4>
                     <div className="space-y-3">
-                      <a 
-                        href="tel:+915694252525" 
+                      <a
+                        href="tel:+915694252525"
                         className="flex items-center p-3 bg-white rounded-lg hover:bg-gray-100 transition-colors"
                       >
                         <div className="w-10 h-10 bg-[var(--fsu-crimson)] rounded-lg flex items-center justify-center mr-3">
                           <Phone className="w-5 h-5 text-white" />
                         </div>
                         <div>
-                          <p className="text-sm font-medium text-gray-900">Call Us</p>
-                          <p className="text-xs text-gray-600">+91-5694-252525</p>
+                          <p className="text-sm font-medium text-gray-900">
+                            Call Us
+                          </p>
+                          <p className="text-xs text-gray-600">
+                            +91-5694-252525
+                          </p>
                         </div>
                       </a>
-                      <a 
-                        href="mailto:info@fsuniversity.edu.in" 
+                      <a
+                        href="mailto:info@fsuniversity.edu.in"
                         className="flex items-center p-3 bg-white rounded-lg hover:bg-gray-100 transition-colors"
                       >
                         <div className="w-10 h-10 bg-[var(--fsu-crimson)] rounded-lg flex items-center justify-center mr-3">
                           <Mail className="w-5 h-5 text-white" />
                         </div>
                         <div>
-                          <p className="text-sm font-medium text-gray-900">Email Us</p>
-                          <p className="text-xs text-gray-600">info@fsuniversity.edu.in</p>
+                          <p className="text-sm font-medium text-gray-900">
+                            Email Us
+                          </p>
+                          <p className="text-xs text-gray-600">
+                            info@fsuniversity.edu.in
+                          </p>
                         </div>
                       </a>
                     </div>
