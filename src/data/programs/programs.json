@@ -1,0 +1,1736 @@
+{
+  "programs": [
+    {
+      "id": "btech-computer-science",
+      "slug": "btech-computer-science",
+      "title": "B.Tech Computer Science & Engineering",
+      "level": "Undergraduate",
+      "duration": "4 Years",
+      "approvals": ["AICTE", "UGC", "NAAC A+"],
+      "intake": "120 Students",
+      "mode": "Full-time",
+      "description": "Our B.Tech Computer Science & Engineering program is designed to produce industry-ready software engineers and technology leaders. With a perfect blend of theoretical knowledge and practical application, students gain expertise in cutting-edge technologies including AI, machine learning, cloud computing, and software development. Our curriculum is continuously updated in collaboration with industry partners to ensure graduates are equipped with the most relevant skills demanded by top technology companies.",
+      "highlights": [
+        "Industry-aligned curriculum with latest technologies",
+        "Hands-on experience with real-world projects",
+        "Dedicated coding labs with 24/7 access",
+        "Expert faculty with industry experience",
+        "Strong placement record with top tech companies",
+        "Opportunities for internships and industry collaborations",
+        "Research opportunities in emerging technologies",
+        "Regular workshops and guest lectures by industry experts"
+      ],
+      "specializations": [
+        "Artificial Intelligence & Machine Learning",
+        "Data Science & Analytics",
+        "Cybersecurity",
+        "Cloud Computing",
+        "Mobile App Development",
+        "Web Development",
+        "Software Engineering",
+        "Computer Networks"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Mathematics-I",
+            "Physics",
+            "Chemistry",
+            "English Communication",
+            "Engineering Graphics",
+            "Computer Programming (C)",
+            "Physics Lab",
+            "Chemistry Lab",
+            "Programming Lab"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Mathematics-II",
+            "Engineering Mechanics",
+            "Basic Electrical Engineering",
+            "Environmental Studies",
+            "Data Structures",
+            "Object Oriented Programming",
+            "Electrical Lab",
+            "Data Structures Lab",
+            "OOP Lab"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Mathematics-III",
+            "Digital Logic Design",
+            "Computer Organization",
+            "Database Management Systems",
+            "Discrete Mathematics",
+            "Technical Communication",
+            "Digital Logic Lab",
+            "DBMS Lab",
+            "Mini Project"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Algorithms & Analysis",
+            "Computer Networks",
+            "Operating Systems",
+            "Software Engineering",
+            "Microprocessors",
+            "Probability & Statistics",
+            "Networks Lab",
+            "OS Lab",
+            "Microprocessor Lab"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "Machine Learning",
+            "Web Technologies",
+            "Compiler Design",
+            "Computer Graphics",
+            "Elective-I",
+            "Elective-II",
+            "ML Lab",
+            "Web Tech Lab",
+            "Major Project-I"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "Artificial Intelligence",
+            "Mobile App Development",
+            "Cloud Computing",
+            "Information Security",
+            "Elective-III",
+            "Elective-IV",
+            "Mobile App Lab",
+            "Cloud Lab",
+            "Major Project-II"
+          ]
+        },
+        {
+          "semester": "Semester 7",
+          "subjects": [
+            "Advanced Algorithms",
+            "Distributed Systems",
+            "Big Data Analytics",
+            "Elective-V",
+            "Elective-VI",
+            "Industrial Training",
+            "Seminar",
+            "Capstone Project-I"
+          ]
+        },
+        {
+          "semester": "Semester 8",
+          "subjects": [
+            "Blockchain Technology",
+            "Internet of Things",
+            "Professional Ethics",
+            "Entrepreneurship",
+            "Comprehensive Viva",
+            "Capstone Project-II",
+            "Industry Internship"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/btech-cse-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Software Engineer",
+          "Full Stack Developer",
+          "Data Scientist",
+          "Machine Learning Engineer",
+          "Cybersecurity Analyst",
+          "Cloud Architect",
+          "DevOps Engineer",
+          "Mobile App Developer",
+          "AI Research Engineer",
+          "Product Manager",
+          "Technical Lead",
+          "System Administrator"
+        ],
+        "averageSalary": "₹8.5 LPA",
+        "placementRate": "95%",
+        "topRecruiters": [
+          { "name": "Microsoft", "logo": "/companies/microsoft.png" },
+          { "name": "Google", "logo": "/companies/google.png" },
+          { "name": "Amazon", "logo": "/companies/amazon.png" },
+          { "name": "TCS", "logo": "/companies/tcs.png" },
+          { "name": "Infosys", "logo": "/companies/infosys.png" },
+          { "name": "Wipro", "logo": "/companies/wipro.png" },
+          { "name": "IBM", "logo": "/companies/ibm.png" },
+          { "name": "Accenture", "logo": "/companies/accenture.png" },
+          { "name": "HCL", "logo": "/companies/hcl.png" },
+          { "name": "Tech Mahindra", "logo": "/companies/techmahindra.png" },
+          { "name": "Cognizant", "logo": "/companies/cognizant.png" },
+          { "name": "Capgemini", "logo": "/companies/capgemini.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 108,
+            "packages": {
+              "highest": "₹45 LPA",
+              "average": "₹8.5 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 102,
+            "packages": {
+              "highest": "₹42 LPA",
+              "average": "₹7.8 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 95,
+            "packages": {
+              "highest": "₹38 LPA",
+              "average": "₹7.2 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 60% marks in 12th standard with PCM (Physics, Chemistry, Mathematics)",
+          "Valid JEE Main score (preferred but not mandatory)",
+          "Age limit: Maximum 25 years as on date of admission",
+          "Must have studied English as a compulsory subject in 12th standard"
+        ],
+        "entranceExam": "JEE Main (preferred) or FS University Entrance Test",
+        "ageLimit": "Maximum 25 years"
+      },
+      "fees": {
+        "tuitionFee": "₹1,20,000/year",
+        "examFee": "₹5,000/year",
+        "otherFees": "₹15,000/year",
+        "totalFee": "₹1,40,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Sports quota scholarships",
+        "Girl student scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Rajesh Kumar",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D Computer Science, IIT Delhi",
+          "specialization": "Machine Learning, Data Mining",
+          "experience": "15+ Years"
+        },
+        {
+          "name": "Dr. Priya Sharma",
+          "designation": "Professor",
+          "qualifications": "Ph.D Software Engineering, IISc Bangalore",
+          "specialization": "Software Engineering, Cloud Computing",
+          "experience": "12+ Years"
+        },
+        {
+          "name": "Dr. Amit Patel",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Computer Networks, NIT Trichy",
+          "specialization": "Computer Networks, Cybersecurity",
+          "experience": "10+ Years"
+        },
+        {
+          "name": "Prof. Sunita Gupta",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Tech AI & ML, BITS Pilani",
+          "specialization": "Artificial Intelligence, Deep Learning",
+          "experience": "8+ Years"
+        },
+        {
+          "name": "Dr. Vikram Singh",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Computer Graphics, IIIT Hyderabad",
+          "specialization": "Computer Graphics, Game Development",
+          "experience": "9+ Years"
+        },
+        {
+          "name": "Prof. Neha Agarwal",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Tech Mobile Computing, Delhi University",
+          "specialization": "Mobile App Development, IoT",
+          "experience": "6+ Years"
+        }
+      ],
+      "facilities": [
+        "Advanced Computer Labs with latest hardware",
+        "24/7 Internet connectivity with high-speed broadband",
+        "Software Development Lab with industry-standard tools",
+        "AI & Machine Learning Lab with GPU clusters",
+        "Cybersecurity Lab with ethical hacking tools",
+        "Project rooms for team-based development",
+        "Digital Library with access to research databases",
+        "Innovation and Incubation Center"
+      ],
+      "accreditations": ["AICTE", "UGC", "NAAC A+", "NBA"]
+    },
+    {
+      "id": "mba",
+      "slug": "mba",
+      "title": "Master of Business Administration",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "approvals": ["AICTE", "UGC", "NAAC A+"],
+      "intake": "80 Students",
+      "mode": "Full-time",
+      "description": "Our MBA program is designed to create future business leaders and entrepreneurs. With a comprehensive curriculum covering all aspects of business management, students develop strategic thinking, leadership skills, and industry knowledge required to excel in the corporate world.",
+      "highlights": [
+        "Industry-relevant curriculum with case studies",
+        "Experienced faculty with corporate background",
+        "Corporate internships and live projects",
+        "Strong alumni network in top companies",
+        "Excellent placement record",
+        "International business exposure programs",
+        "Entrepreneurship development support",
+        "Regular industry interactions and workshops"
+      ],
+      "specializations": [
+        "Marketing Management",
+        "Finance Management",
+        "Human Resource Management",
+        "Operations Management",
+        "Digital Marketing",
+        "International Business",
+        "Entrepreneurship",
+        "Business Analytics"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Principles of Management",
+            "Business Economics",
+            "Accounting for Managers",
+            "Business Communication",
+            "Quantitative Methods",
+            "Organizational Behavior",
+            "Business Law",
+            "Computer Applications in Business"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Marketing Management",
+            "Financial Management",
+            "Human Resource Management",
+            "Operations Management",
+            "Business Research Methods",
+            "Strategic Management",
+            "Entrepreneurship Development",
+            "Business Ethics"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Specialization Subject 1",
+            "Specialization Subject 2",
+            "International Business",
+            "Project Management",
+            "Supply Chain Management",
+            "Digital Marketing",
+            "Summer Internship Project",
+            "Industry Seminar"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Specialization Subject 3",
+            "Specialization Subject 4",
+            "Business Intelligence",
+            "Leadership Development",
+            "Corporate Strategy",
+            "Dissertation/Major Project",
+            "Comprehensive Viva",
+            "Industry Training"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/mba-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Business Manager",
+          "Marketing Manager",
+          "Finance Manager",
+          "HR Manager",
+          "Operations Manager",
+          "Business Analyst",
+          "Project Manager",
+          "Management Consultant",
+          "Business Development Manager",
+          "Product Manager",
+          "Sales Manager",
+          "Team Leader"
+        ],
+        "averageSalary": "₹6.5 LPA",
+        "placementRate": "92%",
+        "topRecruiters": [
+          { "name": "Deloitte", "logo": "/companies/deloitte.png" },
+          { "name": "KPMG", "logo": "/companies/kpmg.png" },
+          { "name": "EY", "logo": "/companies/ey.png" },
+          { "name": "PwC", "logo": "/companies/pwc.png" },
+          { "name": "Reliance", "logo": "/companies/reliance.png" },
+          { "name": "HDFC Bank", "logo": "/companies/hdfc.png" },
+          { "name": "ICICI Bank", "logo": "/companies/icici.png" },
+          { "name": "Axis Bank", "logo": "/companies/axis.png" },
+          { "name": "Bajaj Finserv", "logo": "/companies/bajaj.png" },
+          { "name": "Mahindra Group", "logo": "/companies/mahindra.png" },
+          { "name": "Aditya Birla", "logo": "/companies/birla.png" },
+          { "name": "L&T", "logo": "/companies/lt.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 72,
+            "packages": {
+              "highest": "₹25 LPA",
+              "average": "₹6.5 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 68,
+            "packages": {
+              "highest": "₹22 LPA",
+              "average": "₹6.2 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 65,
+            "packages": {
+              "highest": "₹20 LPA",
+              "average": "₹5.8 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Graduation in any discipline with minimum 50% marks",
+          "Valid CAT/MAT/XAT/CMAT score",
+          "Work experience preferred but not mandatory",
+          "Age limit: Maximum 28 years as on date of admission"
+        ],
+        "entranceExam": "CAT/MAT/XAT/CMAT or FS University Entrance Test",
+        "ageLimit": "Maximum 28 years"
+      },
+      "fees": {
+        "tuitionFee": "₹2,00,000/year",
+        "examFee": "₹8,000/year",
+        "otherFees": "₹25,000/year",
+        "totalFee": "₹2,33,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 40% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Women candidate scholarships",
+        "Corporate sponsorship programs"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Suresh Gupta",
+          "designation": "Professor & Dean",
+          "qualifications": "Ph.D Management, IIM Ahmedabad",
+          "specialization": "Strategic Management, Marketing",
+          "experience": "18+ Years"
+        },
+        {
+          "name": "Dr. Anjali Sharma",
+          "designation": "Professor",
+          "qualifications": "Ph.D Finance, XLRI Jamshedpur",
+          "specialization": "Financial Management, Banking",
+          "experience": "15+ Years"
+        },
+        {
+          "name": "Prof. Rajesh Verma",
+          "designation": "Associate Professor",
+          "qualifications": "MBA HR, TISS Mumbai",
+          "specialization": "Human Resource Management, OB",
+          "experience": "12+ Years"
+        },
+        {
+          "name": "Dr. Priya Agarwal",
+          "designation": "Assistant Professor",
+          "qualifications": "Ph.D Operations, ISB Hyderabad",
+          "specialization": "Operations Management, SCM",
+          "experience": "10+ Years"
+        }
+      ],
+      "facilities": [
+        "Modern MBA classrooms with smart boards",
+        "Computer lab with business software",
+        "Library with business databases access",
+        "Case study room for group discussions",
+        "Seminar halls for corporate events",
+        "Placement cell with industry connections",
+        "Entrepreneurship incubation center",
+        "Business simulation lab"
+      ],
+      "accreditations": ["AICTE", "UGC", "NAAC A+"]
+    },
+    {
+      "id": "dpharm",
+      "slug": "dpharm",
+      "title": "Diploma in Pharmacy",
+      "level": "Diploma",
+      "duration": "2 Years",
+      "approvals": ["PCI", "State Pharmacy Council", "AICTE"],
+      "intake": "60 Students",
+      "mode": "Full-time",
+      "description": "Our Diploma in Pharmacy program is designed to prepare competent pharmacy professionals who can contribute effectively to healthcare delivery. The curriculum combines theoretical knowledge with practical training in pharmaceutical sciences, ensuring graduates are well-equipped to work in various pharmaceutical settings including retail pharmacies, hospitals, pharmaceutical industries, and drug regulatory agencies.",
+      "highlights": [
+        "PCI approved curriculum",
+        "Well-equipped pharmaceutical laboratories",
+        "Hospital pharmacy training",
+        "Industrial training programs",
+        "Experienced faculty with pharmacy background",
+        "Strong industry connections",
+        "Practical training in drug dispensing",
+        "Research opportunities in pharmaceutical sciences"
+      ],
+      "specializations": [
+        "Hospital Pharmacy",
+        "Community Pharmacy",
+        "Industrial Pharmacy",
+        "Clinical Pharmacy",
+        "Regulatory Affairs",
+        "Quality Control & Assurance"
+      ],
+      "curriculum": [
+        {
+          "year": "First Year",
+          "subjects": [
+            "Pharmaceutics-I",
+            "Pharmaceutical Chemistry-I",
+            "Pharmacognosy",
+            "Human Anatomy & Physiology",
+            "Health Education & Community Pharmacy",
+            "Practical: Pharmaceutics-I",
+            "Practical: Pharmaceutical Chemistry-I",
+            "Practical: Pharmacognosy",
+            "Practical: Human Anatomy & Physiology"
+          ]
+        },
+        {
+          "year": "Second Year",
+          "subjects": [
+            "Pharmaceutics-II",
+            "Pharmaceutical Chemistry-II",
+            "Pharmacology & Toxicology",
+            "Pharmaceutical Jurisprudence",
+            "Drug Store & Business Management",
+            "Hospital & Clinical Pharmacy",
+            "Practical: Pharmaceutics-II",
+            "Practical: Pharmaceutical Chemistry-II",
+            "Practical: Pharmacology & Toxicology"
+          ]
+        }
+      ],
+      "careerOpportunities": [
+        "Registered Pharmacist",
+        "Hospital Pharmacist",
+        "Community Pharmacist",
+        "Production Executive in Pharmaceutical Industry",
+        "Quality Control Analyst",
+        "Drug Inspector",
+        "Medical Representative",
+        "Pharmaceutical Sales Executive",
+        "Drug Store Manager",
+        "Research Assistant"
+      ],
+      "careerProspects": {
+        "jobTitles": [
+          "Registered Pharmacist",
+          "Hospital Pharmacist",
+          "Community Pharmacist",
+          "Production Executive",
+          "Quality Control Analyst",
+          "Drug Inspector",
+          "Medical Representative",
+          "Pharmaceutical Sales Executive"
+        ],
+        "averageSalary": "₹3.5 LPA",
+        "placementRate": "88%",
+        "topRecruiters": [
+          { "name": "Apollo Hospitals", "logo": "/companies/apollo.png" },
+          { "name": "Fortis Healthcare", "logo": "/companies/fortis.png" },
+          { "name": "Sun Pharmaceutical", "logo": "/companies/sun-pharma.png" },
+          {
+            "name": "Dr. Reddy's Laboratories",
+            "logo": "/companies/dr-reddys.png"
+          },
+          { "name": "Cipla", "logo": "/companies/cipla.png" },
+          { "name": "Lupin", "logo": "/companies/lupin.png" },
+          { "name": "Medplus", "logo": "/companies/medplus.png" },
+          { "name": "1mg", "logo": "/companies/1mg.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 52,
+            "packages": {
+              "highest": "₹6.5 LPA",
+              "average": "₹3.5 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 48,
+            "packages": {
+              "highest": "₹6.0 LPA",
+              "average": "₹3.2 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 45,
+            "packages": {
+              "highest": "₹5.8 LPA",
+              "average": "₹3.0 LPA"
+            }
+          }
+        ]
+      },
+      "eligibilityAge": "17-25 years",
+      "eligibility": {
+        "academicRequirements": [
+          "10+2 with Physics, Chemistry, Biology/Mathematics (45% for General, 40% for SC/ST)",
+          "Must have passed 12th standard from a recognized board",
+          "Minimum age: 17 years, Maximum age: 25 years",
+          "Medical fitness certificate required"
+        ],
+        "entranceExam": "Merit-based selection + Counseling",
+        "additionalRequirements": [
+          "Character certificate from previous institution",
+          "Migration certificate (if applicable)",
+          "Domicile certificate (for state quota)"
+        ]
+      },
+      "admissionProcess": "Merit-based selection + Counseling",
+      "fees": "₹85,000 per year",
+      "scholarships": [
+        "Merit-based scholarships",
+        "Government scholarships for eligible students",
+        "Financial assistance for economically weaker sections",
+        "Fee concession for top performers"
+      ],
+      "facilities": [
+        "Modern pharmaceutical laboratories",
+        "Drug testing and analysis lab",
+        "Pharmacognosy museum",
+        "Hospital pharmacy training center",
+        "Digital library with pharmaceutical databases",
+        "Industry-standard equipment",
+        "Computer lab with pharmacy software"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Sunita Krishnan",
+          "designation": "Principal & Professor",
+          "qualifications": "Ph.D Pharmaceutical Sciences, Mumbai University",
+          "specialization": "Pharmaceutical Chemistry, Drug Analysis",
+          "experience": "18+ Years"
+        },
+        {
+          "name": "Prof. Rajesh Verma",
+          "designation": "Associate Professor",
+          "qualifications": "M.Pharm Pharmaceutics, Pune University",
+          "specialization": "Pharmaceutics, Drug Formulation",
+          "experience": "12+ Years"
+        },
+        {
+          "name": "Dr. Meera Joshi",
+          "designation": "Assistant Professor",
+          "qualifications": "Ph.D Pharmacognosy, Delhi University",
+          "specialization": "Pharmacognosy, Herbal Medicine",
+          "experience": "8+ Years"
+        },
+        {
+          "name": "Prof. Amit Sharma",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Pharm Pharmacology, Manipal University",
+          "specialization": "Pharmacology, Clinical Pharmacy",
+          "experience": "6+ Years"
+        },
+        {
+          "name": "Dr. Kavitha Reddy",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Pharmaceutical Analysis, Osmania University",
+          "specialization": "Quality Control, Analytical Chemistry",
+          "experience": "10+ Years"
+        }
+      ],
+      "accreditations": ["PCI", "State Pharmacy Council", "AICTE"]
+    },
+    {
+      "id": "deled",
+      "slug": "deled",
+      "title": "Diploma in Elementary Education (D.El.Ed)",
+      "level": "Diploma",
+      "duration": "2 Years",
+      "approvals": ["NCTE", "State Education Board", "UGC"],
+      "intake": "100 Students",
+      "mode": "Full-time",
+      "description": "The Diploma in Elementary Education (D.El.Ed) is a comprehensive teacher training program designed to prepare qualified and competent teachers for elementary education (Classes I-VIII). The program focuses on child psychology, pedagogy, curriculum development, and practical teaching methods to ensure graduates can effectively contribute to quality elementary education in both government and private schools.",
+      "highlights": [
+        "NCTE approved curriculum",
+        "Focus on child-centered education",
+        "Extensive practical teaching experience",
+        "Integration of ICT in education",
+        "Inclusive education training",
+        "Activity-based learning methods",
+        "Regular school internships",
+        "Expert faculty with education background"
+      ],
+      "specializations": [
+        "Primary Education (Classes I-V)",
+        "Upper Primary Education (Classes VI-VIII)",
+        "Special Education & Inclusive Teaching",
+        "Early Childhood Education",
+        "Educational Technology",
+        "Environmental Education"
+      ],
+      "curriculum": [
+        {
+          "year": "First Year",
+          "subjects": [
+            "Childhood & Growing Up",
+            "Contemporary Indian Society",
+            "Learning & Teaching",
+            "Language Across the Curriculum",
+            "Understanding Disciplines & Subjects",
+            "Practicum (School Experience Programme)",
+            "Work & Education",
+            "Art Education",
+            "Health & Physical Education"
+          ]
+        },
+        {
+          "year": "Second Year",
+          "subjects": [
+            "Knowledge & Curriculum",
+            "Pedagogy of Environmental Studies",
+            "Pedagogy of Mathematics",
+            "Pedagogy of Language",
+            "Assessment for Learning",
+            "School Management & Leadership",
+            "ICT in Education",
+            "Internship in Schools",
+            "Action Research Project"
+          ]
+        }
+      ],
+      "careerOpportunities": [
+        "Primary School Teacher",
+        "Elementary School Teacher",
+        "Government School Teacher (through TET)",
+        "Private School Teacher",
+        "Educational Content Developer",
+        "Child Counselor",
+        "Educational Program Coordinator",
+        "Teacher Trainer",
+        "Education Officer",
+        "NGO Education Specialist"
+      ],
+      "careerProspects": {
+        "jobTitles": [
+          "Primary School Teacher",
+          "Elementary School Teacher",
+          "Government School Teacher",
+          "Private School Teacher",
+          "Educational Content Developer",
+          "Child Counselor",
+          "Teacher Trainer",
+          "Education Officer"
+        ],
+        "averageSalary": "₹4.2 LPA",
+        "placementRate": "85%",
+        "topRecruiters": [
+          {
+            "name": "Government Schools",
+            "logo": "/companies/govt-schools.png"
+          },
+          { "name": "Delhi Public School", "logo": "/companies/dps.png" },
+          { "name": "Kendriya Vidyalaya", "logo": "/companies/kv.png" },
+          { "name": "Ryan International", "logo": "/companies/ryan.png" },
+          { "name": "DAV Schools", "logo": "/companies/dav.png" },
+          { "name": "Navodaya Vidyalaya", "logo": "/companies/navodaya.png" },
+          { "name": "CBSE Schools", "logo": "/companies/cbse.png" },
+          {
+            "name": "Teach for India",
+            "logo": "/companies/teach-for-india.png"
+          }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 82,
+            "packages": {
+              "highest": "₹7.2 LPA",
+              "average": "₹4.2 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 78,
+            "packages": {
+              "highest": "₹6.8 LPA",
+              "average": "₹4.0 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 75,
+            "packages": {
+              "highest": "₹6.5 LPA",
+              "average": "₹3.8 LPA"
+            }
+          }
+        ]
+      },
+      "eligibilityAge": "18-35 years",
+      "eligibility": {
+        "academicRequirements": [
+          "10+2 from recognized board with minimum 50% marks (45% for SC/ST)",
+          "Must have passed 12th standard in any stream",
+          "Minimum age: 18 years, Maximum age: 35 years",
+          "Basic computer literacy preferred"
+        ],
+        "entranceExam": "Entrance test + Interview + Document verification",
+        "additionalRequirements": [
+          "Character certificate from previous institution",
+          "Medical fitness certificate",
+          "Teaching aptitude assessment"
+        ]
+      },
+      "admissionProcess": "Entrance test + Interview + Document verification",
+      "fees": "₹45,000 per year",
+      "scholarships": [
+        "Government teacher training scholarships",
+        "Merit-based fee concessions",
+        "Financial aid for rural students",
+        "Reserved category benefits"
+      ],
+      "facilities": [
+        "Psychology & Child Development lab",
+        "Educational Technology lab",
+        "Teaching aids & materials library",
+        "Practice teaching schools",
+        "Computer lab with educational software",
+        "Language lab for communication skills",
+        "Arts & crafts workshop",
+        "Digital classroom setup"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Vandana Singh",
+          "designation": "Principal & Professor",
+          "qualifications": "Ph.D Education, JNU Delhi",
+          "specialization": "Elementary Education, Curriculum Development",
+          "experience": "20+ Years"
+        },
+        {
+          "name": "Prof. Ramesh Kumar",
+          "designation": "Associate Professor",
+          "qualifications": "M.Ed Child Psychology, Jamia Millia Islamia",
+          "specialization": "Child Psychology, Learning Disabilities",
+          "experience": "15+ Years"
+        },
+        {
+          "name": "Dr. Priya Nair",
+          "designation": "Assistant Professor",
+          "qualifications": "Ph.D Educational Technology, Kerala University",
+          "specialization": "Educational Technology, ICT in Education",
+          "experience": "10+ Years"
+        },
+        {
+          "name": "Prof. Sanjay Gupta",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Ed Mathematics Education, NCERT Delhi",
+          "specialization": "Mathematics Pedagogy, Assessment Methods",
+          "experience": "8+ Years"
+        },
+        {
+          "name": "Dr. Anjali Mehta",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Language Education, EFL University",
+          "specialization": "Language Teaching, Multilingual Education",
+          "experience": "12+ Years"
+        },
+        {
+          "name": "Prof. Suresh Chandra",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Ed Science Education, TISS Mumbai",
+          "specialization": "Science Pedagogy, Environmental Education",
+          "experience": "7+ Years"
+        }
+      ],
+      "accreditations": ["NCTE", "State Education Board", "UGC"]
+    },
+    {
+      "id": "btech-mechanical-engineering",
+      "slug": "btech-mechanical-engineering",
+      "title": "B.Tech Mechanical Engineering",
+      "level": "Undergraduate",
+      "duration": "4 Years",
+      "approvals": ["AICTE", "UGC", "NAAC A+"],
+      "intake": "120 Students",
+      "mode": "Full-time",
+      "description": "Our B.Tech Mechanical Engineering program provides a comprehensive foundation in mechanical systems design, manufacturing, thermal sciences, and materials engineering. Students gain hands-on experience with state-of-the-art equipment and software tools used in modern mechanical engineering practice. The curriculum emphasizes both traditional mechanical engineering principles and emerging technologies like robotics, automation, and sustainable energy systems.",
+      "highlights": [
+        "Modern manufacturing and design labs",
+        "Industry-standard CAD/CAM software training",
+        "Hands-on experience with CNC machines and 3D printing",
+        "Strong foundation in thermal and fluid sciences",
+        "Robotics and automation specialization tracks",
+        "Industry partnerships for internships and projects",
+        "Research opportunities in renewable energy",
+        "Regular industrial visits and expert lectures"
+      ],
+      "specializations": [
+        "Design & Manufacturing",
+        "Thermal Engineering",
+        "Robotics & Automation",
+        "Automobile Engineering",
+        "Aerospace Engineering",
+        "Materials Engineering",
+        "Renewable Energy Systems",
+        "Industrial Engineering"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Mathematics-I",
+            "Physics",
+            "Chemistry",
+            "English Communication",
+            "Engineering Graphics",
+            "Basic Mechanical Engineering",
+            "Physics Lab",
+            "Chemistry Lab",
+            "Engineering Graphics Lab"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Mathematics-II",
+            "Engineering Mechanics",
+            "Basic Electrical Engineering",
+            "Environmental Studies",
+            "Engineering Materials",
+            "Workshop Technology",
+            "Electrical Lab",
+            "Materials Lab",
+            "Workshop Practice"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Mathematics-III",
+            "Strength of Materials",
+            "Thermodynamics",
+            "Fluid Mechanics",
+            "Manufacturing Processes",
+            "Computer Aided Design",
+            "Strength of Materials Lab",
+            "Thermodynamics Lab",
+            "CAD Lab"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Theory of Machines",
+            "Heat Transfer",
+            "Material Science",
+            "Fluid Machinery",
+            "Metrology & Quality Control",
+            "Machine Design-I",
+            "Heat Transfer Lab",
+            "Fluid Machinery Lab",
+            "Metrology Lab"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "Machine Design-II",
+            "Internal Combustion Engines",
+            "Dynamics of Machinery",
+            "Manufacturing Technology",
+            "Control Engineering",
+            "Elective-I",
+            "IC Engines Lab",
+            "Manufacturing Lab",
+            "Control Systems Lab"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "Mechanical Vibrations",
+            "Refrigeration & Air Conditioning",
+            "Operations Research",
+            "Industrial Engineering",
+            "Elective-II",
+            "Elective-III",
+            "RAC Lab",
+            "Industrial Engineering Lab",
+            "Mini Project"
+          ]
+        },
+        {
+          "semester": "Semester 7",
+          "subjects": [
+            "Power Plant Engineering",
+            "Automobile Engineering",
+            "Finite Element Analysis",
+            "Elective-IV",
+            "Elective-V",
+            "Industrial Training",
+            "FEA Lab",
+            "Automobile Lab",
+            "Major Project-I"
+          ]
+        },
+        {
+          "semester": "Semester 8",
+          "subjects": [
+            "Renewable Energy Systems",
+            "Robotics & Automation",
+            "Professional Ethics",
+            "Entrepreneurship",
+            "Comprehensive Viva",
+            "Major Project-II",
+            "Industry Internship"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/btech-mechanical-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Mechanical Engineer",
+          "Design Engineer",
+          "Manufacturing Engineer",
+          "Production Engineer",
+          "Quality Control Engineer",
+          "Project Engineer",
+          "Maintenance Engineer",
+          "Automotive Engineer",
+          "HVAC Engineer",
+          "Research & Development Engineer",
+          "CAD Designer",
+          "Technical Consultant"
+        ],
+        "averageSalary": "₹7.2 LPA",
+        "placementRate": "92%",
+        "topRecruiters": [
+          { "name": "Tata Motors", "logo": "/companies/tata-motors.png" },
+          { "name": "Mahindra & Mahindra", "logo": "/companies/mahindra.png" },
+          { "name": "Bajaj Auto", "logo": "/companies/bajaj-auto.png" },
+          { "name": "L&T", "logo": "/companies/lt.png" },
+          { "name": "BHEL", "logo": "/companies/bhel.png" },
+          { "name": "Maruti Suzuki", "logo": "/companies/maruti.png" },
+          { "name": "Hero MotoCorp", "logo": "/companies/hero.png" },
+          { "name": "Godrej", "logo": "/companies/godrej.png" },
+          { "name": "Thermax", "logo": "/companies/thermax.png" },
+          { "name": "Siemens", "logo": "/companies/siemens.png" },
+          { "name": "ABB", "logo": "/companies/abb.png" },
+          { "name": "Bosch", "logo": "/companies/bosch.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 105,
+            "packages": {
+              "highest": "₹28 LPA",
+              "average": "₹7.2 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 98,
+            "packages": {
+              "highest": "₹25 LPA",
+              "average": "₹6.8 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 92,
+            "packages": {
+              "highest": "₹22 LPA",
+              "average": "₹6.5 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 60% marks in 12th standard with PCM (Physics, Chemistry, Mathematics)",
+          "Valid JEE Main score (preferred but not mandatory)",
+          "Age limit: Maximum 25 years as on date of admission",
+          "Must have studied English as a compulsory subject in 12th standard"
+        ],
+        "entranceExam": "JEE Main (preferred) or FS University Entrance Test",
+        "ageLimit": "Maximum 25 years"
+      },
+      "fees": {
+        "tuitionFee": "₹1,15,000/year",
+        "examFee": "₹5,000/year",
+        "otherFees": "₹15,000/year",
+        "totalFee": "₹1,35,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Sports quota scholarships",
+        "Girl student scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Arun Kumar Singh",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D Mechanical Engineering, IIT Kanpur",
+          "specialization": "Thermal Sciences, Heat Transfer",
+          "experience": "18+ Years"
+        },
+        {
+          "name": "Dr. Sunita Verma",
+          "designation": "Professor",
+          "qualifications": "Ph.D Manufacturing Engineering, IISc Bangalore",
+          "specialization": "Manufacturing Processes, Materials",
+          "experience": "15+ Years"
+        },
+        {
+          "name": "Dr. Rajesh Gupta",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Machine Design, NIT Trichy",
+          "specialization": "Machine Design, Vibrations",
+          "experience": "12+ Years"
+        },
+        {
+          "name": "Prof. Anita Sharma",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Tech Automotive Engineering, VIT",
+          "specialization": "Automobile Engineering, IC Engines",
+          "experience": "8+ Years"
+        },
+        {
+          "name": "Dr. Vikash Pandey",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Robotics, IIIT Allahabad",
+          "specialization": "Robotics, Automation, Control Systems",
+          "experience": "10+ Years"
+        },
+        {
+          "name": "Prof. Priya Jain",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Tech Thermal Engineering, BITS Pilani",
+          "specialization": "HVAC, Refrigeration, Energy Systems",
+          "experience": "7+ Years"
+        }
+      ],
+      "facilities": [
+        "Advanced Manufacturing Lab with CNC machines",
+        "CAD/CAM Lab with latest software",
+        "Thermal Engineering Lab",
+        "Fluid Mechanics Lab",
+        "Materials Testing Lab",
+        "Robotics and Automation Lab",
+        "IC Engines Lab",
+        "Metrology and Quality Control Lab",
+        "3D Printing and Rapid Prototyping Facility",
+        "Industry-standard workshop with modern equipment"
+      ],
+      "accreditations": ["AICTE", "UGC", "NAAC A+", "NBA"]
+    },
+    {
+      "id": "btech-civil-engineering",
+      "slug": "btech-civil-engineering",
+      "title": "B.Tech Civil Engineering",
+      "level": "Undergraduate",
+      "duration": "4 Years",
+      "approvals": ["AICTE", "UGC", "NAAC A+"],
+      "intake": "120 Students",
+      "mode": "Full-time",
+      "description": "Our B.Tech Civil Engineering program prepares students for careers in infrastructure development, construction management, and urban planning. The curriculum covers all major areas of civil engineering including structural engineering, transportation, water resources, geotechnical engineering, and environmental engineering. Students gain practical experience through field work, laboratory experiments, and industry projects, preparing them to address modern infrastructure challenges.",
+      "highlights": [
+        "Comprehensive coverage of all civil engineering disciplines",
+        "State-of-the-art structural and materials testing labs",
+        "Field work and surveying experience",
+        "Industry collaboration for real-world projects",
+        "Strong focus on sustainable construction practices",
+        "Modern software training (AutoCAD, STAAD Pro, etc.)",
+        "Regular site visits to ongoing construction projects",
+        "Research opportunities in smart cities and green buildings"
+      ],
+      "specializations": [
+        "Structural Engineering",
+        "Transportation Engineering",
+        "Water Resources Engineering",
+        "Geotechnical Engineering",
+        "Environmental Engineering",
+        "Construction Management",
+        "Urban Planning",
+        "Earthquake Engineering"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Mathematics-I",
+            "Physics",
+            "Chemistry",
+            "English Communication",
+            "Engineering Graphics",
+            "Basic Civil Engineering",
+            "Physics Lab",
+            "Chemistry Lab",
+            "Engineering Graphics Lab"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Mathematics-II",
+            "Engineering Mechanics",
+            "Basic Electrical Engineering",
+            "Environmental Studies",
+            "Engineering Geology",
+            "Building Materials & Construction",
+            "Electrical Lab",
+            "Geology Lab",
+            "Materials Lab"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Mathematics-III",
+            "Strength of Materials",
+            "Fluid Mechanics",
+            "Surveying",
+            "Engineering Economics",
+            "Computer Applications in Civil Engineering",
+            "Strength of Materials Lab",
+            "Fluid Mechanics Lab",
+            "Surveying Lab"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Structural Analysis",
+            "Soil Mechanics",
+            "Hydrology & Water Resources",
+            "Highway Engineering",
+            "Construction Technology",
+            "Concrete Technology",
+            "Soil Mechanics Lab",
+            "Hydrology Lab",
+            "Concrete Lab"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "Design of Steel Structures",
+            "Foundation Engineering",
+            "Water Supply Engineering",
+            "Traffic Engineering",
+            "Project Management",
+            "Elective-I",
+            "Steel Structures Lab",
+            "Foundation Lab",
+            "Water Supply Lab"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "Design of RC Structures",
+            "Environmental Engineering",
+            "Irrigation Engineering",
+            "Airport & Harbour Engineering",
+            "Elective-II",
+            "Elective-III",
+            "Environmental Lab",
+            "Irrigation Lab",
+            "Mini Project"
+          ]
+        },
+        {
+          "semester": "Semester 7",
+          "subjects": [
+            "Advanced Structural Design",
+            "Construction Planning & Management",
+            "Remote Sensing & GIS",
+            "Elective-IV",
+            "Elective-V",
+            "Industrial Training",
+            "GIS Lab",
+            "Construction Management Lab",
+            "Major Project-I"
+          ]
+        },
+        {
+          "semester": "Semester 8",
+          "subjects": [
+            "Earthquake Engineering",
+            "Smart Cities & Infrastructure",
+            "Professional Ethics",
+            "Entrepreneurship",
+            "Comprehensive Viva",
+            "Major Project-II",
+            "Industry Internship"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/btech-civil-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Civil Engineer",
+          "Structural Engineer",
+          "Site Engineer",
+          "Project Manager",
+          "Construction Manager",
+          "Design Engineer",
+          "Highway Engineer",
+          "Water Resources Engineer",
+          "Environmental Engineer",
+          "Urban Planner",
+          "Quality Control Engineer",
+          "Government Engineer"
+        ],
+        "averageSalary": "₹6.8 LPA",
+        "placementRate": "90%",
+        "topRecruiters": [
+          { "name": "L&T Construction", "logo": "/companies/lt.png" },
+          { "name": "Tata Projects", "logo": "/companies/tata-projects.png" },
+          { "name": "Shapoorji Pallonji", "logo": "/companies/shapoorji.png" },
+          { "name": "DLF", "logo": "/companies/dlf.png" },
+          { "name": "Godrej Properties", "logo": "/companies/godrej.png" },
+          { "name": "NBCC", "logo": "/companies/nbcc.png" },
+          { "name": "IRCON", "logo": "/companies/ircon.png" },
+          { "name": "NHAI", "logo": "/companies/nhai.png" },
+          { "name": "CPWD", "logo": "/companies/cpwd.png" },
+          { "name": "PWD", "logo": "/companies/pwd.png" },
+          { "name": "Hindustan Construction", "logo": "/companies/hcc.png" },
+          { "name": "Simplex Infrastructure", "logo": "/companies/simplex.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 102,
+            "packages": {
+              "highest": "₹22 LPA",
+              "average": "₹6.8 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 95,
+            "packages": {
+              "highest": "₹20 LPA",
+              "average": "₹6.5 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 88,
+            "packages": {
+              "highest": "₹18 LPA",
+              "average": "₹6.2 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 60% marks in 12th standard with PCM (Physics, Chemistry, Mathematics)",
+          "Valid JEE Main score (preferred but not mandatory)",
+          "Age limit: Maximum 25 years as on date of admission",
+          "Must have studied English as a compulsory subject in 12th standard"
+        ],
+        "entranceExam": "JEE Main (preferred) or FS University Entrance Test",
+        "ageLimit": "Maximum 25 years"
+      },
+      "fees": {
+        "tuitionFee": "₹1,10,000/year",
+        "examFee": "₹5,000/year",
+        "otherFees": "₹15,000/year",
+        "totalFee": "₹1,30,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Sports quota scholarships",
+        "Girl student scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Manoj Kumar Jain",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D Structural Engineering, IIT Delhi",
+          "specialization": "Structural Design, Earthquake Engineering",
+          "experience": "20+ Years"
+        },
+        {
+          "name": "Dr. Rekha Sharma",
+          "designation": "Professor",
+          "qualifications": "Ph.D Water Resources, IIT Roorkee",
+          "specialization": "Water Resources, Hydrology",
+          "experience": "16+ Years"
+        },
+        {
+          "name": "Dr. Ashok Verma",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Geotechnical Engineering, NIT Kurukshetra",
+          "specialization": "Soil Mechanics, Foundation Engineering",
+          "experience": "12+ Years"
+        },
+        {
+          "name": "Prof. Kavita Singh",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Tech Transportation Engineering, BITS Pilani",
+          "specialization": "Highway Engineering, Traffic Engineering",
+          "experience": "9+ Years"
+        },
+        {
+          "name": "Dr. Rajesh Mishra",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Environmental Engineering, IIT Bombay",
+          "specialization": "Environmental Engineering, Water Treatment",
+          "experience": "11+ Years"
+        },
+        {
+          "name": "Prof. Anita Yadav",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Tech Construction Management, NIT Allahabad",
+          "specialization": "Construction Management, Project Planning",
+          "experience": "7+ Years"
+        }
+      ],
+      "facilities": [
+        "Structural Engineering Lab with testing machines",
+        "Soil Mechanics and Foundation Engineering Lab",
+        "Fluid Mechanics and Hydraulics Lab",
+        "Highway Engineering Lab",
+        "Environmental Engineering Lab",
+        "Concrete Technology Lab",
+        "Surveying Lab with modern instruments",
+        "Computer-Aided Design Lab",
+        "Materials Testing Lab",
+        "Field training area for practical work"
+      ],
+      "accreditations": ["AICTE", "UGC", "NAAC A+", "NBA"]
+    },
+    {
+      "id": "btech-electronics-communication",
+      "slug": "btech-electronics-communication",
+      "title": "B.Tech Electronics & Communication Engineering",
+      "level": "Undergraduate",
+      "duration": "4 Years",
+      "approvals": ["AICTE", "UGC", "NAAC A+"],
+      "intake": "120 Students",
+      "mode": "Full-time",
+      "description": "Our B.Tech Electronics & Communication Engineering program focuses on the design and development of electronic systems, communication technologies, and signal processing. Students learn to work with cutting-edge technologies including 5G networks, IoT devices, embedded systems, and VLSI design. The curriculum balances theoretical concepts with practical applications, preparing graduates for careers in telecommunications, semiconductor industry, and emerging technologies.",
+      "highlights": [
+        "Advanced electronics and communication labs",
+        "Hands-on experience with latest communication technologies",
+        "Strong focus on VLSI design and embedded systems",
+        "Industry collaboration with tech giants",
+        "Research opportunities in 5G and IoT",
+        "Modern simulation software training",
+        "Regular seminars by industry experts",
+        "International internship opportunities"
+      ],
+      "specializations": [
+        "VLSI Design",
+        "Embedded Systems",
+        "Communication Systems",
+        "Signal Processing",
+        "Microelectronics",
+        "Wireless Communication",
+        "Internet of Things (IoT)",
+        "Robotics & Control Systems"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Mathematics-I",
+            "Physics",
+            "Chemistry",
+            "English Communication",
+            "Engineering Graphics",
+            "Basic Electronics Engineering",
+            "Physics Lab",
+            "Chemistry Lab",
+            "Electronics Lab"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Mathematics-II",
+            "Engineering Mechanics",
+            "Basic Electrical Engineering",
+            "Environmental Studies",
+            "Circuit Analysis",
+            "Electronic Devices",
+            "Electrical Lab",
+            "Circuit Analysis Lab",
+            "Electronic Devices Lab"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Mathematics-III",
+            "Network Analysis",
+            "Digital Electronics",
+            "Signals & Systems",
+            "Electronic Circuits",
+            "Electromagnetic Theory",
+            "Digital Electronics Lab",
+            "Electronic Circuits Lab",
+            "Signals & Systems Lab"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Analog Communication",
+            "Microprocessors",
+            "Control Systems",
+            "Linear IC Applications",
+            "Probability & Random Processes",
+            "Antenna & Wave Propagation",
+            "Microprocessor Lab",
+            "Communication Lab",
+            "Control Systems Lab"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "Digital Communication",
+            "Microcontrollers",
+            "VLSI Design",
+            "Digital Signal Processing",
+            "Computer Networks",
+            "Elective-I",
+            "Microcontroller Lab",
+            "DSP Lab",
+            "VLSI Lab"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "Mobile Communication",
+            "Embedded Systems",
+            "Information Theory & Coding",
+            "Optical Communication",
+            "Elective-II",
+            "Elective-III",
+            "Embedded Systems Lab",
+            "Mobile Communication Lab",
+            "Mini Project"
+          ]
+        },
+        {
+          "semester": "Semester 7",
+          "subjects": [
+            "Wireless Communication",
+            "Image Processing",
+            "Satellite Communication",
+            "Elective-IV",
+            "Elective-V",
+            "Industrial Training",
+            "Image Processing Lab",
+            "Advanced Communication Lab",
+            "Major Project-I"
+          ]
+        },
+        {
+          "semester": "Semester 8",
+          "subjects": [
+            "Internet of Things",
+            "5G Technology",
+            "Professional Ethics",
+            "Entrepreneurship",
+            "Comprehensive Viva",
+            "Major Project-II",
+            "Industry Internship"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/btech-ece-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Electronics Engineer",
+          "Communication Engineer",
+          "VLSI Design Engineer",
+          "Embedded Systems Engineer",
+          "RF Engineer",
+          "Signal Processing Engineer",
+          "Hardware Engineer",
+          "Network Engineer",
+          "IoT Developer",
+          "Telecommunication Engineer",
+          "Research Engineer",
+          "Technical Consultant"
+        ],
+        "averageSalary": "₹7.8 LPA",
+        "placementRate": "94%",
+        "topRecruiters": [
+          { "name": "Qualcomm", "logo": "/companies/qualcomm.png" },
+          { "name": "Intel", "logo": "/companies/intel.png" },
+          { "name": "Broadcom", "logo": "/companies/broadcom.png" },
+          { "name": "Samsung", "logo": "/companies/samsung.png" },
+          { "name": "Texas Instruments", "logo": "/companies/ti.png" },
+          { "name": "Jio", "logo": "/companies/jio.png" },
+          { "name": "Airtel", "logo": "/companies/airtel.png" },
+          { "name": "ISRO", "logo": "/companies/isro.png" },
+          { "name": "DRDO", "logo": "/companies/drdo.png" },
+          { "name": "Ericsson", "logo": "/companies/ericsson.png" },
+          { "name": "Nokia", "logo": "/companies/nokia.png" },
+          { "name": "Cisco", "logo": "/companies/cisco.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 110,
+            "packages": {
+              "highest": "₹35 LPA",
+              "average": "₹7.8 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 105,
+            "packages": {
+              "highest": "₹32 LPA",
+              "average": "₹7.4 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 98,
+            "packages": {
+              "highest": "₹28 LPA",
+              "average": "₹7.0 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 60% marks in 12th standard with PCM (Physics, Chemistry, Mathematics)",
+          "Valid JEE Main score (preferred but not mandatory)",
+          "Age limit: Maximum 25 years as on date of admission",
+          "Must have studied English as a compulsory subject in 12th standard"
+        ],
+        "entranceExam": "JEE Main (preferred) or FS University Entrance Test",
+        "ageLimit": "Maximum 25 years"
+      },
+      "fees": {
+        "tuitionFee": "₹1,18,000/year",
+        "examFee": "₹5,000/year",
+        "otherFees": "₹15,000/year",
+        "totalFee": "₹1,38,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Sports quota scholarships",
+        "Girl student scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Suresh Kumar Garg",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D Electronics Engineering, IIT Delhi",
+          "specialization": "VLSI Design, Microelectronics",
+          "experience": "19+ Years"
+        },
+        {
+          "name": "Dr. Ritu Sharma",
+          "designation": "Professor",
+          "qualifications": "Ph.D Communication Systems, IISc Bangalore",
+          "specialization": "Wireless Communication, Signal Processing",
+          "experience": "16+ Years"
+        },
+        {
+          "name": "Dr. Amit Kumar Singh",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Embedded Systems, NIT Trichy",
+          "specialization": "Embedded Systems, IoT",
+          "experience": "11+ Years"
+        },
+        {
+          "name": "Prof. Neha Agarwal",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Tech VLSI Design, BITS Pilani",
+          "specialization": "VLSI Design, Digital Circuits",
+          "experience": "8+ Years"
+        },
+        {
+          "name": "Dr. Vikas Pandey",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D RF Engineering, IIT Kanpur",
+          "specialization": "RF Engineering, Antenna Design",
+          "experience": "10+ Years"
+        },
+        {
+          "name": "Prof. Priyanka Jain",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Tech Digital Signal Processing, Delhi University",
+          "specialization": "Digital Signal Processing, Image Processing",
+          "experience": "6+ Years"
+        }
+      ],
+      "facilities": [
+        "Advanced Electronics Lab with latest equipment",
+        "Communication Systems Lab",
+        "VLSI Design Lab with EDA tools",
+        "Embedded Systems Lab",
+        "Digital Signal Processing Lab",
+        "Microwave & RF Lab",
+        "Computer Networks Lab",
+        "PCB Design and Fabrication Facility",
+        "IoT Lab with development boards",
+        "Industry-standard simulation software"
+      ],
+      "accreditations": ["AICTE", "UGC", "NAAC A+", "NBA"]
+    }
+  ]
+}

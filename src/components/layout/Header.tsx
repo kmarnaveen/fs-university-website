@@ -66,16 +66,26 @@ const Header = () => {
     ],
     schools: [
       {
+        name: "School of Agriculture",
+        href: "/schools/agriculture",
+      },
+      {
+        name: "School of Business Management & Entrepreneurship",
+        href: "/schools/business",
+      },
+      { name: "School of Pharmacy", href: "/schools/pharmacy" },
+      { name: "School of Art & Humanities", href: "/schools/arts" },
+      { name: "School of Law", href: "/schools/law" },
+      { name: "School of Ph.D. & Research", href: "/schools/phd" },
+      { name: "School of Education", href: "/schools/education" },
+      { name: "School of Basic Science", href: "/schools/science" },
+      {
         name: "School of Engineering & Technology",
         href: "/schools/engineering",
       },
-      { name: "School of Management & Commerce", href: "/schools/management" },
-      { name: "School of Law", href: "/schools/law" },
-      { name: "School of Pharmacy", href: "/schools/pharmacy" },
-      { name: "School of Agriculture", href: "/schools/agriculture" },
-      { name: "School of Liberal Arts", href: "/schools/liberal-arts" },
-      { name: "School of Science", href: "/schools/science" },
-      { name: "All Departments", href: "/schools" },
+      { name: "School of Nursing", href: "/schools/nursing" },
+      { name: "School of Commerce & Finance", href: "/schools/commerce" },
+      { name: "All Schools", href: "/schools" },
     ],
     academics: [
       { name: "Academic Calendar", href: "/academics/calendar" },

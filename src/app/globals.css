@@ -335,3 +335,147 @@ h4 {
     @apply bg-background text-foreground;
   }
 }
+
+/* 🌍 Global Responsive Strategy - Fluid Typography */
+@layer components {
+  /* Fluid Typography with clamp() */
+  .fluid-text-6xl {
+    font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem); /* 40px - 72px */
+  }
+  
+  .fluid-text-5xl {
+    font-size: clamp(2rem, 4vw + 0.5rem, 3.5rem); /* 32px - 56px */
+  }
+  
+  .fluid-text-4xl {
+    font-size: clamp(1.75rem, 3vw + 0.5rem, 2.75rem); /* 28px - 44px */
+  }
+  
+  .fluid-text-3xl {
+    font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.25rem); /* 24px - 36px */
+  }
+  
+  .fluid-text-2xl {
+    font-size: clamp(1.25rem, 2vw + 0.25rem, 1.875rem); /* 20px - 30px */
+  }
+  
+  .fluid-text-xl {
+    font-size: clamp(1rem, 1.5vw + 0.25rem, 1.25rem); /* 16px - 20px */
+  }
+
+  /* Scrollable tabs with fade-out effect */
+  .scrollable-tabs {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+  }
+  
+  .scrollable-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollable-tabs::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, white);
+    pointer-events: none;
+  }
+
+  /* Responsive Icon Sizes */
+  .icon-xs { @apply w-3 h-3 sm:w-4 sm:h-4; }
+  .icon-sm { @apply w-4 h-4 sm:w-5 sm:h-5; }
+  .icon-md { @apply w-5 h-5 sm:w-6 sm:h-6; }
+  .icon-lg { @apply w-6 h-6 sm:w-8 sm:h-8; }
+  .icon-xl { @apply w-8 h-8 sm:w-10 sm:h-10; }
+
+  /* Mobile-First Button Sizes */
+  .btn-mobile-friendly {
+    @apply min-h-[44px] px-4 py-3 sm:min-h-[40px] sm:px-6 sm:py-2;
+    @apply text-sm sm:text-base;
+  }
+
+  /* Responsive Spacing Utilities */
+  .section-padding {
+    @apply px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16;
+  }
+
+  .container-mobile-first {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Touch Target Optimization */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  /* Mobile Menu Animations */
+  .mobile-menu-enter {
+    @apply transform transition-transform duration-200 ease-out;
+    transform: translateX(-100%);
+  }
+
+  .mobile-menu-enter-active {
+    transform: translateX(0);
+  }
+
+  .mobile-menu-exit {
+    @apply transform transition-transform duration-200 ease-in;
+    transform: translateX(0);
+  }
+
+  .mobile-menu-exit-active {
+    transform: translateX(-100%);
+  }
+
+  /* Mobile Menu Scrollbar Styling */
+  .mobile-menu-content::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .mobile-menu-content::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .mobile-menu-content::-webkit-scrollbar-thumb {
+    background: var(--fsu-crimson);
+    border-radius: 3px;
+  }
+
+  .mobile-menu-content::-webkit-scrollbar-thumb:hover {
+    background: var(--fsu-maroon);
+  }
+
+  /* Smooth scrolling for mobile menu */
+  .mobile-menu-content {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    /* Add momentum scrolling for iOS */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  /* Mobile Menu Responsive Improvements */
+  @media (max-width: 640px) {
+    .mobile-menu-container {
+      max-height: calc(100vh - 64px);
+      overflow-y: auto;
+    }
+    
+    /* Better touch targets on mobile */
+    .mobile-nav-item {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+    }
+  }
+}

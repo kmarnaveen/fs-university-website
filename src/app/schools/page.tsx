@@ -17,60 +17,206 @@ export default function SchoolsPage() {
       name: "School of Engineering & Technology",
       tagline: "Building the Innovators of Tomorrow",
       description:
-        "Cutting-edge programs in engineering disciplines with state-of-the-art labs and industry partnerships.",
-      image: "/api/placeholder/600/400",
-      programs: ["B.Tech", "M.Tech", "PhD"],
+        "Cutting-edge engineering programs with modern laboratory facilities and industry partnerships.",
+      image:
+        "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=600&h=400&fit=crop",
+      programs: [
+        "B.Tech Computer Science",
+        "B.Tech Mechanical Engineering",
+        "B.Tech Civil Engineering",
+        "B.Tech Electronics & Communication",
+        "BCA",
+        "M.Tech",
+        "MCA",
+        "PhD Engineering",
+      ],
+      departments: [
+        "Computer Science",
+        "Mechanical Engineering",
+        "Civil Engineering",
+        "Electronics & Communication",
+      ],
       href: "/schools/engineering",
+      studentCount: "3,000+",
+      facultyCount: "120",
+    },
+    {
+      id: "science",
+      name: "School of Basic Science",
+      tagline: "Discovering the Natural World",
+      description:
+        "Research-driven programs in fundamental sciences with modern laboratory facilities and interdisciplinary research opportunities.",
+      image:
+        "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop",
+      programs: [
+        "B.Sc Physics, Chemistry, Mathematics",
+        "B.Sc Biology",
+        "M.Sc Physics",
+        "M.Sc Chemistry",
+        "M.Sc Mathematics",
+        "PhD Science",
+      ],
+      departments: ["Physics", "Chemistry", "Mathematics", "Biology"],
+      href: "/schools/science",
+      studentCount: "1,800+",
+      facultyCount: "75",
+    },
+    {
+      id: "agriculture",
+      name: "School of Agriculture",
+      tagline: "Cultivating Sustainable Futures",
+      description:
+        "Modern agricultural education with focus on sustainable farming practices, precision agriculture, and agricultural technology.",
+      image:
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&h=400&fit=crop",
+      programs: ["B.Sc Agriculture", "M.Sc Agriculture", "PhD Agriculture"],
+      departments: [
+        "Agronomy",
+        "Plant Pathology",
+        "Agricultural Engineering",
+        "Soil Science",
+        "Horticulture",
+      ],
+      href: "/schools/agriculture",
+      studentCount: "1,200+",
+      facultyCount: "45",
+    },
+    {
+      id: "nursing",
+      name: "School of Nursing",
+      tagline: "Caring Through Professional Excellence",
+      description:
+        "Professional nursing education with clinical training, healthcare management, and modern nursing practices.",
+      image:
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+      programs: ["B.Sc Nursing"],
+      departments: [
+        "Medical-Surgical Nursing",
+        "Community Health",
+        "Maternal Health",
+        "Psychiatric Nursing",
+      ],
+      href: "/schools/nursing",
+      studentCount: "700+",
+      facultyCount: "30",
+    },
+    {
+      id: "commerce",
+      name: "School of Commerce & Finance",
+      tagline: "Excellence in Financial Education",
+      description:
+        "Comprehensive commerce education with focus on finance, accounting, digital commerce, and business analytics.",
+      image:
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=400&fit=crop",
+      programs: ["B.Com"],
+      departments: [
+        "Accounting & Finance",
+        "Business Economics",
+        "Banking",
+        "Digital Commerce",
+        "Taxation",
+      ],
+      href: "/schools/commerce",
+      studentCount: "1,600+",
+      facultyCount: "65",
     },
     {
       id: "business",
-      name: "School of Business & Management",
+      name: "School of Business Management & Entrepreneurship",
       tagline: "Shaping Future Business Leaders",
       description:
-        "Comprehensive business education with focus on entrepreneurship and global perspectives.",
-      image: "/api/placeholder/600/400",
-      programs: ["BBA", "MBA", "PhD"],
+        "Comprehensive business education with focus on entrepreneurship, digital transformation, and global business perspectives.",
+      image:
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=400&fit=crop",
+      programs: ["BBA", "MBA", "PhD Management"],
+      departments: [
+        "Finance",
+        "Marketing",
+        "Human Resources",
+        "Operations",
+        "Entrepreneurship",
+      ],
       href: "/schools/business",
+      studentCount: "2,500+",
+      facultyCount: "80",
+    },
+    {
+      id: "arts",
+      name: "School of Art & Humanities",
+      tagline: "Exploring Human Expression & Culture",
+      description:
+        "Liberal arts education fostering creativity, critical thinking, cultural understanding, and interdisciplinary research.",
+      image:
+        "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop",
+      programs: ["B.A", "M.A", "PhD Arts & Humanities"],
+      departments: [
+        "English Literature",
+        "History",
+        "Psychology",
+        "Sociology",
+        "Philosophy",
+      ],
+      href: "/schools/arts",
+      studentCount: "1,500+",
+      facultyCount: "60",
     },
     {
       id: "law",
       name: "School of Law",
       tagline: "Justice Through Knowledge",
       description:
-        "Excellence in legal education with moot courts and practical training opportunities.",
-      image: "/api/placeholder/600/400",
-      programs: ["LLB", "LLM", "PhD"],
+        "Excellence in legal education with moot courts, legal aid clinics, and practical training opportunities.",
+      image:
+        "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=600&h=400&fit=crop",
+      programs: ["LL.B", "B.A. LL.B", "LL.M", "PhD Law"],
+      departments: [
+        "Constitutional Law",
+        "Criminal Law",
+        "Corporate Law",
+        "International Law",
+        "Cyber Law",
+      ],
       href: "/schools/law",
+      studentCount: "900+",
+      facultyCount: "40",
     },
     {
-      id: "medicine",
-      name: "School of Medicine & Health Sciences",
-      tagline: "Healing Through Science",
+      id: "education",
+      name: "School of Education",
+      tagline: "Shaping Future Educators",
       description:
-        "Medical education with modern facilities and hospital partnerships for practical training.",
-      image: "/api/placeholder/600/400",
-      programs: ["MBBS", "MD", "MS"],
-      href: "/schools/medicine",
+        "Teacher training programs with modern pedagogical methods, educational technology, and inclusive education practices.",
+      image:
+        "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=600&h=400&fit=crop",
+      programs: ["D.El.Ed", "B.Ed", "B.El.Ed", "M.Ed", "PhD Education"],
+      departments: [
+        "Educational Psychology",
+        "Curriculum Studies",
+        "Educational Technology",
+        "Special Education",
+      ],
+      href: "/schools/education",
+      studentCount: "1,100+",
+      facultyCount: "50",
     },
     {
-      id: "arts",
-      name: "School of Arts & Humanities",
-      tagline: "Exploring Human Expression",
+      id: "pharmacy",
+      name: "School of Pharmacy",
+      tagline: "Advancing Healthcare Through Pharmaceutical Sciences",
       description:
-        "Liberal arts education fostering creativity, critical thinking, and cultural understanding.",
-      image: "/api/placeholder/600/400",
-      programs: ["BA", "MA", "PhD"],
-      href: "/schools/arts",
-    },
-    {
-      id: "science",
-      name: "School of Pure & Applied Sciences",
-      tagline: "Discovering the Natural World",
-      description:
-        "Research-driven programs in fundamental sciences with modern laboratory facilities.",
-      image: "/api/placeholder/600/400",
-      programs: ["BSc", "MSc", "PhD"],
-      href: "/schools/science",
+        "Comprehensive pharmaceutical education with modern labs, drug development research, and industry partnerships.",
+      image:
+        "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=600&h=400&fit=crop",
+      programs: ["D.Pharm", "PhD Pharmacy"],
+      departments: [
+        "Pharmacology",
+        "Pharmaceutical Chemistry",
+        "Pharmacognosy",
+        "Clinical Pharmacy",
+      ],
+      href: "/schools/pharmacy",
+      studentCount: "800+",
+      facultyCount: "35",
     },
   ];
 
@@ -118,18 +264,31 @@ export default function SchoolsPage() {
                 className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white border-0 shadow-lg"
               >
                 <div className="aspect-video bg-gradient-to-br from-[var(--fsu-crimson)]/10 to-[var(--fsu-maroon)]/20 rounded-t-lg relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[var(--fsu-crimson)]/20 to-[var(--fsu-maroon)]/30"></div>
+                  <img
+                    src={school.image}
+                    alt={school.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-[var(--fsu-crimson)]/40 to-[var(--fsu-maroon)]/50"></div>
                   <div className="absolute bottom-4 left-4 right-4">
                     <div className="flex flex-wrap gap-2">
-                      {school.programs.map((program) => (
+                      {school.programs.slice(0, 3).map((program) => (
                         <Badge
                           key={program}
                           variant="secondary"
-                          className="bg-white/90 text-[var(--fsu-crimson)] font-medium"
+                          className="bg-white/90 text-[var(--fsu-crimson)] font-medium text-xs"
                         >
                           {program}
                         </Badge>
                       ))}
+                      {school.programs.length > 3 && (
+                        <Badge
+                          variant="secondary"
+                          className="bg-white/90 text-[var(--fsu-crimson)] font-medium text-xs"
+                        >
+                          +{school.programs.length - 3} more
+                        </Badge>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -142,9 +301,60 @@ export default function SchoolsPage() {
                   </p>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-neutral-600 mb-6 leading-relaxed">
+                  <p className="text-neutral-600 mb-4 leading-relaxed">
                     {school.description}
                   </p>
+
+                  {/* School Stats */}
+                  <div className="flex justify-between items-center mb-4 p-3 bg-neutral-50 rounded-lg">
+                    <div className="text-center">
+                      <div className="text-lg font-bold text-[var(--fsu-crimson)]">
+                        {school.studentCount}
+                      </div>
+                      <div className="text-xs text-neutral-600">Students</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-lg font-bold text-[var(--fsu-crimson)]">
+                        {school.facultyCount}
+                      </div>
+                      <div className="text-xs text-neutral-600">Faculty</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-lg font-bold text-[var(--fsu-crimson)]">
+                        {school.departments?.length || school.programs.length}
+                      </div>
+                      <div className="text-xs text-neutral-600">Depts</div>
+                    </div>
+                  </div>
+
+                  {/* Departments */}
+                  {school.departments && (
+                    <div className="mb-4">
+                      <h4 className="text-sm font-semibold text-[var(--fsu-crimson)] mb-2">
+                        Key Departments:
+                      </h4>
+                      <div className="flex flex-wrap gap-1">
+                        {school.departments.slice(0, 3).map((dept) => (
+                          <Badge
+                            key={dept}
+                            variant="outline"
+                            className="text-xs border-[var(--fsu-gold)] text-[var(--fsu-crimson)]"
+                          >
+                            {dept}
+                          </Badge>
+                        ))}
+                        {school.departments.length > 3 && (
+                          <Badge
+                            variant="outline"
+                            className="text-xs border-[var(--fsu-gold)] text-[var(--fsu-crimson)]"
+                          >
+                            +{school.departments.length - 3}
+                          </Badge>
+                        )}
+                      </div>
+                    </div>
+                  )}
+
                   <Link href={school.href}>
                     <Button className="w-full bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-maroon)] text-white font-semibold">
                       Explore School →

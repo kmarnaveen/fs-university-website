@@ -33,10 +33,10 @@ const ApplyCTA: React.FC<ApplyCTAProps> = ({
   className = ''
 }) => {
   const stats = [
-    { label: 'Programs', value: '150+' },
-    { label: 'Students', value: '25,000+' },
-    { label: 'Faculty', value: '1,200+' },
-    { label: 'Placement Rate', value: '95%' }
+    { label: "Programs", value: "29" },
+    { label: "Students", value: "25,000+" },
+    { label: "Faculty", value: "1,200+" },
+    { label: "Placement Rate", value: "95%" },
   ];
 
   const benefits = [

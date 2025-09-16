@@ -1,0 +1,277 @@
+{
+  "title": "B.Tech Computer Science & Engineering",
+  "level": "Undergraduate",
+  "duration": "4 Years",
+  "approvals": ["AICTE", "UGC", "NAAC A+"],
+  "intake": "120 Students",
+  "mode": "Full-time",
+  "description": "Our B.Tech Computer Science & Engineering program is designed to produce industry-ready software engineers and technology leaders. With a perfect blend of theoretical knowledge and practical application, students gain expertise in cutting-edge technologies including AI, machine learning, cloud computing, and software development. Our curriculum is continuously updated in collaboration with industry partners to ensure graduates are equipped with the most relevant skills demanded by top technology companies.",
+  "highlights": [
+    "Industry-aligned curriculum with latest technologies",
+    "Hands-on experience with real-world projects",
+    "Dedicated coding labs with 24/7 access",
+    "Expert faculty with industry experience",
+    "Strong placement record with top tech companies",
+    "Opportunities for internships and industry collaborations",
+    "Research opportunities in emerging technologies",
+    "Regular workshops and guest lectures by industry experts"
+  ],
+  "specializations": [
+    "Artificial Intelligence & Machine Learning",
+    "Data Science & Analytics",
+    "Cybersecurity",
+    "Cloud Computing",
+    "Mobile App Development",
+    "Web Development",
+    "Software Engineering",
+    "Computer Networks"
+  ],
+  "curriculum": [
+    {
+      "semester": "Semester 1",
+      "subjects": [
+        "Mathematics-I",
+        "Physics",
+        "Chemistry",
+        "English Communication",
+        "Engineering Graphics",
+        "Computer Programming (C)",
+        "Physics Lab",
+        "Chemistry Lab",
+        "Programming Lab"
+      ]
+    },
+    {
+      "semester": "Semester 2",
+      "subjects": [
+        "Mathematics-II",
+        "Engineering Mechanics",
+        "Basic Electrical Engineering",
+        "Environmental Studies",
+        "Data Structures",
+        "Object Oriented Programming",
+        "Electrical Lab",
+        "Data Structures Lab",
+        "OOP Lab"
+      ]
+    },
+    {
+      "semester": "Semester 3",
+      "subjects": [
+        "Mathematics-III",
+        "Digital Logic Design",
+        "Computer Organization",
+        "Database Management Systems",
+        "Discrete Mathematics",
+        "Technical Communication",
+        "Digital Logic Lab",
+        "DBMS Lab",
+        "Mini Project"
+      ]
+    },
+    {
+      "semester": "Semester 4",
+      "subjects": [
+        "Algorithms & Analysis",
+        "Computer Networks",
+        "Operating Systems",
+        "Software Engineering",
+        "Microprocessors",
+        "Probability & Statistics",
+        "Networks Lab",
+        "OS Lab",
+        "Microprocessor Lab"
+      ]
+    },
+    {
+      "semester": "Semester 5",
+      "subjects": [
+        "Machine Learning",
+        "Web Technologies",
+        "Compiler Design",
+        "Computer Graphics",
+        "Elective-I",
+        "Elective-II",
+        "ML Lab",
+        "Web Tech Lab",
+        "Major Project-I"
+      ]
+    },
+    {
+      "semester": "Semester 6",
+      "subjects": [
+        "Artificial Intelligence",
+        "Mobile App Development",
+        "Cloud Computing",
+        "Information Security",
+        "Elective-III",
+        "Elective-IV",
+        "Mobile App Lab",
+        "Cloud Lab",
+        "Major Project-II"
+      ]
+    },
+    {
+      "semester": "Semester 7",
+      "subjects": [
+        "Advanced Algorithms",
+        "Distributed Systems",
+        "Big Data Analytics",
+        "Elective-V",
+        "Elective-VI",
+        "Industrial Training",
+        "Seminar",
+        "Capstone Project-I"
+      ]
+    },
+    {
+      "semester": "Semester 8",
+      "subjects": [
+        "Blockchain Technology",
+        "Internet of Things",
+        "Professional Ethics",
+        "Entrepreneurship",
+        "Comprehensive Viva",
+        "Capstone Project-II",
+        "Industry Internship"
+      ]
+    }
+  ],
+  "syllabusDownload": "/downloads/btech-cse-syllabus.pdf",
+  "careerProspects": {
+    "jobTitles": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Data Scientist",
+      "Machine Learning Engineer",
+      "Cybersecurity Analyst",
+      "Cloud Architect",
+      "DevOps Engineer",
+      "Mobile App Developer",
+      "AI Research Engineer",
+      "Product Manager",
+      "Technical Lead",
+      "System Administrator"
+    ],
+    "averageSalary": "₹8.5 LPA",
+    "placementRate": "95%",
+    "topRecruiters": [
+      { "name": "Microsoft", "logo": "/companies/microsoft.png" },
+      { "name": "Google", "logo": "/companies/google.png" },
+      { "name": "Amazon", "logo": "/companies/amazon.png" },
+      { "name": "TCS", "logo": "/companies/tcs.png" },
+      { "name": "Infosys", "logo": "/companies/infosys.png" },
+      { "name": "Wipro", "logo": "/companies/wipro.png" },
+      { "name": "IBM", "logo": "/companies/ibm.png" },
+      { "name": "Accenture", "logo": "/companies/accenture.png" },
+      { "name": "HCL", "logo": "/companies/hcl.png" },
+      { "name": "Tech Mahindra", "logo": "/companies/techmahindra.png" },
+      { "name": "Cognizant", "logo": "/companies/cognizant.png" },
+      { "name": "Capgemini", "logo": "/companies/capgemini.png" }
+    ],
+    "placementStats": [
+      {
+        "year": "2024",
+        "placed": 108,
+        "packages": {
+          "highest": "₹45 LPA",
+          "average": "₹8.5 LPA"
+        }
+      },
+      {
+        "year": "2023",
+        "placed": 102,
+        "packages": {
+          "highest": "₹42 LPA",
+          "average": "₹7.8 LPA"
+        }
+      },
+      {
+        "year": "2022",
+        "placed": 95,
+        "packages": {
+          "highest": "₹38 LPA",
+          "average": "₹7.2 LPA"
+        }
+      }
+    ]
+  },
+  "eligibility": {
+    "academicRequirements": [
+      "Minimum 60% marks in 12th standard with PCM (Physics, Chemistry, Mathematics)",
+      "Valid JEE Main score (preferred but not mandatory)",
+      "Age limit: Maximum 25 years as on date of admission",
+      "Must have studied English as a compulsory subject in 12th standard"
+    ],
+    "entranceExam": "JEE Main (preferred) or FS University Entrance Test",
+    "ageLimit": "Maximum 25 years"
+  },
+  "fees": {
+    "tuitionFee": "₹1,20,000/year",
+    "examFee": "₹5,000/year",
+    "otherFees": "₹15,000/year",
+    "totalFee": "₹1,40,000/year"
+  },
+  "scholarships": [
+    "Merit-based scholarships up to 50% fee waiver",
+    "Need-based financial assistance",
+    "SC/ST/OBC category scholarships",
+    "Sports quota scholarships",
+    "Girl student scholarships"
+  ],
+  "faculty": [
+    {
+      "name": "Dr. Rajesh Kumar",
+      "designation": "Professor & Head of Department",
+      "qualifications": "Ph.D Computer Science, IIT Delhi",
+      "specialization": "Machine Learning, Data Mining",
+      "experience": "15+ Years"
+    },
+    {
+      "name": "Dr. Priya Sharma",
+      "designation": "Professor",
+      "qualifications": "Ph.D Software Engineering, IISc Bangalore",
+      "specialization": "Software Engineering, Cloud Computing",
+      "experience": "12+ Years"
+    },
+    {
+      "name": "Dr. Amit Patel",
+      "designation": "Associate Professor",
+      "qualifications": "Ph.D Computer Networks, NIT Trichy",
+      "specialization": "Computer Networks, Cybersecurity",
+      "experience": "10+ Years"
+    },
+    {
+      "name": "Prof. Sunita Gupta",
+      "designation": "Assistant Professor",
+      "qualifications": "M.Tech AI & ML, BITS Pilani",
+      "specialization": "Artificial Intelligence, Deep Learning",
+      "experience": "8+ Years"
+    },
+    {
+      "name": "Dr. Vikram Singh",
+      "designation": "Associate Professor",
+      "qualifications": "Ph.D Computer Graphics, IIIT Hyderabad",
+      "specialization": "Computer Graphics, Game Development",
+      "experience": "9+ Years"
+    },
+    {
+      "name": "Prof. Neha Agarwal",
+      "designation": "Assistant Professor",
+      "qualifications": "M.Tech Mobile Computing, Delhi University",
+      "specialization": "Mobile App Development, IoT",
+      "experience": "6+ Years"
+    }
+  ],
+  "facilities": [
+    "Advanced Computer Labs with latest hardware",
+    "24/7 Internet connectivity with high-speed broadband",
+    "Software Development Lab with industry-standard tools",
+    "AI & Machine Learning Lab with GPU clusters",
+    "Cybersecurity Lab with ethical hacking tools",
+    "Project rooms for team-based development",
+    "Digital Library with access to research databases",
+    "Innovation and Incubation Center"
+  ],
+  "accreditations": ["AICTE", "UGC", "NAAC A+", "NBA"]
+}

@@ -43,11 +43,27 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/fsuniversity' },
-    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/fsuniversity' },
-    { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/fsuniversity' },
-    { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/school/fsuniversity' },
-    { name: 'YouTube', icon: Youtube, href: 'https://youtube.com/fsuniversity' },
+    {
+      name: "Facebook",
+      icon: Facebook,
+      href: "https://www.facebook.com/fsuedu/",
+    },
+    { name: "Twitter", icon: Twitter, href: "https://x.com/fsuedu" },
+    {
+      name: "Instagram",
+      icon: Instagram,
+      href: "https://www.instagram.com/fsuedu.in/",
+    },
+    {
+      name: "LinkedIn",
+      icon: Linkedin,
+      href: "https://www.linkedin.com/company/fs-university-shikohabad/",
+    },
+    {
+      name: "YouTube",
+      icon: Youtube,
+      href: "https://www.youtube.com/channel/UC2oEHAUkdADjxfJraVMu43g",
+    },
   ];
 
   return (
