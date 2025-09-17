@@ -6,10 +6,8 @@ interface PlacementStatsProps {
   stats: {
     year: string;
     placed: number;
-    packages: {
-      highest: string;
-      average: string;
-    };
+    total: number;
+    percentage: string;
   }[];
   placementRate: string;
   averageSalary: string;
@@ -98,10 +96,10 @@ const PlacementStatsChart: React.FC<PlacementStatsProps> = ({
                   />
                   <div className="absolute inset-0 flex items-center justify-between px-3 text-xs font-medium">
                     <span className="text-white drop-shadow">
-                      Highest: {stat.packages.highest}
+                      Placed: {stat.placed}/{stat.total}
                     </span>
                     <span className="text-white drop-shadow">
-                      Avg: {stat.packages.average}
+                      Rate: {stat.percentage}
                     </span>
                   </div>
                 </div>

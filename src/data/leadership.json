@@ -1,0 +1,98 @@
+{
+  "governor": {
+    "title": "Hon'ble Governor",
+    "name": "Hon'ble [Governor Name]",
+    "position": "Governor of Uttar Pradesh",
+    "image": "/images/leadership/governor.jpg",
+    "message": "Education is the cornerstone of progress and development. FS University stands as a beacon of quality education, nurturing young minds to become responsible citizens and leaders of tomorrow. I extend my best wishes to the university community for their continued dedication to academic excellence.",
+    "achievements": [
+      "Champion of educational reforms",
+      "Advocate for higher education accessibility",
+      "Supporter of research and innovation"
+    ]
+  },
+  "chancellor": {
+    "title": "Chancellor's Message",
+    "name": "[Chancellor Name]",
+    "position": "Chancellor, FS University",
+    "image": "/images/leadership/chancellor.jpg",
+    "message": "Welcome to FS University, where tradition meets innovation. Our commitment to providing world-class education while preserving our cultural values makes us unique. We strive to create an environment where students can explore, learn, and grow into global leaders.",
+    "achievements": [
+      "Visionary leadership in higher education",
+      "Pioneer in academic innovation",
+      "Champion of student success"
+    ]
+  },
+  "pro-chancellor": {
+    "title": "Pro Chancellor's Message",
+    "name": "[Pro Chancellor Name]",
+    "position": "Pro Chancellor, FS University",
+    "image": "/images/leadership/pro-chancellor.jpg",
+    "message": "At FS University, we believe in empowering our students with knowledge, skills, and values that will serve them throughout their lives. Our faculty and staff are committed to providing an enriching educational experience that prepares our graduates for success in their chosen fields.",
+    "achievements": [
+      "Expert in academic administration",
+      "Advocate for faculty development",
+      "Leader in curriculum innovation"
+    ]
+  },
+  "trustee": {
+    "title": "Trustee Message",
+    "name": "[Trustee Name]",
+    "position": "Trustee, FS University",
+    "image": "/images/leadership/trustee.jpg",
+    "message": "The vision of Late (Shri) Fulan Singh Ji continues to guide our mission at FS University. We are committed to making quality education accessible to all, fostering innovation, and contributing to the betterment of society through our educational endeavors.",
+    "achievements": [
+      "Guardian of university values",
+      "Advocate for educational accessibility",
+      "Supporter of community development"
+    ]
+  },
+  "trustees": {
+    "title": "Trustee's Message",
+    "name": "[Trustee Name]",
+    "position": "Board of Trustees, FS University",
+    "image": "/images/leadership/trustees.jpg",
+    "message": "Our role as trustees is to ensure that FS University maintains its commitment to excellence while adapting to the changing needs of higher education. We work tirelessly to support the university's mission and vision.",
+    "achievements": [
+      "Steward of institutional governance",
+      "Promoter of academic excellence",
+      "Facilitator of strategic growth"
+    ]
+  },
+  "secretary": {
+    "title": "Secretary's Message",
+    "name": "[Secretary Name]",
+    "position": "Secretary, FS University",
+    "image": "/images/leadership/secretary.jpg",
+    "message": "As Secretary of FS University, I am honored to be part of an institution that has consistently demonstrated its commitment to academic excellence and student success. Our administrative team works diligently to support our academic mission.",
+    "achievements": [
+      "Expert in educational administration",
+      "Facilitator of operational excellence",
+      "Advocate for institutional efficiency"
+    ]
+  },
+  "vice-chancellor": {
+    "title": "Vice Chancellor Message",
+    "name": "[Vice Chancellor Name]",
+    "position": "Vice Chancellor, FS University",
+    "image": "/images/leadership/vice-chancellor.jpg",
+    "message": "Welcome to FS University, where we are dedicated to providing transformative educational experiences. Our commitment to research, innovation, and community engagement sets us apart as a leading institution of higher learning.",
+    "achievements": [
+      "Leader in academic innovation",
+      "Champion of research excellence",
+      "Advocate for holistic education"
+    ]
+  },
+  "director-general": {
+    "title": "Director General's Message",
+    "name": "[Director General Name]",
+    "position": "Director General, FS University",
+    "image": "/images/leadership/director-general.jpg",
+    "message": "At FS University, we are committed to creating an environment that fosters learning, growth, and innovation. Our strategic initiatives focus on enhancing the quality of education and ensuring our graduates are well-prepared for the challenges of the modern world.",
+    "achievements": [
+      "Strategic leader in higher education",
+      "Innovator in educational delivery",
+      "Advocate for student success"
+    ]
+  }
+}

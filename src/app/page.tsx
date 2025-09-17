@@ -11,6 +11,7 @@ import { NewsCard } from "@/components/ui/news-card";
 import { TestimonialCard } from "@/components/ui/testimonial-card";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { ImageGalleryModal } from "@/components/ui/image-gallery-modal";
+import { AccreditationMarquee } from "@/components/ui/accreditation-marquee";
 import ProgramCard from "@/components/programs/ProgramCard";
 import ApplyCTA from "@/components/fsu-specific/ApplyCTA";
 import {
@@ -1065,6 +1066,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <AccreditationMarquee />
 
       {/* Trust & Stats Bar */}
       <section className="py-12 bg-neutral-50 border-b">
@@ -1081,6 +1083,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Accreditation Marquee */}
 
       {/* Notice Board Section */}
       <section className="py-16 lg:py-20 bg-gradient-to-br from-neutral-50 to-white">

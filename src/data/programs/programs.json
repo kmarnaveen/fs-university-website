@@ -1731,6 +1731,4231 @@
         "Industry-standard simulation software"
       ],
       "accreditations": ["AICTE", "UGC", "NAAC A+", "NBA"]
+    },
+    {
+      "id": "bca",
+      "slug": "bca",
+      "title": "Bachelor of Computer Applications",
+      "level": "Undergraduate",
+      "duration": "3 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "60 Students",
+      "mode": "Full-time",
+      "description": "Our BCA program is designed to provide comprehensive knowledge in computer applications and software development. Students gain expertise in programming languages, database management, web development, and mobile application development. The curriculum emphasizes both theoretical concepts and practical application, preparing graduates for careers in the rapidly evolving IT industry.",
+      "highlights": [
+        "Industry-oriented curriculum with latest technologies",
+        "Hands-on programming experience from first year",
+        "Modern computer labs with 24/7 access",
+        "Expert faculty with industry experience",
+        "Strong placement support with IT companies",
+        "Internship opportunities with tech startups",
+        "Project-based learning approach",
+        "Regular coding competitions and hackathons"
+      ],
+      "specializations": [
+        "Web Development",
+        "Mobile App Development",
+        "Database Management",
+        "Software Testing",
+        "Digital Marketing",
+        "E-commerce Development",
+        "Game Development",
+        "UI/UX Design"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Computer Fundamentals",
+            "Programming in C",
+            "Mathematics-I",
+            "English Communication",
+            "Digital Electronics",
+            "Computer Lab-I",
+            "Environmental Studies"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Data Structures",
+            "Programming in C++",
+            "Mathematics-II",
+            "Business Communication",
+            "Computer Organization",
+            "Computer Lab-II",
+            "Personality Development"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Object Oriented Programming",
+            "Database Management Systems",
+            "Web Technologies",
+            "Operating Systems",
+            "Software Engineering",
+            "DBMS Lab",
+            "Web Lab"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Java Programming",
+            "Computer Networks",
+            "System Analysis & Design",
+            "Numerical Methods",
+            "Multimedia Applications",
+            "Java Lab",
+            "Project-I"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "Advanced Java",
+            "Mobile Application Development",
+            "E-commerce Technologies",
+            "Information Security",
+            "Elective-I",
+            "Mobile App Lab",
+            "Major Project-I"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "Cloud Computing",
+            "Data Analytics",
+            "Software Testing",
+            "Professional Ethics",
+            "Elective-II",
+            "Industry Training",
+            "Major Project-II"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/bca-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Software Developer",
+          "Web Developer",
+          "Mobile App Developer",
+          "Database Administrator",
+          "System Analyst",
+          "Software Tester",
+          "Technical Support Engineer",
+          "UI/UX Designer",
+          "Digital Marketing Executive",
+          "E-commerce Developer",
+          "Game Developer",
+          "IT Consultant"
+        ],
+        "averageSalary": "₹4.5 LPA",
+        "placementRate": "88%",
+        "topRecruiters": [
+          { "name": "TCS", "logo": "/companies/tcs.png" },
+          { "name": "Infosys", "logo": "/companies/infosys.png" },
+          { "name": "Wipro", "logo": "/companies/wipro.png" },
+          { "name": "HCL", "logo": "/companies/hcl.png" },
+          { "name": "Tech Mahindra", "logo": "/companies/techmahindra.png" },
+          { "name": "Cognizant", "logo": "/companies/cognizant.png" },
+          { "name": "Capgemini", "logo": "/companies/capgemini.png" },
+          { "name": "IBM", "logo": "/companies/ibm.png" },
+          { "name": "Accenture", "logo": "/companies/accenture.png" },
+          { "name": "Mindtree", "logo": "/companies/mindtree.png" },
+          { "name": "Zoho", "logo": "/companies/zoho.png" },
+          { "name": "Freshworks", "logo": "/companies/freshworks.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 52,
+            "packages": {
+              "highest": "₹18 LPA",
+              "average": "₹4.5 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 48,
+            "packages": {
+              "highest": "₹15 LPA",
+              "average": "₹4.2 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 45,
+            "packages": {
+              "highest": "₹12 LPA",
+              "average": "₹3.8 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 50% marks in 12th standard (any stream)",
+          "Mathematics as a subject in 12th standard",
+          "Age limit: Maximum 25 years as on date of admission",
+          "Must have studied English as a compulsory subject"
+        ],
+        "entranceExam": "FS University Entrance Test or Merit-based admission",
+        "ageLimit": "Maximum 25 years"
+      },
+      "fees": {
+        "tuitionFee": "₹60,000/year",
+        "examFee": "₹3,000/year",
+        "otherFees": "₹7,000/year",
+        "totalFee": "₹70,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 40% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Girl student scholarships",
+        "Sports quota scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Anjali Verma",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D Computer Applications, Jawaharlal Nehru University",
+          "specialization": "Software Engineering, Database Systems",
+          "experience": "14+ Years"
+        },
+        {
+          "name": "Prof. Rahul Sharma",
+          "designation": "Associate Professor",
+          "qualifications": "M.Tech Computer Science, IIT Delhi",
+          "specialization": "Web Technologies, Mobile Development",
+          "experience": "10+ Years"
+        },
+        {
+          "name": "Dr. Kavita Singh",
+          "designation": "Assistant Professor",
+          "qualifications": "Ph.D Information Technology, Delhi University",
+          "specialization": "Data Analytics, Cloud Computing",
+          "experience": "8+ Years"
+        },
+        {
+          "name": "Prof. Suresh Kumar",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Tech Software Engineering, BITS Pilani",
+          "specialization": "Software Testing, Quality Assurance",
+          "experience": "7+ Years"
+        },
+        {
+          "name": "Prof. Priya Jain",
+          "designation": "Assistant Professor",
+          "qualifications": "MCA, NIT Kurukshetra",
+          "specialization": "Java Programming, Android Development",
+          "experience": "6+ Years"
+        }
+      ],
+      "facilities": [
+        "Modern Computer Labs with latest software",
+        "Programming Lab with multiple language support",
+        "Web Development Lab with design tools",
+        "Mobile App Development Lab",
+        "Database Lab with enterprise software",
+        "Software Testing Lab",
+        "24/7 Internet connectivity",
+        "Digital Library with programming resources"
+      ],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "bpharm",
+      "slug": "bpharm",
+      "title": "Bachelor of Pharmacy",
+      "level": "Undergraduate",
+      "duration": "4 Years",
+      "approvals": ["PCI", "AICTE", "UGC", "NAAC A+"],
+      "intake": "60 Students",
+      "mode": "Full-time",
+      "description": "Our Bachelor of Pharmacy program provides comprehensive education in pharmaceutical sciences, preparing students to become competent pharmacists and pharmaceutical professionals. The curriculum covers drug discovery, development, manufacturing, quality control, and patient care. Students gain hands-on experience through well-equipped laboratories and industry internships, ensuring they are ready to serve in hospitals, pharmaceutical companies, and regulatory agencies.",
+      "highlights": [
+        "PCI approved curriculum with modern facilities",
+        "Well-equipped pharmaceutical laboratories",
+        "Hospital and industry internships",
+        "Expert faculty with research background",
+        "Strong placement support in pharma sector",
+        "Research opportunities in drug development",
+        "Clinical pharmacy training",
+        "Regular industry visits and guest lectures"
+      ],
+      "specializations": [
+        "Clinical Pharmacy",
+        "Hospital Pharmacy",
+        "Industrial Pharmacy",
+        "Pharmaceutical Analysis",
+        "Drug Regulatory Affairs",
+        "Pharmacovigilance",
+        "Pharmaceutical Marketing",
+        "Quality Control & Assurance"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Human Anatomy & Physiology-I",
+            "Pharmaceutical Inorganic Chemistry",
+            "Pharmaceutics-I",
+            "Communication Skills",
+            "Remedial Biology",
+            "Remedial Mathematics",
+            "Computer Applications"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Human Anatomy & Physiology-II",
+            "Pharmaceutical Organic Chemistry-I",
+            "Pharmaceutics-II",
+            "Pathophysiology",
+            "Environmental Sciences",
+            "Social & Preventive Pharmacy"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Pharmaceutical Organic Chemistry-II",
+            "Physical Pharmaceutics-I",
+            "Pharmaceutical Microbiology",
+            "Pharmacognosy & Phytochemistry-I",
+            "Business Communication"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Pharmaceutical Organic Chemistry-III",
+            "Medicinal Chemistry-I",
+            "Physical Pharmaceutics-II",
+            "Pharmacology-I",
+            "Pharmacognosy & Phytochemistry-II"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "Medicinal Chemistry-II",
+            "Industrial Pharmacy-I",
+            "Pharmacology-II",
+            "Pharmacognosy & Phytochemistry-III",
+            "Pharmaceutical Jurisprudence"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "Medicinal Chemistry-III",
+            "Pharmacology-III",
+            "Herbal Drug Technology",
+            "Biopharmaceutics & Pharmacokinetics",
+            "Pharmaceutical Biotechnology"
+          ]
+        },
+        {
+          "semester": "Semester 7",
+          "subjects": [
+            "Instrumental Methods of Analysis",
+            "Industrial Pharmacy-II",
+            "Pharmacy Practice",
+            "Novel Drug Delivery System",
+            "Elective Subject"
+          ]
+        },
+        {
+          "semester": "Semester 8",
+          "subjects": [
+            "Biostatistics & Research Methodology",
+            "Social & Preventive Pharmacy",
+            "Pharma Marketing Management",
+            "Pharmaceutical Regulatory Science",
+            "Project Work"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/bpharm-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Hospital Pharmacist",
+          "Community Pharmacist",
+          "Clinical Pharmacist",
+          "Drug Inspector",
+          "Quality Control Analyst",
+          "Production Pharmacist",
+          "Research Associate",
+          "Regulatory Affairs Officer",
+          "Medical Representative",
+          "Pharmacovigilance Associate",
+          "Drug Safety Associate",
+          "Pharmaceutical Marketing Executive"
+        ],
+        "averageSalary": "₹4.2 LPA",
+        "placementRate": "90%",
+        "topRecruiters": [
+          { "name": "Sun Pharmaceutical", "logo": "/companies/sun-pharma.png" },
+          { "name": "Cipla", "logo": "/companies/cipla.png" },
+          { "name": "Dr. Reddy's", "logo": "/companies/drreddys.png" },
+          { "name": "Lupin", "logo": "/companies/lupin.png" },
+          { "name": "Aurobindo Pharma", "logo": "/companies/aurobindo.png" },
+          { "name": "Zydus Cadila", "logo": "/companies/zydus.png" },
+          {
+            "name": "Torrent Pharmaceuticals",
+            "logo": "/companies/torrent.png"
+          },
+          { "name": "Alkem Laboratories", "logo": "/companies/alkem.png" },
+          { "name": "Mankind Pharma", "logo": "/companies/mankind.png" },
+          { "name": "Abbott", "logo": "/companies/abbott.png" },
+          { "name": "Pfizer", "logo": "/companies/pfizer.png" },
+          { "name": "GSK", "logo": "/companies/gsk.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 54,
+            "packages": {
+              "highest": "₹12 LPA",
+              "average": "₹4.2 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 51,
+            "packages": {
+              "highest": "₹10 LPA",
+              "average": "₹3.8 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 48,
+            "packages": {
+              "highest": "₹9 LPA",
+              "average": "₹3.5 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 50% marks in 12th standard with PCM/PCB (Physics, Chemistry, Mathematics/Biology)",
+          "NEET qualification (for some states)",
+          "Age limit: Minimum 17 years as on 31st December of admission year",
+          "Must have studied English as a compulsory subject"
+        ],
+        "entranceExam": "NEET/State CET/University Entrance Test",
+        "ageLimit": "Minimum 17 years"
+      },
+      "fees": {
+        "tuitionFee": "₹1,00,000/year",
+        "examFee": "₹5,000/year",
+        "otherFees": "₹15,000/year",
+        "totalFee": "₹1,20,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Girl student scholarships",
+        "Sports quota scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Sudha Rani",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D Pharmaceutical Sciences, NIPER",
+          "specialization": "Medicinal Chemistry, Drug Discovery",
+          "experience": "16+ Years"
+        },
+        {
+          "name": "Dr. Manoj Kumar",
+          "designation": "Professor",
+          "qualifications": "Ph.D Pharmacology, AIIMS Delhi",
+          "specialization": "Clinical Pharmacology, Toxicology",
+          "experience": "14+ Years"
+        },
+        {
+          "name": "Dr. Ritu Sharma",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Pharmaceutics, Jamia Hamdard",
+          "specialization": "Drug Delivery Systems, Nanotechnology",
+          "experience": "11+ Years"
+        },
+        {
+          "name": "Prof. Rakesh Gupta",
+          "designation": "Associate Professor",
+          "qualifications": "M.Pharm Industrial Pharmacy, BITS Pilani",
+          "specialization": "Industrial Pharmacy, Quality Control",
+          "experience": "10+ Years"
+        },
+        {
+          "name": "Dr. Preeti Jain",
+          "designation": "Assistant Professor",
+          "qualifications": "Ph.D Pharmacognosy, Delhi University",
+          "specialization": "Herbal Medicine, Phytochemistry",
+          "experience": "8+ Years"
+        },
+        {
+          "name": "Prof. Vijay Singh",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Pharm Pharmaceutical Analysis, Pune University",
+          "specialization": "Analytical Chemistry, Method Development",
+          "experience": "7+ Years"
+        }
+      ],
+      "facilities": [
+        "Modern Pharmaceutical Analysis Lab",
+        "Medicinal Chemistry Lab",
+        "Pharmacology & Toxicology Lab",
+        "Pharmaceutics & Drug Delivery Lab",
+        "Pharmacognosy & Phytochemistry Lab",
+        "Microbiology & Biotechnology Lab",
+        "Quality Control & Assurance Lab",
+        "Animal House Facility",
+        "Herbal Garden",
+        "Digital Library with pharma databases"
+      ],
+      "accreditations": ["PCI", "AICTE", "UGC", "NAAC A+"]
+    },
+    {
+      "id": "bba",
+      "slug": "bba",
+      "title": "Bachelor of Business Administration",
+      "level": "Undergraduate",
+      "duration": "3 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "80 Students",
+      "mode": "Full-time",
+      "description": "Our BBA program is designed to develop future business leaders and entrepreneurs with comprehensive knowledge of business fundamentals, management principles, and practical skills. The curriculum integrates theoretical concepts with real-world applications through case studies, internships, and industry projects. Students gain expertise in various business functions and develop critical thinking, leadership, and communication skills essential for success in the corporate world.",
+      "highlights": [
+        "Comprehensive business curriculum with specializations",
+        "Industry-experienced faculty and guest lectures",
+        "Corporate internships and live projects",
+        "Entrepreneurship development programs",
+        "Strong industry connections and placements",
+        "International business exposure opportunities",
+        "Leadership development workshops",
+        "Regular business competitions and events"
+      ],
+      "specializations": [
+        "Marketing Management",
+        "Finance Management",
+        "Human Resource Management",
+        "Operations Management",
+        "Digital Marketing",
+        "International Business",
+        "Entrepreneurship & Innovation",
+        "Business Analytics"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Principles of Management",
+            "Business Economics-I",
+            "Financial Accounting",
+            "Business Communication",
+            "Business Mathematics",
+            "Computer Applications",
+            "Environmental Studies"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Organizational Behavior",
+            "Business Economics-II",
+            "Cost Accounting",
+            "Business Law",
+            "Business Statistics",
+            "Personality Development",
+            "Indian Culture & Ethics"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Marketing Management",
+            "Financial Management",
+            "Human Resource Management",
+            "Operations Management",
+            "Business Research Methods",
+            "Corporate Social Responsibility",
+            "Foreign Language"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Strategic Management",
+            "International Business",
+            "Entrepreneurship Development",
+            "Management Information Systems",
+            "Project Management",
+            "Specialization Subject-I",
+            "Summer Internship"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "Business Ethics & Governance",
+            "Supply Chain Management",
+            "Digital Marketing",
+            "Innovation Management",
+            "Specialization Subject-II",
+            "Specialization Subject-III",
+            "Industry Project"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "Leadership & Change Management",
+            "Business Intelligence",
+            "Global Business Environment",
+            "Specialization Subject-IV",
+            "Comprehensive Project",
+            "Seminar & Viva",
+            "Industry Training"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/bba-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Business Development Executive",
+          "Marketing Executive",
+          "Sales Executive",
+          "HR Executive",
+          "Operations Executive",
+          "Business Analyst",
+          "Project Coordinator",
+          "Management Trainee",
+          "Digital Marketing Executive",
+          "Entrepreneur",
+          "Team Leader",
+          "Administrative Officer"
+        ],
+        "averageSalary": "₹4.8 LPA",
+        "placementRate": "85%",
+        "topRecruiters": [
+          { "name": "Reliance Industries", "logo": "/companies/reliance.png" },
+          { "name": "HDFC Bank", "logo": "/companies/hdfc.png" },
+          { "name": "ICICI Bank", "logo": "/companies/icici.png" },
+          { "name": "Axis Bank", "logo": "/companies/axis.png" },
+          { "name": "Bajaj Finserv", "logo": "/companies/bajaj.png" },
+          { "name": "Mahindra Group", "logo": "/companies/mahindra.png" },
+          { "name": "Aditya Birla", "logo": "/companies/birla.png" },
+          { "name": "L&T", "logo": "/companies/lt.png" },
+          { "name": "Godrej", "logo": "/companies/godrej.png" },
+          { "name": "Hindustan Unilever", "logo": "/companies/hul.png" },
+          { "name": "Amazon", "logo": "/companies/amazon.png" },
+          { "name": "Flipkart", "logo": "/companies/flipkart.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 68,
+            "packages": {
+              "highest": "₹15 LPA",
+              "average": "₹4.8 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 64,
+            "packages": {
+              "highest": "₹12 LPA",
+              "average": "₹4.5 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 60,
+            "packages": {
+              "highest": "₹10 LPA",
+              "average": "₹4.2 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 50% marks in 12th standard (any stream)",
+          "Age limit: Maximum 25 years as on date of admission",
+          "Must have studied English as a compulsory subject",
+          "Preference given to Commerce and Science stream students"
+        ],
+        "entranceExam": "FS University Entrance Test or Merit-based admission",
+        "ageLimit": "Maximum 25 years"
+      },
+      "fees": {
+        "tuitionFee": "₹65,000/year",
+        "examFee": "₹3,000/year",
+        "otherFees": "₹7,000/year",
+        "totalFee": "₹75,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 40% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Girl student scholarships",
+        "Sports quota scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Rajesh Gupta",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D Management, IIM Ahmedabad",
+          "specialization": "Strategic Management, Leadership",
+          "experience": "18+ Years"
+        },
+        {
+          "name": "Dr. Sunita Malik",
+          "designation": "Professor",
+          "qualifications": "Ph.D Marketing, Delhi School of Economics",
+          "specialization": "Digital Marketing, Consumer Behavior",
+          "experience": "15+ Years"
+        },
+        {
+          "name": "Prof. Amit Sharma",
+          "designation": "Associate Professor",
+          "qualifications": "MBA Finance, XLRI Jamshedpur",
+          "specialization": "Financial Management, Investment Analysis",
+          "experience": "12+ Years"
+        },
+        {
+          "name": "Dr. Priya Agarwal",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D HR Management, Jamia Millia Islamia",
+          "specialization": "Human Resource Management, Organizational Behavior",
+          "experience": "11+ Years"
+        },
+        {
+          "name": "Prof. Vikram Singh",
+          "designation": "Assistant Professor",
+          "qualifications": "MBA Operations, MDI Gurgaon",
+          "specialization": "Operations Management, Supply Chain",
+          "experience": "9+ Years"
+        },
+        {
+          "name": "Prof. Neha Jain",
+          "designation": "Assistant Professor",
+          "qualifications": "MBA International Business, Symbiosis Pune",
+          "specialization": "International Business, Export-Import",
+          "experience": "7+ Years"
+        }
+      ],
+      "facilities": [
+        "Modern classrooms with AV equipment",
+        "Business Simulation Lab",
+        "Computer Lab with business software",
+        "Case Study Discussion Rooms",
+        "Seminar Hall for corporate events",
+        "Library with business databases",
+        "Entrepreneurship Incubation Center",
+        "Industry Interaction Center"
+      ],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "bcom",
+      "slug": "bcom",
+      "title": "Bachelor of Commerce",
+      "level": "Undergraduate",
+      "duration": "3 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "100 Students",
+      "mode": "Full-time",
+      "description": "Our Bachelor of Commerce program provides a comprehensive foundation in commerce, accounting, economics, and business studies. The curriculum is designed to develop analytical, computational, and communication skills essential for success in the business world. Students gain practical knowledge through internships, projects, and industry exposure, preparing them for diverse career opportunities in commerce, finance, and business sectors.",
+      "highlights": [
+        "Comprehensive commerce curriculum with practical application",
+        "Industry-relevant subjects and skill development",
+        "Expert faculty with professional experience",
+        "Strong placement support in banking and finance",
+        "Professional certification integration",
+        "Internship opportunities with corporates",
+        "Regular industry workshops and seminars",
+        "Entrepreneurship development support"
+      ],
+      "specializations": [
+        "Accounting & Finance",
+        "Banking & Insurance",
+        "Taxation",
+        "International Trade",
+        "E-commerce",
+        "Financial Markets",
+        "Business Economics",
+        "Cost & Management Accounting"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Financial Accounting-I",
+            "Business Economics-I",
+            "Business Organization & Management",
+            "Business Communication",
+            "Business Mathematics",
+            "Computer Applications",
+            "Environmental Studies"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Financial Accounting-II",
+            "Business Economics-II",
+            "Company Law",
+            "Business Statistics",
+            "Banking Theory & Practice",
+            "Personality Development",
+            "Indian Culture & Heritage"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Corporate Accounting",
+            "Cost Accounting",
+            "Income Tax Law",
+            "Marketing Management",
+            "Financial Management",
+            "Business Law",
+            "Foreign Language"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Management Accounting",
+            "Auditing",
+            "Goods & Services Tax",
+            "International Trade",
+            "Investment Management",
+            "Specialization Subject-I",
+            "Summer Internship"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "Advanced Accounting",
+            "Business Ethics & Corporate Governance",
+            "E-commerce",
+            "Financial Markets",
+            "Specialization Subject-II",
+            "Specialization Subject-III",
+            "Project Work-I"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "Entrepreneurship Development",
+            "Financial Services",
+            "Business Research Methods",
+            "Specialization Subject-IV",
+            "Project Work-II",
+            "Comprehensive Viva",
+            "Industry Training"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/bcom-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Accountant",
+          "Tax Consultant",
+          "Financial Analyst",
+          "Banking Officer",
+          "Insurance Agent",
+          "Auditor",
+          "Investment Advisor",
+          "Business Analyst",
+          "Accounts Executive",
+          "Finance Executive",
+          "Credit Analyst",
+          "Chartered Accountant (after CA)"
+        ],
+        "averageSalary": "₹3.8 LPA",
+        "placementRate": "82%",
+        "topRecruiters": [
+          { "name": "HDFC Bank", "logo": "/companies/hdfc.png" },
+          { "name": "ICICI Bank", "logo": "/companies/icici.png" },
+          { "name": "Axis Bank", "logo": "/companies/axis.png" },
+          { "name": "State Bank of India", "logo": "/companies/sbi.png" },
+          { "name": "Punjab National Bank", "logo": "/companies/pnb.png" },
+          { "name": "LIC", "logo": "/companies/lic.png" },
+          { "name": "HDFC Life", "logo": "/companies/hdfc-life.png" },
+          {
+            "name": "ICICI Prudential",
+            "logo": "/companies/icici-prudential.png"
+          },
+          { "name": "Bajaj Finserv", "logo": "/companies/bajaj.png" },
+          { "name": "Reliance Industries", "logo": "/companies/reliance.png" },
+          { "name": "Deloitte", "logo": "/companies/deloitte.png" },
+          { "name": "EY", "logo": "/companies/ey.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 82,
+            "packages": {
+              "highest": "₹12 LPA",
+              "average": "₹3.8 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 78,
+            "packages": {
+              "highest": "₹10 LPA",
+              "average": "₹3.5 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 75,
+            "packages": {
+              "highest": "₹8 LPA",
+              "average": "₹3.2 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 50% marks in 12th standard (preferably Commerce stream)",
+          "Mathematics/Business Mathematics as a subject in 12th standard",
+          "Age limit: Maximum 25 years as on date of admission",
+          "Must have studied English as a compulsory subject"
+        ],
+        "entranceExam": "Merit-based admission or FS University Entrance Test",
+        "ageLimit": "Maximum 25 years"
+      },
+      "fees": {
+        "tuitionFee": "₹45,000/year",
+        "examFee": "₹2,500/year",
+        "otherFees": "₹5,000/year",
+        "totalFee": "₹52,500/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Girl student scholarships",
+        "Sports quota scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Mohit Agarwal",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D Commerce, Delhi School of Economics",
+          "specialization": "Financial Accounting, Corporate Finance",
+          "experience": "20+ Years"
+        },
+        {
+          "name": "Prof. Rekha Sharma",
+          "designation": "Professor",
+          "qualifications": "M.Com, CA, Delhi University",
+          "specialization": "Cost Accounting, Taxation",
+          "experience": "16+ Years"
+        },
+        {
+          "name": "Dr. Sunil Kumar",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Economics, JNU",
+          "specialization": "Business Economics, Financial Markets",
+          "experience": "13+ Years"
+        },
+        {
+          "name": "Prof. Meera Jain",
+          "designation": "Associate Professor",
+          "qualifications": "M.Com, CS, Pune University",
+          "specialization": "Company Law, Corporate Governance",
+          "experience": "11+ Years"
+        },
+        {
+          "name": "Prof. Rajiv Gupta",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Com, MBA Finance, Symbiosis",
+          "specialization": "Banking, Financial Services",
+          "experience": "9+ Years"
+        },
+        {
+          "name": "Prof. Kavita Singh",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Com, CMA, Jamia Millia Islamia",
+          "specialization": "Management Accounting, Auditing",
+          "experience": "8+ Years"
+        }
+      ],
+      "facilities": [
+        "Modern classrooms with smart boards",
+        "Accounting Lab with software like Tally, SAP",
+        "Computer Lab with MS Office and statistical software",
+        "Library with commerce and finance books",
+        "Seminar Hall for guest lectures",
+        "Case Study Discussion Rooms",
+        "Digital Learning Resources",
+        "Career Counseling Center"
+      ],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "ba",
+      "slug": "ba",
+      "title": "Bachelor of Arts",
+      "level": "Undergraduate",
+      "duration": "3 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "80 Students",
+      "mode": "Full-time",
+      "description": "Our Bachelor of Arts program offers a comprehensive liberal arts education that develops critical thinking, communication skills, and cultural awareness. Students can choose from a variety of subjects in humanities, social sciences, and languages. The program emphasizes analytical thinking, research skills, and creative expression, preparing graduates for diverse career paths in education, media, public service, and cultural sectors.",
+      "highlights": [
+        "Flexible curriculum with multiple subject combinations",
+        "Strong foundation in liberal arts and humanities",
+        "Research opportunities in social sciences",
+        "Expert faculty with academic and research background",
+        "Career guidance for competitive examinations",
+        "Cultural and literary activities",
+        "Language learning opportunities",
+        "Preparation for higher studies and research"
+      ],
+      "specializations": [
+        "English Literature",
+        "History",
+        "Political Science",
+        "Psychology",
+        "Sociology",
+        "Philosophy",
+        "Economics",
+        "Geography"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "English Literature-I",
+            "History-I (Ancient India)",
+            "Political Science-I",
+            "Psychology-I",
+            "Environmental Studies",
+            "Computer Applications",
+            "General Knowledge"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "English Literature-II",
+            "History-II (Medieval India)",
+            "Political Science-II",
+            "Psychology-II",
+            "Sociology-I",
+            "Communication Skills",
+            "Physical Education"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "English Literature-III",
+            "History-III (Modern India)",
+            "Political Science-III",
+            "Psychology-III",
+            "Sociology-II",
+            "Philosophy-I",
+            "Foreign Language"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "English Literature-IV",
+            "History-IV (World History)",
+            "Political Science-IV",
+            "Economics-I",
+            "Philosophy-II",
+            "Geography-I",
+            "Summer Project"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "English Literature-V",
+            "History-V (Contemporary India)",
+            "Political Science-V",
+            "Economics-II",
+            "Geography-II",
+            "Elective Subject-I",
+            "Research Methodology"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "English Literature-VI",
+            "History-VI (Indian Culture)",
+            "Political Science-VI",
+            "Economics-III",
+            "Elective Subject-II",
+            "Dissertation",
+            "Comprehensive Viva"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/ba-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Civil Services Officer",
+          "Teacher/Professor",
+          "Journalist",
+          "Content Writer",
+          "Social Worker",
+          "Research Assistant",
+          "Museum Curator",
+          "Library Sciences Professional",
+          "Public Relations Officer",
+          "Administrative Officer",
+          "Cultural Program Coordinator",
+          "Human Rights Activist"
+        ],
+        "averageSalary": "₹3.2 LPA",
+        "placementRate": "75%",
+        "topRecruiters": [
+          { "name": "Government Sector", "logo": "/companies/government.png" },
+          {
+            "name": "Educational Institutions",
+            "logo": "/companies/education.png"
+          },
+          { "name": "Media Organizations", "logo": "/companies/media.png" },
+          { "name": "NGOs", "logo": "/companies/ngo.png" },
+          { "name": "Publishing Houses", "logo": "/companies/publishing.png" },
+          {
+            "name": "Cultural Organizations",
+            "logo": "/companies/cultural.png"
+          },
+          { "name": "Research Institutes", "logo": "/companies/research.png" },
+          { "name": "Museums", "logo": "/companies/museum.png" },
+          { "name": "Libraries", "logo": "/companies/library.png" },
+          { "name": "Social Services", "logo": "/companies/social.png" },
+          { "name": "Content Agencies", "logo": "/companies/content.png" },
+          {
+            "name": "Translation Services",
+            "logo": "/companies/translation.png"
+          }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 60,
+            "packages": {
+              "highest": "₹8 LPA",
+              "average": "₹3.2 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 58,
+            "packages": {
+              "highest": "₹7 LPA",
+              "average": "₹3.0 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 55,
+            "packages": {
+              "highest": "₹6 LPA",
+              "average": "₹2.8 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 50% marks in 12th standard (any stream)",
+          "Age limit: Maximum 25 years as on date of admission",
+          "Must have studied English as a compulsory subject",
+          "Preference given to Arts/Humanities stream students"
+        ],
+        "entranceExam": "Merit-based admission or FS University Entrance Test",
+        "ageLimit": "Maximum 25 years"
+      },
+      "fees": {
+        "tuitionFee": "₹30,000/year",
+        "examFee": "₹2,000/year",
+        "otherFees": "₹3,000/year",
+        "totalFee": "₹35,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Girl student scholarships",
+        "Sports quota scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Kavita Sharma",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D English Literature, JNU",
+          "specialization": "Modern Literature, Literary Criticism",
+          "experience": "18+ Years"
+        },
+        {
+          "name": "Dr. Rajesh Kumar",
+          "designation": "Professor",
+          "qualifications": "Ph.D History, Delhi University",
+          "specialization": "Ancient Indian History, Archaeology",
+          "experience": "16+ Years"
+        },
+        {
+          "name": "Prof. Sunita Agarwal",
+          "designation": "Associate Professor",
+          "qualifications": "M.A Political Science, JNU",
+          "specialization": "Indian Politics, International Relations",
+          "experience": "12+ Years"
+        },
+        {
+          "name": "Dr. Priya Jain",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Psychology, Jamia Millia Islamia",
+          "specialization": "Social Psychology, Cognitive Psychology",
+          "experience": "11+ Years"
+        },
+        {
+          "name": "Prof. Amit Singh",
+          "designation": "Assistant Professor",
+          "qualifications": "M.A Sociology, BHU",
+          "specialization": "Rural Sociology, Social Research",
+          "experience": "8+ Years"
+        },
+        {
+          "name": "Prof. Meera Gupta",
+          "designation": "Assistant Professor",
+          "qualifications": "M.A Philosophy, Pune University",
+          "specialization": "Indian Philosophy, Ethics",
+          "experience": "7+ Years"
+        }
+      ],
+      "facilities": [
+        "Well-equipped classrooms with AV facilities",
+        "Library with extensive humanities collection",
+        "Language Lab for foreign language learning",
+        "Seminar Hall for academic discussions",
+        "Computer Lab with internet access",
+        "Research Center for social sciences",
+        "Cultural Activity Center",
+        "Career Counseling Center"
+      ],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "bsc-mathematics",
+      "slug": "bsc-mathematics",
+      "title": "B.Sc Mathematics",
+      "level": "Undergraduate",
+      "duration": "3 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "50 Students",
+      "mode": "Full-time",
+      "description": "Our B.Sc Mathematics program provides a rigorous foundation in pure and applied mathematics, developing analytical thinking, problem-solving skills, and mathematical modeling capabilities. The curriculum covers algebra, calculus, statistics, differential equations, and modern mathematical concepts. Students gain expertise in mathematical software and computational techniques, preparing them for careers in education, research, data science, and various industries requiring strong quantitative skills.",
+      "highlights": [
+        "Comprehensive mathematics curriculum with modern applications",
+        "Strong foundation in pure and applied mathematics",
+        "Mathematical software and computational training",
+        "Research opportunities in mathematical sciences",
+        "Expert faculty with advanced degrees",
+        "Preparation for competitive examinations",
+        "Industry collaborations for practical applications",
+        "Graduate school preparation programs"
+      ],
+      "specializations": [
+        "Pure Mathematics",
+        "Applied Mathematics",
+        "Statistics",
+        "Mathematical Modeling",
+        "Computational Mathematics",
+        "Operations Research",
+        "Actuarial Science",
+        "Data Analytics"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Calculus-I",
+            "Algebra-I",
+            "Geometry",
+            "Computer Programming (C)",
+            "Physics-I",
+            "English Communication",
+            "Environmental Studies"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Calculus-II",
+            "Algebra-II",
+            "Differential Equations-I",
+            "Computer Programming (C++)",
+            "Physics-II",
+            "Statistics-I",
+            "Technical Writing"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Real Analysis-I",
+            "Abstract Algebra",
+            "Differential Equations-II",
+            "Numerical Methods",
+            "Probability Theory",
+            "Mathematical Software",
+            "Elective-I"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Real Analysis-II",
+            "Linear Algebra",
+            "Partial Differential Equations",
+            "Complex Analysis",
+            "Statistics-II",
+            "Operations Research",
+            "Summer Project"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "Topology",
+            "Number Theory",
+            "Mathematical Modeling",
+            "Discrete Mathematics",
+            "Multivariate Calculus",
+            "Elective-II",
+            "Research Methodology"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "Functional Analysis",
+            "Advanced Statistics",
+            "Optimization Theory",
+            "Mathematical Physics",
+            "Elective-III",
+            "Project Work",
+            "Comprehensive Viva"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/bsc-mathematics-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Data Scientist",
+          "Statistician",
+          "Actuarial Analyst",
+          "Research Scientist",
+          "Mathematics Teacher",
+          "Financial Analyst",
+          "Operations Research Analyst",
+          "Software Developer",
+          "Quantitative Analyst",
+          "Business Analyst",
+          "Risk Analyst",
+          "Academic Researcher"
+        ],
+        "averageSalary": "₹4.5 LPA",
+        "placementRate": "85%",
+        "topRecruiters": [
+          { "name": "TCS", "logo": "/companies/tcs.png" },
+          { "name": "Infosys", "logo": "/companies/infosys.png" },
+          { "name": "Wipro", "logo": "/companies/wipro.png" },
+          { "name": "IBM", "logo": "/companies/ibm.png" },
+          { "name": "Accenture", "logo": "/companies/accenture.png" },
+          { "name": "HDFC Bank", "logo": "/companies/hdfc.png" },
+          { "name": "ICICI Bank", "logo": "/companies/icici.png" },
+          { "name": "LIC", "logo": "/companies/lic.png" },
+          { "name": "SBI", "logo": "/companies/sbi.png" },
+          {
+            "name": "Educational Institutions",
+            "logo": "/companies/education.png"
+          },
+          {
+            "name": "Research Organizations",
+            "logo": "/companies/research.png"
+          },
+          { "name": "Government Agencies", "logo": "/companies/government.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 42,
+            "packages": {
+              "highest": "₹15 LPA",
+              "average": "₹4.5 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 40,
+            "packages": {
+              "highest": "₹12 LPA",
+              "average": "₹4.2 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 38,
+            "packages": {
+              "highest": "₹10 LPA",
+              "average": "₹4.0 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 60% marks in 12th standard with Mathematics",
+          "Physics and Chemistry as additional subjects preferred",
+          "Age limit: Maximum 25 years as on date of admission",
+          "Must have studied English as a compulsory subject"
+        ],
+        "entranceExam": "Merit-based admission or FS University Entrance Test",
+        "ageLimit": "Maximum 25 years"
+      },
+      "fees": {
+        "tuitionFee": "₹40,000/year",
+        "examFee": "₹2,500/year",
+        "otherFees": "₹4,500/year",
+        "totalFee": "₹47,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Girl student scholarships",
+        "Sports quota scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Vikram Sharma",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D Mathematics, IIT Delhi",
+          "specialization": "Real Analysis, Functional Analysis",
+          "experience": "20+ Years"
+        },
+        {
+          "name": "Dr. Sunita Agarwal",
+          "designation": "Professor",
+          "qualifications": "Ph.D Applied Mathematics, IISc Bangalore",
+          "specialization": "Differential Equations, Mathematical Modeling",
+          "experience": "17+ Years"
+        },
+        {
+          "name": "Prof. Rajesh Kumar",
+          "designation": "Associate Professor",
+          "qualifications": "M.Sc, Ph.D Statistics, Delhi University",
+          "specialization": "Probability Theory, Statistical Inference",
+          "experience": "13+ Years"
+        },
+        {
+          "name": "Dr. Priya Jain",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Pure Mathematics, JNU",
+          "specialization": "Abstract Algebra, Number Theory",
+          "experience": "11+ Years"
+        },
+        {
+          "name": "Prof. Amit Singh",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Sc Mathematics, IIT Kanpur",
+          "specialization": "Topology, Complex Analysis",
+          "experience": "8+ Years"
+        },
+        {
+          "name": "Prof. Neha Gupta",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Sc Applied Mathematics, NIT Trichy",
+          "specialization": "Numerical Analysis, Computational Mathematics",
+          "experience": "6+ Years"
+        }
+      ],
+      "facilities": [
+        "Mathematics Resource Center",
+        "Computer Lab with mathematical software (MATLAB, Mathematica)",
+        "Statistics Lab with statistical packages (R, SPSS)",
+        "Library with mathematical journals and books",
+        "Seminar Room for academic discussions",
+        "Tutorial Rooms for problem-solving sessions",
+        "Research Lab for advanced studies",
+        "Online learning resources and databases"
+      ],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "bsc-physics",
+      "slug": "bsc-physics",
+      "title": "B.Sc Physics",
+      "level": "Undergraduate",
+      "duration": "3 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "50 Students",
+      "mode": "Full-time",
+      "description": "Our B.Sc Physics program provides a comprehensive understanding of fundamental physical principles and their applications in modern technology. Students explore classical mechanics, quantum physics, electromagnetism, thermodynamics, and modern physics through theoretical study and hands-on laboratory work. The program emphasizes scientific thinking, analytical skills, and experimental techniques, preparing graduates for careers in research, education, technology, and various industries.",
+      "highlights": [
+        "Comprehensive physics curriculum from classical to modern",
+        "Well-equipped laboratories for experimental physics",
+        "Strong foundation in mathematical physics",
+        "Research opportunities in emerging areas",
+        "Expert faculty with research background",
+        "Industry connections for internships",
+        "Preparation for competitive examinations",
+        "Advanced instrumentation training"
+      ],
+      "specializations": [
+        "Theoretical Physics",
+        "Experimental Physics",
+        "Applied Physics",
+        "Electronics & Instrumentation",
+        "Medical Physics",
+        "Astrophysics",
+        "Material Science",
+        "Nuclear Physics"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Mechanics",
+            "Properties of Matter",
+            "Mathematics-I (Calculus)",
+            "Chemistry-I",
+            "English Communication",
+            "Physics Lab-I",
+            "Environmental Studies"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Waves & Oscillations",
+            "Kinetic Theory & Thermodynamics",
+            "Mathematics-II (Differential Equations)",
+            "Chemistry-II",
+            "Computer Programming",
+            "Physics Lab-II",
+            "Technical Writing"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Electricity & Magnetism",
+            "Optics",
+            "Mathematical Physics-I",
+            "Digital Electronics",
+            "Environmental Science",
+            "Physics Lab-III",
+            "Electronics Lab"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Electromagnetic Theory",
+            "Modern Physics",
+            "Mathematical Physics-II",
+            "Analog Electronics",
+            "Statistics",
+            "Physics Lab-IV",
+            "Summer Project"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "Quantum Mechanics",
+            "Atomic & Molecular Physics",
+            "Solid State Physics",
+            "Nuclear Physics",
+            "Elective-I",
+            "Advanced Physics Lab-I",
+            "Research Methodology"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "Statistical Mechanics",
+            "Particle Physics",
+            "Relativity & Cosmology",
+            "Laser Physics",
+            "Elective-II",
+            "Advanced Physics Lab-II",
+            "Project Work"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/bsc-physics-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Research Scientist",
+          "Physics Teacher",
+          "Technical Officer",
+          "Quality Control Analyst",
+          "Instrumentation Engineer",
+          "Medical Physicist",
+          "Data Analyst",
+          "Software Developer",
+          "Laboratory Technician",
+          "Scientific Writer",
+          "Product Development Engineer",
+          "Academic Researcher"
+        ],
+        "averageSalary": "₹4.2 LPA",
+        "placementRate": "80%",
+        "topRecruiters": [
+          { "name": "ISRO", "logo": "/companies/isro.png" },
+          { "name": "DRDO", "logo": "/companies/drdo.png" },
+          { "name": "BARC", "logo": "/companies/barc.png" },
+          { "name": "TIFR", "logo": "/companies/tifr.png" },
+          { "name": "TCS", "logo": "/companies/tcs.png" },
+          { "name": "Infosys", "logo": "/companies/infosys.png" },
+          { "name": "IBM", "logo": "/companies/ibm.png" },
+          {
+            "name": "Educational Institutions",
+            "logo": "/companies/education.png"
+          },
+          { "name": "Research Labs", "logo": "/companies/research.png" },
+          {
+            "name": "Manufacturing Industries",
+            "logo": "/companies/manufacturing.png"
+          },
+          {
+            "name": "Instrumentation Companies",
+            "logo": "/companies/instrumentation.png"
+          },
+          { "name": "Government Sector", "logo": "/companies/government.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 40,
+            "packages": {
+              "highest": "₹12 LPA",
+              "average": "₹4.2 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 38,
+            "packages": {
+              "highest": "₹10 LPA",
+              "average": "₹4.0 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 36,
+            "packages": {
+              "highest": "₹9 LPA",
+              "average": "₹3.8 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 60% marks in 12th standard with PCM (Physics, Chemistry, Mathematics)",
+          "Strong foundation in Mathematics and Physics",
+          "Age limit: Maximum 25 years as on date of admission",
+          "Must have studied English as a compulsory subject"
+        ],
+        "entranceExam": "Merit-based admission or FS University Entrance Test",
+        "ageLimit": "Maximum 25 years"
+      },
+      "fees": {
+        "tuitionFee": "₹45,000/year",
+        "examFee": "₹2,500/year",
+        "otherFees": "₹5,000/year",
+        "totalFee": "₹52,500/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Girl student scholarships",
+        "Sports quota scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Ajay Kumar",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D Physics, IIT Bombay",
+          "specialization": "Condensed Matter Physics, Material Science",
+          "experience": "22+ Years"
+        },
+        {
+          "name": "Dr. Meera Sharma",
+          "designation": "Professor",
+          "qualifications": "Ph.D Theoretical Physics, TIFR",
+          "specialization": "Quantum Mechanics, Particle Physics",
+          "experience": "18+ Years"
+        },
+        {
+          "name": "Prof. Suresh Gupta",
+          "designation": "Associate Professor",
+          "qualifications": "M.Sc, Ph.D Nuclear Physics, Banaras Hindu University",
+          "specialization": "Nuclear Physics, Radiation Physics",
+          "experience": "14+ Years"
+        },
+        {
+          "name": "Dr. Kavita Singh",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Astrophysics, IUCAA",
+          "specialization": "Astrophysics, Cosmology",
+          "experience": "12+ Years"
+        },
+        {
+          "name": "Prof. Rahul Jain",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Sc Physics, IIT Kanpur",
+          "specialization": "Optics, Laser Physics",
+          "experience": "9+ Years"
+        },
+        {
+          "name": "Prof. Priya Agarwal",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Sc Applied Physics, NIT Trichy",
+          "specialization": "Electronics, Instrumentation",
+          "experience": "7+ Years"
+        }
+      ],
+      "facilities": [
+        "Advanced Physics Laboratories",
+        "Optics and Laser Lab",
+        "Electronics and Instrumentation Lab",
+        "Modern Physics Lab with radioactive sources",
+        "Computer Simulation Lab",
+        "Observatory for astronomical observations",
+        "Workshop for instrument making",
+        "Library with physics journals and research papers",
+        "Seminar Hall with AV equipment",
+        "Research facilities for M.Sc and Ph.D students"
+      ],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "bsc-chemistry",
+      "slug": "bsc-chemistry",
+      "title": "B.Sc Chemistry",
+      "level": "Undergraduate",
+      "duration": "3 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "50 Students",
+      "mode": "Full-time",
+      "description": "Our B.Sc Chemistry program provides comprehensive knowledge of chemical principles, theories, and applications through intensive laboratory work and theoretical study. Students explore organic, inorganic, physical, and analytical chemistry, developing skills in chemical analysis, synthesis, and research. The program emphasizes hands-on experience with modern analytical instruments and techniques, preparing graduates for careers in chemical industries, research, pharmaceuticals, and environmental sectors.",
+      "highlights": [
+        "Comprehensive chemistry curriculum with practical focus",
+        "State-of-the-art chemistry laboratories",
+        "Modern analytical instrumentation training",
+        "Research opportunities in chemical sciences",
+        "Industry partnerships for internships",
+        "Expert faculty with research experience",
+        "Environmental chemistry and green chemistry focus",
+        "Preparation for higher studies and research"
+      ],
+      "specializations": [
+        "Organic Chemistry",
+        "Inorganic Chemistry",
+        "Physical Chemistry",
+        "Analytical Chemistry",
+        "Environmental Chemistry",
+        "Industrial Chemistry",
+        "Biochemistry",
+        "Materials Chemistry"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "General Chemistry",
+            "Inorganic Chemistry-I",
+            "Mathematics-I",
+            "Physics-I",
+            "English Communication",
+            "Chemistry Lab-I",
+            "Environmental Studies"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Organic Chemistry-I",
+            "Inorganic Chemistry-II",
+            "Mathematics-II",
+            "Physics-II",
+            "Computer Applications",
+            "Chemistry Lab-II",
+            "Technical Communication"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Organic Chemistry-II",
+            "Physical Chemistry-I",
+            "Analytical Chemistry-I",
+            "Biology",
+            "Statistics",
+            "Chemistry Lab-III",
+            "Instrumental Methods"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Organic Chemistry-III",
+            "Physical Chemistry-II",
+            "Analytical Chemistry-II",
+            "Environmental Chemistry",
+            "Chemical Kinetics",
+            "Chemistry Lab-IV",
+            "Summer Project"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "Advanced Organic Chemistry",
+            "Quantum Chemistry",
+            "Industrial Chemistry",
+            "Biochemistry",
+            "Elective-I",
+            "Advanced Chemistry Lab-I",
+            "Research Methodology"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "Coordination Chemistry",
+            "Spectroscopy",
+            "Green Chemistry",
+            "Polymer Chemistry",
+            "Elective-II",
+            "Advanced Chemistry Lab-II",
+            "Project Work"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/bsc-chemistry-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Research Scientist",
+          "Quality Control Analyst",
+          "Production Chemist",
+          "Environmental Chemist",
+          "Forensic Scientist",
+          "Chemistry Teacher",
+          "Laboratory Technician",
+          "Product Development Chemist",
+          "Technical Sales Representative",
+          "Analytical Chemist",
+          "Chemical Engineer",
+          "Pharmaceutical Analyst"
+        ],
+        "averageSalary": "₹4.0 LPA",
+        "placementRate": "82%",
+        "topRecruiters": [
+          { "name": "Reliance Industries", "logo": "/companies/reliance.png" },
+          { "name": "ONGC", "logo": "/companies/ongc.png" },
+          { "name": "IOCL", "logo": "/companies/iocl.png" },
+          { "name": "DRDO", "logo": "/companies/drdo.png" },
+          { "name": "Sun Pharmaceutical", "logo": "/companies/sun-pharma.png" },
+          { "name": "Cipla", "logo": "/companies/cipla.png" },
+          { "name": "Dr. Reddy's", "logo": "/companies/drreddys.png" },
+          { "name": "Asian Paints", "logo": "/companies/asian-paints.png" },
+          { "name": "UPL", "logo": "/companies/upl.png" },
+          {
+            "name": "Educational Institutions",
+            "logo": "/companies/education.png"
+          },
+          {
+            "name": "Research Organizations",
+            "logo": "/companies/research.png"
+          },
+          {
+            "name": "Environmental Agencies",
+            "logo": "/companies/environmental.png"
+          }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 41,
+            "packages": {
+              "highest": "₹11 LPA",
+              "average": "₹4.0 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 39,
+            "packages": {
+              "highest": "₹9 LPA",
+              "average": "₹3.8 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 37,
+            "packages": {
+              "highest": "₹8 LPA",
+              "average": "₹3.5 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 60% marks in 12th standard with PCM/PCB (Physics, Chemistry, Mathematics/Biology)",
+          "Chemistry as a compulsory subject in 12th standard",
+          "Age limit: Maximum 25 years as on date of admission",
+          "Must have studied English as a compulsory subject"
+        ],
+        "entranceExam": "Merit-based admission or FS University Entrance Test",
+        "ageLimit": "Maximum 25 years"
+      },
+      "fees": {
+        "tuitionFee": "₹45,000/year",
+        "examFee": "₹2,500/year",
+        "otherFees": "₹5,000/year",
+        "totalFee": "₹52,500/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Girl student scholarships",
+        "Sports quota scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Ravi Kumar",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D Organic Chemistry, IIT Delhi",
+          "specialization": "Organic Synthesis, Medicinal Chemistry",
+          "experience": "20+ Years"
+        },
+        {
+          "name": "Dr. Sunita Agarwal",
+          "designation": "Professor",
+          "qualifications": "Ph.D Physical Chemistry, IISc Bangalore",
+          "specialization": "Quantum Chemistry, Spectroscopy",
+          "experience": "17+ Years"
+        },
+        {
+          "name": "Prof. Manoj Sharma",
+          "designation": "Associate Professor",
+          "qualifications": "M.Sc, Ph.D Inorganic Chemistry, JNU",
+          "specialization": "Coordination Chemistry, Bioinorganic Chemistry",
+          "experience": "13+ Years"
+        },
+        {
+          "name": "Dr. Kavita Jain",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Analytical Chemistry, Delhi University",
+          "specialization": "Environmental Chemistry, Analytical Methods",
+          "experience": "11+ Years"
+        },
+        {
+          "name": "Prof. Amit Singh",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Sc Chemistry, BHU",
+          "specialization": "Industrial Chemistry, Polymer Science",
+          "experience": "8+ Years"
+        },
+        {
+          "name": "Prof. Priya Gupta",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Sc Biochemistry, Jamia Millia Islamia",
+          "specialization": "Biochemistry, Green Chemistry",
+          "experience": "6+ Years"
+        }
+      ],
+      "facilities": [
+        "Modern Organic Chemistry Lab",
+        "Inorganic Chemistry Lab with fume hoods",
+        "Physical Chemistry Lab with precision instruments",
+        "Analytical Chemistry Lab with modern equipment",
+        "Instrumental Analysis Lab (HPLC, GC-MS, IR, NMR)",
+        "Computational Chemistry Lab",
+        "Chemical Store with safety protocols",
+        "Research Lab for advanced studies",
+        "Library with chemical databases",
+        "Seminar Room for academic discussions"
+      ],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "bsc-biology",
+      "slug": "bsc-biology",
+      "title": "B.Sc Biology",
+      "level": "Undergraduate",
+      "duration": "3 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "60 Students",
+      "mode": "Full-time",
+      "description": "Our B.Sc Biology program provides comprehensive understanding of life sciences, covering cell biology, genetics, ecology, evolution, and molecular biology. Students gain hands-on experience through extensive laboratory work, field studies, and research projects. The curriculum emphasizes both classical and modern aspects of biology, including biotechnology and bioinformatics, preparing graduates for careers in research, healthcare, environmental conservation, and biotechnology industries.",
+      "highlights": [
+        "Comprehensive life sciences curriculum",
+        "Modern biology laboratories with advanced equipment",
+        "Field study opportunities and ecological research",
+        "Biotechnology and molecular biology focus",
+        "Research projects and scientific methodology training",
+        "Expert faculty with research background",
+        "Industry connections in biotechnology sector",
+        "Preparation for medical and research careers"
+      ],
+      "specializations": [
+        "Cell Biology & Genetics",
+        "Ecology & Environmental Biology",
+        "Molecular Biology & Biotechnology",
+        "Microbiology",
+        "Plant Biology",
+        "Animal Biology & Physiology",
+        "Biochemistry",
+        "Marine Biology"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Cell Biology",
+            "Diversity of Life",
+            "Chemistry-I",
+            "Mathematics-I",
+            "English Communication",
+            "Biology Lab-I",
+            "Environmental Studies"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Genetics",
+            "Plant Biology",
+            "Chemistry-II",
+            "Physics",
+            "Computer Applications",
+            "Biology Lab-II",
+            "Biostatistics"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Animal Biology",
+            "Microbiology",
+            "Biochemistry-I",
+            "Ecology",
+            "Research Methodology",
+            "Biology Lab-III",
+            "Field Study"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Molecular Biology",
+            "Physiology",
+            "Biochemistry-II",
+            "Evolution",
+            "Bioinformatics",
+            "Biology Lab-IV",
+            "Summer Project"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "Biotechnology",
+            "Immunology",
+            "Developmental Biology",
+            "Environmental Biology",
+            "Elective-I",
+            "Advanced Biology Lab-I",
+            "Research Project-I"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "Genomics & Proteomics",
+            "Conservation Biology",
+            "Bioethics",
+            "Applied Biology",
+            "Elective-II",
+            "Advanced Biology Lab-II",
+            "Research Project-II"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/bsc-biology-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Research Scientist",
+          "Biotechnology Specialist",
+          "Environmental Consultant",
+          "Laboratory Technician",
+          "Quality Control Analyst",
+          "Biology Teacher",
+          "Medical Lab Technologist",
+          "Conservation Biologist",
+          "Biostatistician",
+          "Science Writer",
+          "Pharmaceutical Researcher",
+          "Genetic Counselor"
+        ],
+        "averageSalary": "₹4.2 LPA",
+        "placementRate": "85%",
+        "topRecruiters": [
+          { "name": "Biocon", "logo": "/companies/biocon.png" },
+          { "name": "Serum Institute", "logo": "/companies/serum.png" },
+          { "name": "Dr. Reddy's", "logo": "/companies/drreddys.png" },
+          { "name": "Cipla", "logo": "/companies/cipla.png" },
+          { "name": "Sun Pharmaceutical", "logo": "/companies/sun-pharma.png" },
+          { "name": "Glenmark", "logo": "/companies/glenmark.png" },
+          { "name": "Lupin", "logo": "/companies/lupin.png" },
+          { "name": "CSIR Labs", "logo": "/companies/csir.png" },
+          { "name": "ICMR", "logo": "/companies/icmr.png" },
+          {
+            "name": "Educational Institutions",
+            "logo": "/companies/education.png"
+          },
+          {
+            "name": "Environmental Agencies",
+            "logo": "/companies/environmental.png"
+          },
+          {
+            "name": "Research Organizations",
+            "logo": "/companies/research.png"
+          }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 51,
+            "packages": {
+              "highest": "₹12 LPA",
+              "average": "₹4.2 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 48,
+            "packages": {
+              "highest": "₹10 LPA",
+              "average": "₹4.0 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 45,
+            "packages": {
+              "highest": "₹9 LPA",
+              "average": "₹3.8 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 60% marks in 12th standard with PCB (Physics, Chemistry, Biology)",
+          "Biology as a compulsory subject in 12th standard",
+          "Age limit: Maximum 25 years as on date of admission",
+          "Must have studied English as a compulsory subject"
+        ],
+        "entranceExam": "Merit-based admission or FS University Entrance Test",
+        "ageLimit": "Maximum 25 years"
+      },
+      "fees": {
+        "tuitionFee": "₹48,000/year",
+        "examFee": "₹2,500/year",
+        "otherFees": "₹5,500/year",
+        "totalFee": "₹56,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Girl student scholarships",
+        "Sports quota scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Anjali Sharma",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D Molecular Biology, TIFR",
+          "specialization": "Molecular Biology, Genetic Engineering",
+          "experience": "19+ Years"
+        },
+        {
+          "name": "Dr. Rajesh Kumar",
+          "designation": "Professor",
+          "qualifications": "Ph.D Ecology, JNU",
+          "specialization": "Ecology, Environmental Biology",
+          "experience": "16+ Years"
+        },
+        {
+          "name": "Prof. Sunita Agarwal",
+          "designation": "Associate Professor",
+          "qualifications": "M.Sc, Ph.D Microbiology, BHU",
+          "specialization": "Microbiology, Biotechnology",
+          "experience": "12+ Years"
+        },
+        {
+          "name": "Dr. Priya Jain",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Plant Biology, Delhi University",
+          "specialization": "Plant Physiology, Botany",
+          "experience": "10+ Years"
+        },
+        {
+          "name": "Prof. Vikram Singh",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Sc Zoology, Jamia Millia Islamia",
+          "specialization": "Animal Physiology, Cell Biology",
+          "experience": "8+ Years"
+        },
+        {
+          "name": "Prof. Neha Gupta",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Sc Biochemistry, Pune University",
+          "specialization": "Biochemistry, Bioinformatics",
+          "experience": "6+ Years"
+        }
+      ],
+      "facilities": [
+        "Modern Biology Laboratories",
+        "Molecular Biology & Biotechnology Lab",
+        "Microbiology Lab with sterile facilities",
+        "Plant Biology & Botany Lab",
+        "Animal Biology & Physiology Lab",
+        "Biochemistry Lab with analytical equipment",
+        "Computer Lab with bioinformatics software",
+        "Museum with biological specimens",
+        "Botanical Garden for field studies",
+        "Research facilities for advanced studies"
+      ],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "bsc-botany",
+      "slug": "bsc-botany",
+      "title": "B.Sc Botany",
+      "level": "Undergraduate",
+      "duration": "3 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "40 Students",
+      "mode": "Full-time",
+      "description": "Our B.Sc Botany program provides in-depth knowledge of plant sciences, covering plant anatomy, physiology, taxonomy, ecology, and biotechnology. Students explore the diversity of plant life, from microscopic algae to flowering plants, and their ecological importance. The curriculum combines theoretical knowledge with extensive field work, laboratory studies, and research projects, preparing graduates for careers in agriculture, forestry, environmental conservation, and plant biotechnology.",
+      "highlights": [
+        "Comprehensive plant sciences curriculum",
+        "Extensive fieldwork and botanical surveys",
+        "Modern plant biology laboratories",
+        "Botanical garden for hands-on learning",
+        "Plant biotechnology and tissue culture training",
+        "Environmental conservation focus",
+        "Research opportunities in plant sciences",
+        "Expert faculty with field experience"
+      ],
+      "specializations": [
+        "Plant Taxonomy & Systematics",
+        "Plant Ecology & Environmental Botany",
+        "Plant Biotechnology",
+        "Economic Botany",
+        "Plant Pathology",
+        "Forest Botany",
+        "Algology & Mycology",
+        "Plant Breeding & Genetics"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Plant Diversity-I (Algae & Fungi)",
+            "Plant Anatomy",
+            "Chemistry-I",
+            "Mathematics/Physics",
+            "English Communication",
+            "Botany Lab-I",
+            "Environmental Studies"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Plant Diversity-II (Bryophytes & Pteridophytes)",
+            "Plant Morphology",
+            "Chemistry-II",
+            "Statistics",
+            "Computer Applications",
+            "Botany Lab-II",
+            "Field Study-I"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Plant Diversity-III (Gymnosperms & Angiosperms)",
+            "Plant Physiology-I",
+            "Plant Ecology",
+            "Biochemistry",
+            "Research Methodology",
+            "Botany Lab-III",
+            "Taxonomy Practical"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Plant Taxonomy",
+            "Plant Physiology-II",
+            "Economic Botany",
+            "Genetics",
+            "Microbiology",
+            "Botany Lab-IV",
+            "Summer Project"
+          ]
+        },
+        {
+          "semester": "Semester 5",
+          "subjects": [
+            "Plant Biotechnology",
+            "Plant Pathology",
+            "Plant Breeding",
+            "Medicinal Plants",
+            "Elective-I",
+            "Advanced Botany Lab-I",
+            "Field Study-II"
+          ]
+        },
+        {
+          "semester": "Semester 6",
+          "subjects": [
+            "Conservation Biology",
+            "Ethnobotany",
+            "Bioinformatics",
+            "Environmental Impact Assessment",
+            "Elective-II",
+            "Advanced Botany Lab-II",
+            "Research Project"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/bsc-botany-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Botanist",
+          "Plant Researcher",
+          "Environmental Consultant",
+          "Agricultural Scientist",
+          "Forest Officer",
+          "Horticulturist",
+          "Plant Biotechnologist",
+          "Taxonomy Specialist",
+          "Conservation Biologist",
+          "Botany Teacher",
+          "Herbal Product Developer",
+          "Ecological Consultant"
+        ],
+        "averageSalary": "₹3.8 LPA",
+        "placementRate": "78%",
+        "topRecruiters": [
+          { "name": "Forest Department", "logo": "/companies/forest.png" },
+          {
+            "name": "Agricultural Departments",
+            "logo": "/companies/agriculture.png"
+          },
+          { "name": "CSIR Labs", "logo": "/companies/csir.png" },
+          { "name": "ICFRE", "logo": "/companies/icfre.png" },
+          { "name": "Botanical Survey of India", "logo": "/companies/bsi.png" },
+          {
+            "name": "Environmental Agencies",
+            "logo": "/companies/environmental.png"
+          },
+          { "name": "NGOs", "logo": "/companies/ngo.png" },
+          {
+            "name": "Biotechnology Companies",
+            "logo": "/companies/biotech.png"
+          },
+          {
+            "name": "Pharmaceutical Companies",
+            "logo": "/companies/pharma.png"
+          },
+          {
+            "name": "Educational Institutions",
+            "logo": "/companies/education.png"
+          },
+          {
+            "name": "Research Organizations",
+            "logo": "/companies/research.png"
+          },
+          { "name": "Herbal Companies", "logo": "/companies/herbal.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2024",
+            "placed": 31,
+            "packages": {
+              "highest": "₹9 LPA",
+              "average": "₹3.8 LPA"
+            }
+          },
+          {
+            "year": "2023",
+            "placed": 29,
+            "packages": {
+              "highest": "₹8 LPA",
+              "average": "₹3.5 LPA"
+            }
+          },
+          {
+            "year": "2022",
+            "placed": 27,
+            "packages": {
+              "highest": "₹7 LPA",
+              "average": "₹3.2 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Minimum 60% marks in 12th standard with PCB (Physics, Chemistry, Biology)",
+          "Biology and Botany as compulsory subjects in 12th standard",
+          "Age limit: Maximum 25 years as on date of admission",
+          "Must have studied English as a compulsory subject"
+        ],
+        "entranceExam": "Merit-based admission or FS University Entrance Test",
+        "ageLimit": "Maximum 25 years"
+      },
+      "fees": {
+        "tuitionFee": "₹42,000/year",
+        "examFee": "₹2,500/year",
+        "otherFees": "₹5,000/year",
+        "totalFee": "₹49,500/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Girl student scholarships",
+        "Sports quota scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Meera Sharma",
+          "designation": "Professor & Head of Department",
+          "qualifications": "Ph.D Plant Taxonomy, Botanical Survey of India",
+          "specialization": "Plant Taxonomy, Systematics",
+          "experience": "18+ Years"
+        },
+        {
+          "name": "Dr. Rajesh Kumar",
+          "designation": "Professor",
+          "qualifications": "Ph.D Plant Ecology, JNU",
+          "specialization": "Plant Ecology, Environmental Botany",
+          "experience": "15+ Years"
+        },
+        {
+          "name": "Prof. Sunita Agarwal",
+          "designation": "Associate Professor",
+          "qualifications": "M.Sc, Ph.D Plant Physiology, BHU",
+          "specialization": "Plant Physiology, Plant Biochemistry",
+          "experience": "11+ Years"
+        },
+        {
+          "name": "Dr. Kavita Jain",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Plant Biotechnology, Delhi University",
+          "specialization": "Plant Biotechnology, Tissue Culture",
+          "experience": "9+ Years"
+        },
+        {
+          "name": "Prof. Amit Singh",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Sc Botany, Jamia Millia Islamia",
+          "specialization": "Economic Botany, Medicinal Plants",
+          "experience": "7+ Years"
+        },
+        {
+          "name": "Prof. Priya Gupta",
+          "designation": "Assistant Professor",
+          "qualifications": "M.Sc Plant Pathology, IARI",
+          "specialization": "Plant Pathology, Plant Protection",
+          "experience": "5+ Years"
+        }
+      ],
+      "facilities": [
+        "Botanical Garden with diverse plant collections",
+        "Plant Taxonomy & Herbarium",
+        "Plant Physiology Lab",
+        "Plant Biotechnology & Tissue Culture Lab",
+        "Plant Pathology Lab",
+        "Microscopy Lab with advanced microscopes",
+        "Seed Bank & Germplasm Conservation",
+        "Greenhouse for controlled plant studies",
+        "Museum with plant specimens",
+        "Field Station for ecological studies"
+      ],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "bachelor-education",
+      "slug": "bachelor-education",
+      "title": "Bachelor of Education (B.Ed)",
+      "level": "Undergraduate",
+      "duration": "2 Years",
+      "approvals": ["NCTE", "UGC", "NAAC A+"],
+      "intake": "100 Students",
+      "mode": "Full-time",
+      "description": "The B.Ed program prepares aspiring teachers with the knowledge, skills, and values necessary to excel in the teaching profession. The curriculum blends pedagogy, psychology, classroom management, and modern teaching practices.",
+      "highlights": [
+        "NCTE approved curriculum",
+        "Focus on pedagogy and child psychology",
+        "Hands-on teaching practice in schools",
+        "Workshops on inclusive education",
+        "Expert faculty with school-level experience"
+      ],
+      "curriculum": [
+        {
+          "year": "Year 1",
+          "subjects": [
+            "Childhood and Growing Up",
+            "Contemporary India and Education",
+            "Learning and Teaching",
+            "Pedagogy of School Subjects",
+            "Language Across the Curriculum",
+            "ICT in Education"
+          ]
+        },
+        {
+          "year": "Year 2",
+          "subjects": [
+            "Knowledge and Curriculum",
+            "Assessment for Learning",
+            "Gender, School and Society",
+            "Creating Inclusive School",
+            "Optional Pedagogy Courses",
+            "Internship & Teaching Practice"
+          ]
+        }
+      ],
+      "careerProspects": {
+        "jobTitles": [
+          "School Teacher",
+          "Educational Consultant",
+          "Curriculum Designer",
+          "Educational Counselor"
+        ],
+        "averageSalary": "₹4.5 LPA",
+        "placementRate": "85%",
+        "topRecruiters": [
+          { "name": "Kendriya Vidyalaya", "logo": "/companies/kv.png" },
+          { "name": "DPS", "logo": "/companies/dps.png" }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Graduation with minimum 50% marks",
+          "Relaxation for reserved categories as per norms"
+        ],
+        "entranceExam": "University Entrance Test",
+        "ageLimit": "No upper age limit"
+      },
+      "fees": {
+        "tuitionFee": "₹60,000/year",
+        "examFee": "₹3,000/year",
+        "otherFees": "₹7,000/year",
+        "totalFee": "₹70,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships",
+        "Government teacher training scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Meena Verma",
+          "designation": "Professor & Dean",
+          "qualifications": "Ph.D Education, JNU",
+          "specialization": "Pedagogy, Educational Psychology",
+          "experience": "18+ Years"
+        }
+      ],
+      "facilities": [
+        "Smart Classrooms",
+        "Teaching Practice Schools",
+        "Education Resource Center",
+        "Digital Library"
+      ],
+      "accreditations": ["NCTE", "UGC", "NAAC A+"]
+    },
+    {
+      "id": "bachelor-physical-education",
+      "slug": "bachelor-physical-education",
+      "title": "Bachelor of Physical Education (B.P.Ed)",
+      "level": "Undergraduate",
+      "duration": "2 Years",
+      "approvals": ["NCTE", "UGC", "NAAC A+"],
+      "intake": "80 Students",
+      "mode": "Full-time",
+      "description": "B.P.Ed prepares students for careers in sports, fitness, and physical education by focusing on physical training, sports sciences, and health education.",
+      "highlights": [
+        "Comprehensive training in sports and fitness",
+        "Internship opportunities in schools and academies",
+        "Modern sports complex with gymnasium",
+        "Workshops on nutrition and sports psychology"
+      ],
+      "curriculum": [
+        {
+          "year": "Year 1",
+          "subjects": [
+            "History of Physical Education",
+            "Anatomy & Physiology",
+            "Sports Psychology",
+            "Health Education",
+            "Track & Field"
+          ]
+        },
+        {
+          "year": "Year 2",
+          "subjects": [
+            "Kinesiology & Biomechanics",
+            "Sports Training & Coaching",
+            "Research Methods",
+            "Games Specialization",
+            "Teaching Practice"
+          ]
+        }
+      ],
+      "careerProspects": {
+        "jobTitles": [
+          "Physical Education Teacher",
+          "Fitness Trainer",
+          "Sports Coach",
+          "Rehabilitation Specialist"
+        ],
+        "averageSalary": "₹4 LPA",
+        "placementRate": "80%",
+        "topRecruiters": [
+          { "name": "CBSE Schools", "logo": "/companies/cbse.png" },
+          { "name": "Sports Authority of India", "logo": "/companies/sai.png" },
+          { "name": "Gold's Gym", "logo": "/companies/goldsgym.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2023",
+            "placed": 64,
+            "packages": {
+              "highest": "₹6.5 LPA",
+              "average": "₹4 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": ["Graduation with minimum 50% marks"],
+        "entranceExam": "Physical Fitness Test + Interview"
+      },
+      "fees": {
+        "tuitionFee": "₹50,000/year",
+        "examFee": "₹2,000/year",
+        "otherFees": "₹5,000/year",
+        "totalFee": "₹57,000/year"
+      },
+      "scholarships": ["Sports quota scholarships", "Government financial aid"],
+      "faculty": [
+        {
+          "name": "Prof. Arvind Rana",
+          "designation": "Professor",
+          "qualifications": "M.P.Ed, Ph.D",
+          "specialization": "Sports Science, Coaching",
+          "experience": "14+ Years"
+        }
+      ],
+      "facilities": [
+        "Sports Complex",
+        "Gymnasium",
+        "Physiotherapy Lab",
+        "Outdoor & Indoor Grounds"
+      ],
+      "accreditations": ["NCTE", "UGC", "NAAC A+"]
+    },
+    {
+      "id": "master-technology",
+      "slug": "master-technology",
+      "title": "Master of Technology (M.Tech)",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "approvals": ["AICTE", "UGC", "NAAC A+"],
+      "intake": "60 Students",
+      "mode": "Full-time",
+      "description": "M.Tech provides advanced technical knowledge in engineering and technology domains with research orientation and industry-driven curriculum.",
+      "highlights": [
+        "Research-focused curriculum",
+        "Specializations in cutting-edge areas",
+        "Industry projects and internships",
+        "Experienced faculty with research background"
+      ],
+      "specializations": [
+        "Computer Science",
+        "Electronics & Communication",
+        "Mechanical Engineering",
+        "Civil Engineering",
+        "Data Science"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Advanced Engineering Mathematics",
+            "Research Methodology",
+            "Advanced Data Structures",
+            "Digital Signal Processing",
+            "Seminar"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Machine Learning",
+            "Computer Networks",
+            "VLSI Design",
+            "Software Engineering",
+            "Minor Project"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Artificial Intelligence",
+            "Advanced Database Systems",
+            "Embedded Systems",
+            "Elective I",
+            "Major Project Phase I"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Elective II",
+            "Elective III",
+            "Industrial Training",
+            "Major Project Phase II",
+            "Thesis/Dissertation"
+          ]
+        }
+      ],
+      "careerProspects": {
+        "jobTitles": [
+          "Research Engineer",
+          "Project Manager",
+          "Technical Consultant"
+        ],
+        "averageSalary": "₹10 LPA",
+        "placementRate": "92%",
+        "topRecruiters": [
+          { "name": "TCS", "logo": "/companies/tcs.png" },
+          { "name": "Infosys", "logo": "/companies/infosys.png" },
+          { "name": "IBM", "logo": "/companies/ibm.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2023",
+            "placed": 55,
+            "packages": {
+              "highest": "₹18 LPA",
+              "average": "₹10 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": ["B.Tech/BE with minimum 60% marks"],
+        "entranceExam": "GATE (preferred)"
+      },
+      "fees": {
+        "tuitionFee": "₹1,00,000/year",
+        "examFee": "₹5,000/year",
+        "otherFees": "₹10,000/year",
+        "totalFee": "₹1,15,000/year"
+      },
+      "scholarships": ["GATE fellowship", "Research grants"],
+      "faculty": [
+        {
+          "name": "Dr. Rajesh Kumar",
+          "designation": "Professor & Head",
+          "qualifications": "Ph.D Computer Science, IIT Delhi",
+          "specialization": "Machine Learning, Data Science",
+          "experience": "20+ Years"
+        },
+        {
+          "name": "Dr. Priya Sharma",
+          "designation": "Associate Professor",
+          "qualifications": "Ph.D Electronics, IIT Bombay",
+          "specialization": "VLSI Design, Embedded Systems",
+          "experience": "15+ Years"
+        }
+      ],
+      "facilities": [
+        "Advanced Research Labs",
+        "High-Performance Computing Clusters",
+        "Incubation Center"
+      ],
+      "accreditations": ["AICTE", "UGC", "NAAC A+"]
+    },
+    {
+      "id": "master-computer-applications",
+      "slug": "master-computer-applications",
+      "title": "Master of Computer Applications (MCA)",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "approvals": ["AICTE", "UGC", "NAAC A+"],
+      "intake": "120 Students",
+      "mode": "Full-time",
+      "description": "MCA equips students with advanced skills in computer science, software development, and application design, preparing them for IT and software industry roles.",
+      "highlights": [
+        "Focus on advanced programming & development",
+        "Industry internships",
+        "Project-based learning"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Advanced Programming",
+            "Data Structures & Algorithms",
+            "Database Management Systems",
+            "Computer Organization",
+            "Mathematical Foundations"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Software Engineering",
+            "Web Technologies",
+            "Operating Systems",
+            "Computer Graphics",
+            "System Analysis & Design"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Mobile Application Development",
+            "Machine Learning",
+            "Network Security",
+            "Elective I",
+            "Project Phase I"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Cloud Computing",
+            "Elective II",
+            "Industrial Training",
+            "Project Phase II",
+            "Seminar & Viva"
+          ]
+        }
+      ],
+      "careerProspects": {
+        "jobTitles": ["Software Developer", "Data Analyst", "System Architect"],
+        "averageSalary": "₹7.5 LPA",
+        "placementRate": "90%",
+        "topRecruiters": [
+          { "name": "Wipro", "logo": "/companies/wipro.png" },
+          { "name": "HCL", "logo": "/companies/hcl.png" },
+          { "name": "Tech Mahindra", "logo": "/companies/techmahindra.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2023",
+            "placed": 108,
+            "packages": {
+              "highest": "₹15 LPA",
+              "average": "₹7.5 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "BCA or Graduation with Mathematics at 10+2 level"
+        ],
+        "entranceExam": "University MCA Entrance Test"
+      },
+      "fees": {
+        "tuitionFee": "₹90,000/year",
+        "examFee": "₹4,000/year",
+        "otherFees": "₹8,000/year",
+        "totalFee": "₹1,02,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "Industry-sponsored scholarships",
+        "Excellence scholarships for top performers",
+        "Reserved category benefits"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Amit Verma",
+          "designation": "Professor",
+          "qualifications": "Ph.D Computer Science",
+          "specialization": "Software Engineering, Database Systems",
+          "experience": "18+ Years"
+        },
+        {
+          "name": "Prof. Neha Singh",
+          "designation": "Associate Professor",
+          "qualifications": "M.Tech, Ph.D",
+          "specialization": "Web Development, Mobile Apps",
+          "experience": "12+ Years"
+        }
+      ],
+      "facilities": [
+        "Computer Labs",
+        "Software Development Lab",
+        "AI & Data Science Lab"
+      ],
+      "accreditations": ["AICTE", "UGC", "NAAC A+"]
+    },
+    {
+      "id": "master-pharmacy",
+      "slug": "master-pharmacy",
+      "title": "Master of Pharmacy (M.Pharm)",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "approvals": ["PCI", "UGC", "NAAC A+"],
+      "intake": "40 Students",
+      "mode": "Full-time",
+      "description": "M.Pharm trains students in pharmaceutical sciences, drug design, formulation, and clinical research, enabling careers in pharma R&D, manufacturing, and healthcare.",
+      "specializations": [
+        "Pharmaceutics",
+        "Pharmacology",
+        "Pharmaceutical Chemistry",
+        "Pharmacy Practice"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Advanced Pharmaceutical Chemistry",
+            "Modern Pharmaceutical Analysis",
+            "Pharmaceutical Biotechnology",
+            "Research Methodology",
+            "Biostatistics"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Drug Design & Development",
+            "Clinical Pharmacology",
+            "Pharmaceutical Formulations",
+            "Regulatory Affairs",
+            "Seminar"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Advanced Pharmacology",
+            "Quality Assurance",
+            "Pharmacovigilance",
+            "Elective Subject",
+            "Research Project Phase I"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Industrial Pharmacy",
+            "Clinical Research",
+            "Dissertation",
+            "Research Project Phase II",
+            "Comprehensive Viva"
+          ]
+        }
+      ],
+      "careerProspects": {
+        "jobTitles": ["Pharmacist", "Clinical Researcher", "Drug Analyst"],
+        "averageSalary": "₹6.5 LPA",
+        "placementRate": "88%",
+        "topRecruiters": [
+          { "name": "Dr. Reddy's", "logo": "/companies/drreddys.png" },
+          { "name": "Cipla", "logo": "/companies/cipla.png" },
+          { "name": "Sun Pharma", "logo": "/companies/sunpharma.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2023",
+            "placed": 35,
+            "packages": {
+              "highest": "₹12 LPA",
+              "average": "₹6.5 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": ["B.Pharm with minimum 55% marks"],
+        "entranceExam": "GPAT (preferred)"
+      },
+      "fees": {
+        "tuitionFee": "₹1,20,000/year",
+        "examFee": "₹5,000/year",
+        "otherFees": "₹10,000/year",
+        "totalFee": "₹1,35,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 40% fee waiver",
+        "GPAT fellowship for qualified students",
+        "Research assistantship opportunities",
+        "Industry-sponsored scholarships",
+        "Financial aid for economically weaker sections"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Suresh Gupta",
+          "designation": "Professor",
+          "qualifications": "Ph.D Pharmaceutical Sciences",
+          "specialization": "Pharmacology, Drug Development",
+          "experience": "22+ Years"
+        },
+        {
+          "name": "Dr. Kavita Jain",
+          "designation": "Associate Professor",
+          "qualifications": "M.Pharm, Ph.D",
+          "specialization": "Pharmaceutics, Drug Delivery",
+          "experience": "16+ Years"
+        }
+      ],
+      "facilities": [
+        "Pharmaceutical Labs",
+        "Drug Testing Facilities",
+        "Research Center"
+      ],
+      "accreditations": ["PCI", "UGC", "NAAC A+"]
+    },
+    {
+      "id": "master-business-administration",
+      "slug": "master-business-administration",
+      "title": "Master of Business Administration (MBA)",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "approvals": ["AICTE", "UGC", "NAAC A+"],
+      "intake": "180 Students",
+      "mode": "Full-time",
+      "description": "MBA program provides comprehensive training in management, leadership, and entrepreneurship with multiple specializations.",
+      "specializations": [
+        "Finance",
+        "Marketing",
+        "HR",
+        "Operations",
+        "Business Analytics"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Management Principles",
+            "Organizational Behavior",
+            "Financial Accounting",
+            "Business Economics",
+            "Quantitative Methods"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Marketing Management",
+            "Financial Management",
+            "Human Resource Management",
+            "Operations Management",
+            "Business Communication"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Strategic Management",
+            "International Business",
+            "Entrepreneurship",
+            "Specialization Subjects",
+            "Summer Internship Project"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Business Analytics",
+            "Leadership & Change Management",
+            "Specialization Electives",
+            "Final Project",
+            "Comprehensive Viva"
+          ]
+        }
+      ],
+      "careerProspects": {
+        "jobTitles": [
+          "Business Analyst",
+          "Marketing Manager",
+          "Finance Consultant"
+        ],
+        "averageSalary": "₹9 LPA",
+        "placementRate": "95%",
+        "topRecruiters": [
+          { "name": "Deloitte", "logo": "/companies/deloitte.png" },
+          { "name": "McKinsey", "logo": "/companies/mckinsey.png" },
+          { "name": "HDFC Bank", "logo": "/companies/hdfc.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2023",
+            "placed": 171,
+            "packages": {
+              "highest": "₹25 LPA",
+              "average": "₹9 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": ["Graduation with minimum 50% marks"],
+        "entranceExam": "CAT/MAT/University Entrance"
+      },
+      "fees": {
+        "tuitionFee": "₹2,50,000/year",
+        "examFee": "₹10,000/year",
+        "otherFees": "₹15,000/year",
+        "totalFee": "₹2,75,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 30% fee waiver",
+        "Corporate scholarships and sponsorships",
+        "Financial assistance for deserving candidates",
+        "Alumni scholarships",
+        "Women entrepreneurship scholarships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Arun Sharma",
+          "designation": "Professor & Dean",
+          "qualifications": "Ph.D Management, IIM Bangalore",
+          "specialization": "Strategic Management, Finance",
+          "experience": "25+ Years"
+        },
+        {
+          "name": "Prof. Ritu Agarwal",
+          "designation": "Associate Professor",
+          "qualifications": "MBA, Ph.D",
+          "specialization": "Marketing, Consumer Behavior",
+          "experience": "18+ Years"
+        }
+      ],
+      "facilities": [
+        "Management Labs",
+        "Case Study Rooms",
+        "Corporate Training Center"
+      ],
+      "accreditations": ["AICTE", "UGC", "NAAC A+"]
+    },
+    {
+      "id": "master-commerce",
+      "slug": "master-commerce",
+      "title": "Master of Commerce (M.Com)",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "100 Students",
+      "mode": "Full-time",
+      "description": "M.Com develops advanced knowledge in commerce, finance, and accounting, preparing students for careers in academics, banking, and corporate sectors.",
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Advanced Financial Accounting",
+            "Management Accounting",
+            "Business Economics",
+            "Quantitative Methods",
+            "Commercial Law"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Corporate Finance",
+            "Taxation",
+            "Banking & Insurance",
+            "International Trade",
+            "Business Research Methods"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Financial Markets",
+            "Auditing",
+            "Cost Management",
+            "Elective Subject I",
+            "Project Work Phase I"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Financial Analysis",
+            "Corporate Governance",
+            "Elective Subject II",
+            "Project Work Phase II",
+            "Comprehensive Examination"
+          ]
+        }
+      ],
+      "careerProspects": {
+        "jobTitles": [
+          "Chartered Accountant",
+          "Financial Analyst",
+          "Corporate Accountant"
+        ],
+        "averageSalary": "₹6 LPA",
+        "placementRate": "85%",
+        "topRecruiters": [
+          { "name": "PwC", "logo": "/companies/pwc.png" },
+          { "name": "KPMG", "logo": "/companies/kpmg.png" },
+          { "name": "Ernst & Young", "logo": "/companies/ey.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2023",
+            "placed": 85,
+            "packages": {
+              "highest": "₹12 LPA",
+              "average": "₹6 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": ["B.Com/Equivalent with 50% marks"]
+      },
+      "fees": {
+        "tuitionFee": "₹60,000/year",
+        "examFee": "₹3,000/year",
+        "otherFees": "₹7,000/year",
+        "totalFee": "₹70,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "Professional development scholarships",
+        "Research excellence awards",
+        "Reserved category benefits"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Manoj Kumar",
+          "designation": "Professor",
+          "qualifications": "Ph.D Commerce, Delhi University",
+          "specialization": "Accounting, Finance",
+          "experience": "20+ Years"
+        },
+        {
+          "name": "Prof. Sunita Devi",
+          "designation": "Associate Professor",
+          "qualifications": "M.Com, Ph.D",
+          "specialization": "Banking, Economics",
+          "experience": "14+ Years"
+        }
+      ],
+      "facilities": ["Commerce Labs", "Digital Library", "Research Journals"],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "master-arts",
+      "slug": "master-arts",
+      "title": "Master of Arts (MA)",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "120 Students",
+      "mode": "Full-time",
+      "description": "MA program offers advanced knowledge in humanities and social sciences with specializations such as English, History, Economics, and Political Science.",
+      "specializations": [
+        "English",
+        "History",
+        "Economics",
+        "Political Science",
+        "Psychology"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Research Methodology",
+            "Literary Theory & Criticism",
+            "Ancient History",
+            "Microeconomics",
+            "Political Theory"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Modern Literature",
+            "Medieval History",
+            "Macroeconomics",
+            "Public Administration",
+            "Cognitive Psychology"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Contemporary Literature",
+            "Modern History",
+            "International Economics",
+            "Comparative Politics",
+            "Dissertation Phase I"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Specialized Paper",
+            "Elective Subject",
+            "Field Work",
+            "Dissertation Phase II",
+            "Viva Voce"
+          ]
+        }
+      ],
+      "careerProspects": {
+        "jobTitles": ["Lecturer", "Content Writer", "Research Associate"],
+        "averageSalary": "₹5.5 LPA",
+        "placementRate": "80%",
+        "topRecruiters": [
+          { "name": "Universities", "logo": "/companies/universities.png" },
+          { "name": "Content Agencies", "logo": "/companies/content.png" },
+          { "name": "Research Institutes", "logo": "/companies/research.png" }
+        ],
+        "placementStats": [
+          {
+            "year": "2023",
+            "placed": 96,
+            "packages": {
+              "highest": "₹8 LPA",
+              "average": "₹5.5 LPA"
+            }
+          }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": ["Graduation in relevant field with 50% marks"]
+      },
+      "fees": {
+        "tuitionFee": "₹50,000/year",
+        "examFee": "₹2,000/year",
+        "otherFees": "₹5,000/year",
+        "totalFee": "₹57,000/year"
+      },
+      "scholarships": [
+        "Merit-based scholarships up to 40% fee waiver",
+        "Research fellowships for outstanding students",
+        "Financial aid for economically disadvantaged",
+        "Cultural activity scholarships",
+        "Government scholarships for eligible categories"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Ramesh Chandra",
+          "designation": "Professor",
+          "qualifications": "Ph.D English Literature, JNU",
+          "specialization": "Modern Literature, Linguistics",
+          "experience": "24+ Years"
+        },
+        {
+          "name": "Prof. Shalini Mishra",
+          "designation": "Associate Professor",
+          "qualifications": "M.A, Ph.D History",
+          "specialization": "Ancient History, Archaeology",
+          "experience": "17+ Years"
+        }
+      ],
+      "facilities": ["Language Labs", "Research Center", "Digital Library"],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "msc-mathematics",
+      "slug": "msc-mathematics",
+      "title": "M.Sc Mathematics",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "40 Students",
+      "mode": "Full-time",
+      "description": "Our M.Sc Mathematics program provides advanced study in pure and applied mathematics, preparing students for research careers, higher studies, and specialized roles in academia and industry. The curriculum covers advanced topics in algebra, analysis, topology, differential equations, and mathematical modeling. Students engage in rigorous mathematical research and develop expertise in computational mathematics and statistical analysis.",
+      "highlights": [
+        "Advanced mathematical research opportunities",
+        "Expert faculty with Ph.D qualifications",
+        "Strong foundation for Ph.D and research careers",
+        "Industry collaborations for applied mathematics",
+        "Access to mathematical software and tools",
+        "Regular seminars by renowned mathematicians",
+        "Preparation for competitive examinations like NET/SET",
+        "Interdisciplinary research opportunities"
+      ],
+      "specializations": [
+        "Pure Mathematics",
+        "Applied Mathematics",
+        "Mathematical Statistics",
+        "Computational Mathematics",
+        "Operations Research",
+        "Numerical Analysis",
+        "Mathematical Modeling",
+        "Cryptography"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Real Analysis",
+            "Abstract Algebra",
+            "Linear Algebra",
+            "Topology",
+            "Differential Equations",
+            "Mathematical Methods"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Complex Analysis",
+            "Functional Analysis",
+            "Measure Theory",
+            "Number Theory",
+            "Numerical Methods",
+            "Optimization Techniques"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Differential Geometry",
+            "Partial Differential Equations",
+            "Statistics and Probability",
+            "Operations Research",
+            "Discrete Mathematics",
+            "Elective I"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Mathematical Modeling",
+            "Computational Mathematics",
+            "Advanced Statistics",
+            "Elective II",
+            "Project/Dissertation",
+            "Seminar"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/msc-mathematics-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Research Scientist",
+          "Data Analyst",
+          "Statistical Analyst",
+          "Mathematics Teacher/Professor",
+          "Actuarial Analyst",
+          "Quantitative Analyst",
+          "Operations Research Analyst",
+          "Cryptography Specialist"
+        ],
+        "averageSalary": "₹5.5 LPA",
+        "placementRate": "78%",
+        "topRecruiters": [
+          { "name": "ISRO", "logo": "/companies/isro.png" },
+          { "name": "IBM", "logo": "/companies/ibm.png" },
+          { "name": "TCS Research", "logo": "/companies/tcs.png" },
+          { "name": "SAS Institute", "logo": "/companies/sas.png" }
+        ],
+        "placementStats": [
+          { "year": "2023", "placed": 28, "total": 35, "percentage": "80%" },
+          { "year": "2022", "placed": 25, "total": 32, "percentage": "78%" },
+          { "year": "2021", "placed": 23, "total": 30, "percentage": "77%" }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "B.Sc Mathematics/Statistics with minimum 55% marks",
+          "Must have studied Mathematics as major subject",
+          "Knowledge of calculus and linear algebra required"
+        ],
+        "entranceExam": "University M.Sc Entrance Test + Interview",
+        "ageLimit": "Maximum 28 years"
+      },
+      "fees": {
+        "tuitionFee": "₹55,000/year",
+        "examFee": "₹3,000/year",
+        "otherFees": "₹7,000/year",
+        "totalFee": "₹65,000/year"
+      },
+      "scholarships": [
+        "UGC-NET/JRF fellowships",
+        "Merit-based scholarships up to 40% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Girl student scholarships",
+        "Research assistantships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Rajesh Kumar",
+          "designation": "Professor & Head",
+          "qualification": "Ph.D in Pure Mathematics",
+          "specialization": "Real Analysis, Functional Analysis",
+          "experience": "22+ Years"
+        },
+        {
+          "name": "Dr. Priya Sharma",
+          "designation": "Associate Professor",
+          "qualification": "Ph.D in Applied Mathematics",
+          "specialization": "Numerical Methods, Operations Research",
+          "experience": "16+ Years"
+        },
+        {
+          "name": "Dr. Amit Singh",
+          "designation": "Assistant Professor",
+          "qualification": "Ph.D in Statistics",
+          "specialization": "Mathematical Statistics, Probability Theory",
+          "experience": "12+ Years"
+        },
+        {
+          "name": "Dr. Kavita Gupta",
+          "designation": "Assistant Professor",
+          "qualification": "Ph.D in Computational Mathematics",
+          "specialization": "Mathematical Modeling, Differential Equations",
+          "experience": "10+ Years"
+        }
+      ],
+      "facilities": [
+        "Advanced Computer Lab with mathematical software",
+        "Statistical Software (MATLAB, R, SAS, SPSS)",
+        "Research Library with mathematical journals",
+        "Seminar Hall for academic discussions",
+        "Internet access for online research databases",
+        "Mathematics Laboratory",
+        "Project Development Center"
+      ],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "msc-physics",
+      "slug": "msc-physics",
+      "title": "M.Sc Physics",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "40 Students",
+      "mode": "Full-time",
+      "description": "Our M.Sc Physics program provides advanced theoretical and experimental training in various branches of physics, preparing students for research careers, higher studies, and specialized roles in academia and industry. The curriculum covers quantum mechanics, electromagnetic theory, statistical mechanics, solid state physics, and modern experimental techniques. Students engage in cutting-edge research projects and develop expertise in advanced instrumentation.",
+      "highlights": [
+        "State-of-the-art physics laboratories",
+        "Research opportunities in emerging areas",
+        "Expert faculty with international research experience",
+        "Access to advanced scientific instruments",
+        "Collaboration with national research institutions",
+        "Strong foundation for Ph.D and research careers",
+        "Industry internships in technology companies",
+        "Regular workshops and conferences"
+      ],
+      "specializations": [
+        "Condensed Matter Physics",
+        "Nuclear Physics",
+        "Particle Physics",
+        "Astrophysics",
+        "Quantum Physics",
+        "Materials Science",
+        "Laser Physics",
+        "Medical Physics"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Classical Mechanics",
+            "Electromagnetic Theory",
+            "Quantum Mechanics I",
+            "Mathematical Physics",
+            "Electronics",
+            "Physics Lab I"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Statistical Mechanics",
+            "Quantum Mechanics II",
+            "Solid State Physics",
+            "Nuclear Physics",
+            "Computational Physics",
+            "Physics Lab II"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Advanced Quantum Mechanics",
+            "Particle Physics",
+            "Atomic & Molecular Physics",
+            "Condensed Matter Physics",
+            "Elective I",
+            "Advanced Lab I"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Relativity & Cosmology",
+            "Laser Physics",
+            "Elective II",
+            "Project/Dissertation",
+            "Advanced Lab II",
+            "Seminar"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/msc-physics-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Research Scientist",
+          "Physics Professor",
+          "R&D Engineer",
+          "Nuclear Physicist",
+          "Data Scientist",
+          "Instrumentation Engineer",
+          "Medical Physicist",
+          "Space Scientist"
+        ],
+        "averageSalary": "₹6.2 LPA",
+        "placementRate": "82%",
+        "topRecruiters": [
+          { "name": "BARC", "logo": "/companies/barc.png" },
+          { "name": "DRDO", "logo": "/companies/drdo.png" },
+          { "name": "ISRO", "logo": "/companies/isro.png" },
+          { "name": "TIFR", "logo": "/companies/tifr.png" },
+          { "name": "Intel", "logo": "/companies/intel.png" }
+        ],
+        "placementStats": [
+          { "year": "2023", "placed": 30, "total": 36, "percentage": "83%" },
+          { "year": "2022", "placed": 28, "total": 34, "percentage": "82%" },
+          { "year": "2021", "placed": 26, "total": 32, "percentage": "81%" }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "B.Sc Physics with minimum 55% marks",
+          "Must have studied Physics, Mathematics as major subjects",
+          "Basic knowledge of quantum mechanics and electromagnetism"
+        ],
+        "entranceExam": "University M.Sc Entrance Test + Interview",
+        "ageLimit": "Maximum 28 years"
+      },
+      "fees": {
+        "tuitionFee": "₹65,000/year",
+        "examFee": "₹3,000/year",
+        "otherFees": "₹8,000/year",
+        "totalFee": "₹76,000/year"
+      },
+      "scholarships": [
+        "UGC-NET/JRF fellowships",
+        "INSPIRE fellowships for research",
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Girl student scholarships",
+        "Research assistantships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Suresh Patel",
+          "designation": "Professor & Head",
+          "qualification": "Ph.D in Condensed Matter Physics",
+          "specialization": "Solid State Physics, Material Science",
+          "experience": "25+ Years"
+        },
+        {
+          "name": "Dr. Meera Joshi",
+          "designation": "Associate Professor",
+          "qualification": "Ph.D in Nuclear Physics",
+          "specialization": "Nuclear Reactions, Particle Physics",
+          "experience": "18+ Years"
+        },
+        {
+          "name": "Dr. Vikram Rao",
+          "designation": "Assistant Professor",
+          "qualification": "Ph.D in Astrophysics",
+          "specialization": "Cosmology, General Relativity",
+          "experience": "14+ Years"
+        },
+        {
+          "name": "Dr. Anita Verma",
+          "designation": "Assistant Professor",
+          "qualification": "Ph.D in Laser Physics",
+          "specialization": "Quantum Optics, Laser Applications",
+          "experience": "11+ Years"
+        }
+      ],
+      "facilities": [
+        "Advanced Physics Laboratory with modern equipment",
+        "Laser Lab with various laser systems",
+        "Nuclear Physics Lab with radiation detectors",
+        "Materials Characterization Lab",
+        "Computer Simulation Lab",
+        "High-precision measurement instruments",
+        "Research Library with physics journals",
+        "Clean room facility for sensitive experiments"
+      ],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "msc-chemistry",
+      "slug": "msc-chemistry",
+      "title": "M.Sc Chemistry",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "40 Students",
+      "mode": "Full-time",
+      "description": "Our M.Sc Chemistry program provides comprehensive advanced training in theoretical and practical aspects of chemistry, preparing students for research careers, higher studies, and specialized roles in chemical industries and academia. The curriculum covers organic, inorganic, physical, and analytical chemistry with emphasis on modern synthetic techniques, spectroscopic methods, and computational chemistry.",
+      "highlights": [
+        "Advanced analytical and synthesis laboratories",
+        "Access to modern spectroscopic instruments",
+        "Research opportunities in green chemistry",
+        "Expert faculty with industry and research experience",
+        "Collaboration with pharmaceutical companies",
+        "Strong foundation for Ph.D and research careers",
+        "Industry internships and projects",
+        "Regular seminars and workshops"
+      ],
+      "specializations": [
+        "Organic Chemistry",
+        "Inorganic Chemistry",
+        "Physical Chemistry",
+        "Analytical Chemistry",
+        "Medicinal Chemistry",
+        "Environmental Chemistry",
+        "Polymer Chemistry",
+        "Computational Chemistry"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Advanced Organic Chemistry",
+            "Advanced Inorganic Chemistry",
+            "Advanced Physical Chemistry",
+            "Spectroscopic Methods",
+            "Mathematical Chemistry",
+            "Chemistry Lab I"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Organometallic Chemistry",
+            "Coordination Chemistry",
+            "Chemical Kinetics",
+            "Analytical Chemistry",
+            "Computational Chemistry",
+            "Chemistry Lab II"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Medicinal Chemistry",
+            "Environmental Chemistry",
+            "Polymer Chemistry",
+            "Advanced Analytical Techniques",
+            "Elective I",
+            "Advanced Lab I"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Green Chemistry",
+            "Industrial Chemistry",
+            "Elective II",
+            "Project/Dissertation",
+            "Advanced Lab II",
+            "Seminar"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/msc-chemistry-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Research Scientist",
+          "Quality Control Analyst",
+          "Product Development Chemist",
+          "Analytical Chemist",
+          "Chemistry Professor",
+          "Environmental Chemist",
+          "Pharmaceutical Scientist",
+          "Materials Scientist"
+        ],
+        "averageSalary": "₹5.8 LPA",
+        "placementRate": "85%",
+        "topRecruiters": [
+          { "name": "Dr. Reddy's Labs", "logo": "/companies/drreddy.png" },
+          { "name": "CIPLA", "logo": "/companies/cipla.png" },
+          { "name": "Reliance Industries", "logo": "/companies/reliance.png" },
+          { "name": "ONGC", "logo": "/companies/ongc.png" },
+          { "name": "BARC", "logo": "/companies/barc.png" }
+        ],
+        "placementStats": [
+          { "year": "2023", "placed": 32, "total": 38, "percentage": "84%" },
+          { "year": "2022", "placed": 30, "total": 35, "percentage": "86%" },
+          { "year": "2021", "placed": 28, "total": 33, "percentage": "85%" }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "B.Sc Chemistry with minimum 55% marks",
+          "Must have studied Chemistry as major subject",
+          "Basic knowledge of organic, inorganic, and physical chemistry"
+        ],
+        "entranceExam": "University M.Sc Entrance Test + Interview",
+        "ageLimit": "Maximum 28 years"
+      },
+      "fees": {
+        "tuitionFee": "₹60,000/year",
+        "examFee": "₹3,000/year",
+        "otherFees": "₹8,000/year",
+        "totalFee": "₹71,000/year"
+      },
+      "scholarships": [
+        "UGC-NET/JRF fellowships",
+        "INSPIRE fellowships for research",
+        "Merit-based scholarships up to 50% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Girl student scholarships",
+        "Industry-sponsored research fellowships"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Ramesh Chandra",
+          "designation": "Professor & Head",
+          "qualification": "Ph.D in Organic Chemistry",
+          "specialization": "Synthetic Organic Chemistry, Natural Products",
+          "experience": "24+ Years"
+        },
+        {
+          "name": "Dr. Sunita Agarwal",
+          "designation": "Associate Professor",
+          "qualification": "Ph.D in Inorganic Chemistry",
+          "specialization": "Coordination Chemistry, Organometallics",
+          "experience": "19+ Years"
+        },
+        {
+          "name": "Dr. Manoj Kumar",
+          "designation": "Assistant Professor",
+          "qualification": "Ph.D in Physical Chemistry",
+          "specialization": "Chemical Kinetics, Spectroscopy",
+          "experience": "15+ Years"
+        },
+        {
+          "name": "Dr. Pooja Sharma",
+          "designation": "Assistant Professor",
+          "qualification": "Ph.D in Analytical Chemistry",
+          "specialization": "Environmental Analysis, Chromatography",
+          "experience": "12+ Years"
+        }
+      ],
+      "facilities": [
+        "Advanced Organic Synthesis Laboratory",
+        "Inorganic Preparation Laboratory",
+        "Physical Chemistry Lab with modern instruments",
+        "Analytical Chemistry Lab with HPLC, GC-MS",
+        "Spectroscopy Lab (NMR, IR, UV-Vis)",
+        "Computational Chemistry Lab",
+        "Chemical Store with safety protocols",
+        "Research Library with chemistry journals"
+      ],
+      "accreditations": ["UGC", "NAAC A+"]
+    },
+    {
+      "id": "master-education",
+      "slug": "master-education",
+      "title": "Master of Education (M.Ed)",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "approvals": ["NCTE", "UGC", "NAAC A+"],
+      "intake": "50 Students",
+      "mode": "Full-time",
+      "description": "Our M.Ed program is designed for practicing teachers and education professionals seeking advanced knowledge in educational theory, research, and administration. The curriculum focuses on educational psychology, curriculum development, educational management, and research methodology. Students develop expertise in educational leadership, policy analysis, and innovative teaching methodologies.",
+      "highlights": [
+        "Advanced educational research opportunities",
+        "Expert faculty with educational administration experience",
+        "Focus on educational leadership and management",
+        "Collaboration with schools and educational institutions",
+        "Strong foundation for educational policy and administration",
+        "Preparation for Ph.D in Education",
+        "Regular workshops on modern teaching methods",
+        "Field work and practical training"
+      ],
+      "specializations": [
+        "Educational Administration",
+        "Curriculum and Instruction",
+        "Educational Psychology",
+        "Educational Technology",
+        "Special Education",
+        "Educational Measurement and Evaluation",
+        "Teacher Education",
+        "Educational Research"
+      ],
+      "curriculum": [
+        {
+          "semester": "Semester 1",
+          "subjects": [
+            "Advanced Educational Psychology",
+            "Philosophy of Education",
+            "Sociology of Education",
+            "Educational Research Methodology",
+            "Curriculum Development",
+            "Educational Statistics"
+          ]
+        },
+        {
+          "semester": "Semester 2",
+          "subjects": [
+            "Educational Administration and Management",
+            "Educational Technology",
+            "Measurement and Evaluation",
+            "Comparative Education",
+            "Educational Planning",
+            "Research Project I"
+          ]
+        },
+        {
+          "semester": "Semester 3",
+          "subjects": [
+            "Educational Leadership",
+            "Special Education",
+            "Teacher Education",
+            "Educational Policy",
+            "Elective I",
+            "Field Work"
+          ]
+        },
+        {
+          "semester": "Semester 4",
+          "subjects": [
+            "Educational Innovation",
+            "Guidance and Counseling",
+            "Elective II",
+            "Dissertation",
+            "Internship",
+            "Seminar"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/med-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Educational Administrator",
+          "Principal/Vice Principal",
+          "Curriculum Developer",
+          "Educational Consultant",
+          "Education Officer",
+          "Training and Development Manager",
+          "Educational Researcher",
+          "Education Policy Analyst"
+        ],
+        "averageSalary": "₹6.5 LPA",
+        "placementRate": "88%",
+        "topRecruiters": [
+          { "name": "CBSE", "logo": "/companies/cbse.png" },
+          { "name": "NCERT", "logo": "/companies/ncert.png" },
+          { "name": "Pearson Education", "logo": "/companies/pearson.png" },
+          { "name": "BYJU'S", "logo": "/companies/byjus.png" },
+          { "name": "Unacademy", "logo": "/companies/unacademy.png" }
+        ],
+        "placementStats": [
+          { "year": "2023", "placed": 42, "total": 48, "percentage": "88%" },
+          { "year": "2022", "placed": 40, "total": 45, "percentage": "89%" },
+          { "year": "2021", "placed": 38, "total": 43, "percentage": "88%" }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "B.Ed degree with minimum 55% marks",
+          "Minimum 2 years teaching experience preferred",
+          "Bachelor's degree in any discipline"
+        ],
+        "entranceExam": "University M.Ed Entrance Test + Interview",
+        "ageLimit": "Maximum 35 years"
+      },
+      "fees": {
+        "tuitionFee": "₹70,000/year",
+        "examFee": "₹3,500/year",
+        "otherFees": "₹8,500/year",
+        "totalFee": "₹82,000/year"
+      },
+      "scholarships": [
+        "UGC-NET/JRF fellowships in Education",
+        "Teacher training scholarships",
+        "Merit-based scholarships up to 40% fee waiver",
+        "Need-based financial assistance",
+        "SC/ST/OBC category scholarships",
+        "Women in education scholarships",
+        "Government teacher development grants"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Indira Sharma",
+          "designation": "Professor & Head",
+          "qualification": "Ph.D in Educational Administration",
+          "specialization": "Educational Leadership, School Management",
+          "experience": "28+ Years"
+        },
+        {
+          "name": "Dr. Rajesh Mishra",
+          "designation": "Associate Professor",
+          "qualification": "Ph.D in Educational Psychology",
+          "specialization": "Child Development, Learning Psychology",
+          "experience": "22+ Years"
+        },
+        {
+          "name": "Dr. Sushma Gupta",
+          "designation": "Assistant Professor",
+          "qualification": "Ph.D in Curriculum Studies",
+          "specialization": "Curriculum Development, Instructional Design",
+          "experience": "16+ Years"
+        },
+        {
+          "name": "Dr. Amit Khanna",
+          "designation": "Assistant Professor",
+          "qualification": "Ph.D in Educational Technology",
+          "specialization": "E-learning, Digital Education",
+          "experience": "13+ Years"
+        }
+      ],
+      "facilities": [
+        "Educational Psychology Laboratory",
+        "Teaching Aids Development Center",
+        "Computer Lab with educational software",
+        "Audio-Visual Production Unit",
+        "Research Library with education journals",
+        "Seminar Hall for conferences",
+        "Practice Teaching Schools",
+        "Educational Technology Lab"
+      ],
+      "accreditations": ["NCTE", "UGC", "NAAC A+"]
+    },
+    {
+      "id": "phd-management",
+      "slug": "phd-management",
+      "title": "Ph.D Management",
+      "level": "Doctoral",
+      "duration": "3-5 Years",
+      "approvals": ["UGC", "NAAC A+"],
+      "intake": "20 Students",
+      "mode": "Full-time/Part-time",
+      "description": "Our Ph.D in Management program is designed for aspiring researchers and academics who want to contribute to the advancement of management knowledge. The program emphasizes rigorous research methodology, theoretical foundations, and practical applications in various management domains. Students work closely with experienced faculty mentors to conduct original research that addresses contemporary business challenges and contributes to academic literature.",
+      "highlights": [
+        "Research-intensive program with experienced mentors",
+        "Opportunities to publish in international journals",
+        "Access to extensive business databases and resources",
+        "Collaboration with industry for applied research",
+        "Regular research seminars and conferences",
+        "Financial support through research assistantships",
+        "International research collaboration opportunities",
+        "Preparation for academic and consulting careers"
+      ],
+      "specializations": [
+        "Strategic Management",
+        "Human Resource Management",
+        "Marketing Management",
+        "Financial Management",
+        "Operations Management",
+        "Organizational Behavior",
+        "International Business",
+        "Entrepreneurship"
+      ],
+      "curriculum": [
+        {
+          "year": "Year 1",
+          "subjects": [
+            "Research Methodology in Management",
+            "Advanced Statistics and Data Analysis",
+            "Management Theory and Practice",
+            "Literature Review and Research Proposal",
+            "Specialization Core Courses",
+            "Research Ethics and Academic Writing"
+          ]
+        },
+        {
+          "year": "Year 2",
+          "subjects": [
+            "Advanced Research Methods",
+            "Quantitative and Qualitative Analysis",
+            "Comprehensive Examination",
+            "Research Proposal Defense",
+            "Teaching Assistantship",
+            "Conference Presentations"
+          ]
+        },
+        {
+          "year": "Year 3-5",
+          "subjects": [
+            "Dissertation Research",
+            "Data Collection and Analysis",
+            "Regular Progress Reviews",
+            "Publication Activities",
+            "Teaching Experience",
+            "Final Dissertation Defense"
+          ]
+        }
+      ],
+      "syllabusDownload": "/downloads/phd-management-syllabus.pdf",
+      "careerProspects": {
+        "jobTitles": [
+          "Assistant Professor",
+          "Research Scientist",
+          "Management Consultant",
+          "Policy Analyst",
+          "Business Research Manager",
+          "Strategy Consultant",
+          "Corporate Trainer",
+          "Think Tank Researcher"
+        ],
+        "averageSalary": "₹12.0 LPA",
+        "placementRate": "95%",
+        "topRecruiters": [
+          { "name": "IIMs", "logo": "/companies/iim.png" },
+          { "name": "McKinsey & Company", "logo": "/companies/mckinsey.png" },
+          { "name": "Deloitte", "logo": "/companies/deloitte.png" },
+          { "name": "KPMG", "logo": "/companies/kpmg.png" },
+          { "name": "Boston Consulting Group", "logo": "/companies/bcg.png" }
+        ],
+        "placementStats": [
+          { "year": "2023", "placed": 18, "total": 19, "percentage": "95%" },
+          { "year": "2022", "placed": 16, "total": 17, "percentage": "94%" },
+          { "year": "2021", "placed": 15, "total": 16, "percentage": "94%" }
+        ]
+      },
+      "eligibility": {
+        "academicRequirements": [
+          "Master's degree in Management/Business Administration with minimum 55% marks",
+          "UGC-NET/JRF in Management or equivalent qualification",
+          "Strong research aptitude and analytical skills",
+          "Proficiency in English and academic writing"
+        ],
+        "entranceExam": "University Ph.D Entrance Test + Interview + Research Proposal",
+        "ageLimit": "Maximum 35 years (relaxation for reserved categories)"
+      },
+      "fees": {
+        "tuitionFee": "₹80,000/year",
+        "examFee": "₹5,000/year",
+        "otherFees": "₹15,000/year",
+        "totalFee": "₹1,00,000/year"
+      },
+      "scholarships": [
+        "UGC-JRF fellowships (₹31,000/month + HRA)",
+        "University research fellowships",
+        "Industry-sponsored research grants",
+        "Merit-based fee waivers",
+        "International conference support",
+        "Publication incentives",
+        "Teaching assistantship stipends"
+      ],
+      "faculty": [
+        {
+          "name": "Dr. Anil Kumar Jain",
+          "designation": "Professor & Research Supervisor",
+          "qualification": "Ph.D in Strategic Management, MBA",
+          "specialization": "Strategic Management, Corporate Governance",
+          "experience": "25+ Years",
+          "publications": "50+ International Publications"
+        },
+        {
+          "name": "Dr. Priya Malhotra",
+          "designation": "Professor & Research Supervisor",
+          "qualification": "Ph.D in Human Resource Management",
+          "specialization": "Organizational Behavior, HR Analytics",
+          "experience": "22+ Years",
+          "publications": "45+ International Publications"
+        },
+        {
+          "name": "Dr. Vikash Gupta",
+          "designation": "Associate Professor",
+          "qualification": "Ph.D in Marketing Management",
+          "specialization": "Digital Marketing, Consumer Behavior",
+          "experience": "18+ Years",
+          "publications": "35+ International Publications"
+        },
+        {
+          "name": "Dr. Ritu Sharma",
+          "designation": "Associate Professor",
+          "qualification": "Ph.D in Financial Management",
+          "specialization": "Corporate Finance, Investment Analysis",
+          "experience": "16+ Years",
+          "publications": "30+ International Publications"
+        }
+      ],
+      "facilities": [
+        "Dedicated research labs with advanced analytics software",
+        "Access to international business databases (Bloomberg, Reuters)",
+        "High-speed internet and computing facilities",
+        "Research library with extensive management collection",
+        "Conference halls for research presentations",
+        "Statistical software (SPSS, R, Python, STATA)",
+        "Individual research cubicles for scholars",
+        "International journal access and publication support"
+      ],
+      "accreditations": ["UGC", "NAAC A+"]
     }
   ]
 }

@@ -252,7 +252,7 @@ const allPrograms = [
     fees: "₹70,000/year",
     eligibility: "Graduation Required",
     featured: false,
-    slug: "bed",
+    slug: "bachelor-education",
   },
   {
     id: "bped",
@@ -265,7 +265,7 @@ const allPrograms = [
     fees: "₹80,000/year",
     eligibility: "12th Any Stream",
     featured: false,
-    slug: "bped",
+    slug: "bachelor-physical-education",
   },
 
   // Postgraduate Programs
@@ -280,7 +280,7 @@ const allPrograms = [
     fees: "₹1,80,000/year",
     eligibility: "B.Tech/B.E. with GATE",
     featured: true,
-    slug: "mtech",
+    slug: "master-technology",
   },
   {
     id: "mca",
@@ -293,7 +293,7 @@ const allPrograms = [
     fees: "₹1,40,000/year",
     eligibility: "BCA/B.Sc IT/Graduation with Math",
     featured: true,
-    slug: "mca",
+    slug: "master-computer-applications",
   },
   {
     id: "mpharm",
@@ -306,7 +306,7 @@ const allPrograms = [
     fees: "₹2,00,000/year",
     eligibility: "B.Pharm with GPAT",
     featured: false,
-    slug: "mpharm",
+    slug: "master-pharmacy",
   },
   {
     id: "mba",
@@ -319,7 +319,7 @@ const allPrograms = [
     fees: "₹3,85,000/year",
     eligibility: "Graduation with CAT/MAT/XAT",
     featured: true,
-    slug: "mba",
+    slug: "master-business-administration",
   },
   {
     id: "mcom",
@@ -332,7 +332,7 @@ const allPrograms = [
     fees: "₹80,000/year",
     eligibility: "B.Com/Graduation",
     featured: false,
-    slug: "mcom",
+    slug: "master-commerce",
   },
   {
     id: "ma",
@@ -345,7 +345,7 @@ const allPrograms = [
     fees: "₹60,000/year",
     eligibility: "BA/Graduation",
     featured: false,
-    slug: "ma",
+    slug: "master-arts",
   },
   {
     id: "msc-math",

@@ -11,6 +11,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuItem,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
 } from "@/components/ui/dropdown-menu";
 import {
   Menu,
@@ -26,7 +29,9 @@ import {
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [expandedMobileMenu, setExpandedMobileMenu] = useState<string | null>(null);
+  const [expandedMobileMenu, setExpandedMobileMenu] = useState<string | null>(
+    null
+  );
 
   const toggleMobileSubmenu = (menu: string) => {
     setExpandedMobileMenu(expandedMobileMenu === menu ? null : menu);
@@ -35,25 +40,48 @@ const Header = () => {
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
-    
+
     // Cleanup function to reset overflow when component unmounts
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     };
   }, [isMobileMenuOpen]);
 
   const megaMenuData = {
     about: [
-      { name: "About FS University", href: "/about" },
-      { name: "Mission & Vision", href: "/about#mission-vision" },
-      { name: "Leadership", href: "/about#leadership" },
-      { name: "Accreditations & Rankings", href: "/about#accreditations" },
-      { name: "History & Milestones", href: "/about#history" },
+      {
+        name: "Leadership",
+        href: "#",
+        isSubmenu: true,
+        submenu: [
+          { name: "Hon'ble Governor", href: "/leadership/governor" },
+          { name: "Chancellor's Message", href: "/leadership/chancellor" },
+          {
+            name: "Pro Chancellor's Message",
+            href: "/leadership/pro-chancellor",
+          },
+          { name: "Trustee Message", href: "/leadership/trustee" },
+          { name: "Trustee's Message", href: "/leadership/trustees" },
+          { name: "Secretary's Message", href: "/leadership/secretary" },
+          {
+            name: "Vice Chancellor Message",
+            href: "/leadership/vice-chancellor",
+          },
+          {
+            name: "Director General's Message",
+            href: "/leadership/director-general",
+          },
+        ],
+      },
+      { name: "Our History", href: "/about/history" },
+      { name: "Mission & Vision", href: "/about/mission-vision" },
+      { name: "Accreditations & Rankings", href: "/about/accreditations" },
       { name: "Campus Tour", href: "/about/campus-tour" },
+      { name: "About FS University", href: "/about" },
     ],
     admissions: [
       { name: "Admissions Overview", href: "/admissions" },
@@ -261,10 +289,10 @@ const Header = () => {
                     <ChevronDown className="w-4 h-4" />
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="start" className="w-64">
+                <DropdownMenuContent align="start" className="w-80">
                   <DropdownMenuLabel>About FS University</DropdownMenuLabel>
                   <DropdownMenuSeparator />
-                  {megaMenuData.about.map((item) => (
+                  {megaMenuData.about.slice(1).map((item) => (
                     <DropdownMenuItem
                       key={item.name}
                       asChild
@@ -275,6 +303,42 @@ const Header = () => {
                       </Link>
                     </DropdownMenuItem>
                   ))}
+                  <DropdownMenuSeparator />
+                  <DropdownMenuLabel>University Leadership</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  {megaMenuData.about[0].isSubmenu ? (
+                    <DropdownMenuSub>
+                      <DropdownMenuSubTrigger className="hover:bg-[var(--fsu-crimson)] hover:text-white focus:bg-[var(--fsu-crimson)] focus:text-white">
+                        {megaMenuData.about[0].name}
+                      </DropdownMenuSubTrigger>
+                      <DropdownMenuSubContent>
+                        {megaMenuData.about[0].submenu?.map((subItem) => (
+                          <DropdownMenuItem
+                            key={subItem.name}
+                            asChild
+                            className="hover:bg-[var(--fsu-crimson)] hover:text-white focus:bg-[var(--fsu-crimson)] focus:text-white"
+                          >
+                            <Link href={subItem.href} className="w-full">
+                              {subItem.name}
+                            </Link>
+                          </DropdownMenuItem>
+                        ))}
+                      </DropdownMenuSubContent>
+                    </DropdownMenuSub>
+                  ) : (
+                    <DropdownMenuItem
+                      key={megaMenuData.about[0].name}
+                      asChild
+                      className="hover:bg-[var(--fsu-crimson)] hover:text-white focus:bg-[var(--fsu-crimson)] focus:text-white"
+                    >
+                      <Link
+                        href={megaMenuData.about[0].href}
+                        className="w-full"
+                      >
+                        {megaMenuData.about[0].name}
+                      </Link>
+                    </DropdownMenuItem>
+                  )}
                 </DropdownMenuContent>
               </DropdownMenu>
 
@@ -541,8 +605,9 @@ const Header = () => {
                 </div>
 
                 {/* Menu Content */}
-                <div className="flex-1 overflow-y-auto p-4">
-                  <nav className="space-y-2">
+                <div className="flex-1 overflow-y-auto p-4 max-h-[calc(100vh-200px)] mobile-menu-scroll">
+                  <nav className="space-y-2 pb-4">
+                    {/* Extra bottom padding for better scrolling */}
                     {/* About Us */}
                     <div className="border border-gray-200 rounded-xl overflow-hidden">
                       <button
@@ -560,16 +625,37 @@ const Header = () => {
                       </button>
                       {expandedMobileMenu === "about" && (
                         <div className="border-t border-gray-200 bg-gray-50">
-                          {megaMenuData.about.map((item, index) => (
-                            <Link
-                              key={index}
-                              href={item.href}
-                              className="block px-6 py-3 text-sm text-gray-700 hover:bg-white hover:text-[var(--fsu-crimson)] transition-colors border-b border-gray-100 last:border-b-0"
-                              onClick={() => setIsMobileMenuOpen(false)}
-                            >
-                              {item.name}
-                            </Link>
-                          ))}
+                          {megaMenuData.about.map((item, index) =>
+                            item.isSubmenu ? (
+                              <div
+                                key={index}
+                                className="border-b border-gray-100 last:border-b-0"
+                              >
+                                <div className="px-6 py-3 font-medium text-gray-900 bg-gray-100">
+                                  {item.name}
+                                </div>
+                                {item.submenu?.map((subItem, subIndex) => (
+                                  <Link
+                                    key={subIndex}
+                                    href={subItem.href}
+                                    className="block px-8 py-2 text-sm text-gray-600 hover:bg-white hover:text-[var(--fsu-crimson)] transition-colors"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {subItem.name}
+                                  </Link>
+                                ))}
+                              </div>
+                            ) : (
+                              <Link
+                                key={index}
+                                href={item.href}
+                                className="block px-6 py-3 text-sm text-gray-700 hover:bg-white hover:text-[var(--fsu-crimson)] transition-colors border-b border-gray-100 last:border-b-0"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                              >
+                                {item.name}
+                              </Link>
+                            )
+                          )}
                         </div>
                       )}
                     </div>
@@ -678,94 +764,94 @@ const Header = () => {
                     >
                       Notice Board
                     </Link>
-                  </nav>
-                </div>
 
-                {/* Bottom Action Section */}
-                <div className="p-4 border-t border-gray-200 bg-gray-50 space-y-4">
-                  {/* Primary CTA */}
-                  <Button
-                    className="w-full bg-gradient-to-r from-[var(--fsu-crimson)] to-[var(--fsu-maroon)] text-white hover:from-[var(--fsu-maroon)] hover:to-[var(--fsu-crimson)] font-semibold py-4 text-base rounded-xl shadow-lg"
-                    asChild
-                  >
-                    <Link
-                      href="/apply"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      🎓 Apply Now
-                    </Link>
-                  </Button>
+                    {/* Bottom Action Section - Now inside scrollable area */}
+                    <div className="mt-6 pt-6 border-t border-gray-200 space-y-4">
+                      {/* Primary CTA */}
+                      <Button
+                        className="w-full bg-gradient-to-r from-[var(--fsu-crimson)] to-[var(--fsu-maroon)] text-white hover:from-[var(--fsu-maroon)] hover:to-[var(--fsu-crimson)] font-semibold py-4 text-base rounded-xl shadow-lg"
+                        asChild
+                      >
+                        <Link
+                          href="/apply"
+                          onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                          🎓 Apply Now
+                        </Link>
+                      </Button>
 
-                  {/* Portal Access */}
-                  <div className="grid grid-cols-2 gap-3">
-                    <Button
-                      variant="outline"
-                      className="border-[var(--fsu-crimson)] text-[var(--fsu-crimson)] hover:bg-[var(--fsu-crimson)] hover:text-white py-3 text-sm rounded-xl transition-all duration-200"
-                      asChild
-                    >
-                      <Link
-                        href="/student-portal"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                      >
-                        <User className="w-4 h-4 mr-2" />
-                        Student Portal
-                      </Link>
-                    </Button>
-                    <Button
-                      variant="outline"
-                      className="border-[var(--fsu-crimson)] text-[var(--fsu-crimson)] hover:bg-[var(--fsu-crimson)] hover:text-white py-3 text-sm rounded-xl transition-all duration-200"
-                      asChild
-                    >
-                      <Link
-                        href="/faculty-portal"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                      >
-                        <GraduationCap className="w-4 h-4 mr-2" />
-                        Faculty Portal
-                      </Link>
-                    </Button>
-                  </div>
+                      {/* Portal Access */}
+                      <div className="grid grid-cols-2 gap-3">
+                        <Button
+                          variant="outline"
+                          className="border-[var(--fsu-crimson)] text-[var(--fsu-crimson)] hover:bg-[var(--fsu-crimson)] hover:text-white py-3 text-sm rounded-xl transition-all duration-200"
+                          asChild
+                        >
+                          <Link
+                            href="/student-portal"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                            <User className="w-4 h-4 mr-2" />
+                            Student Portal
+                          </Link>
+                        </Button>
+                        <Button
+                          variant="outline"
+                          className="border-[var(--fsu-crimson)] text-[var(--fsu-crimson)] hover:bg-[var(--fsu-crimson)] hover:text-white py-3 text-sm rounded-xl transition-all duration-200"
+                          asChild
+                        >
+                          <Link
+                            href="/faculty-portal"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                            <GraduationCap className="w-4 h-4 mr-2" />
+                            Faculty Portal
+                          </Link>
+                        </Button>
+                      </div>
 
-                  {/* Contact Information */}
-                  <div className="pt-4 border-t border-gray-300">
-                    <h4 className="font-semibold text-gray-900 mb-3 text-sm">
-                      Quick Contact
-                    </h4>
-                    <div className="space-y-3">
-                      <a
-                        href="tel:+915694252525"
-                        className="flex items-center p-3 bg-white rounded-lg hover:bg-gray-100 transition-colors"
-                      >
-                        <div className="w-10 h-10 bg-[var(--fsu-crimson)] rounded-lg flex items-center justify-center mr-3">
-                          <Phone className="w-5 h-5 text-white" />
+                      {/* Contact Information */}
+                      <div className="pt-4 border-t border-gray-300">
+                        <h4 className="font-semibold text-gray-900 mb-3 text-sm">
+                          Quick Contact
+                        </h4>
+                        <div className="space-y-3">
+                          <a
+                            href="tel:+915694252525"
+                            className="flex items-center p-3 bg-white rounded-lg hover:bg-gray-100 transition-colors"
+                          >
+                            <div className="w-10 h-10 bg-[var(--fsu-crimson)] rounded-lg flex items-center justify-center mr-3">
+                              <Phone className="w-5 h-5 text-white" />
+                            </div>
+                            <div>
+                              <p className="text-sm font-medium text-gray-900">
+                                Call Us
+                              </p>
+                              <p className="text-xs text-gray-600">
+                                +91-5694-252525
+                              </p>
+                            </div>
+                          </a>
+                          <a
+                            href="mailto:info@fsuniversity.edu.in"
+                            className="flex items-center p-3 bg-white rounded-lg hover:bg-gray-100 transition-colors"
+                          >
+                            <div className="w-10 h-10 bg-[var(--fsu-crimson)] rounded-lg flex items-center justify-center mr-3">
+                              <Mail className="w-5 h-5 text-white" />
+                            </div>
+                            <div>
+                              <p className="text-sm font-medium text-gray-900">
+                                Email Us
+                              </p>
+                              <p className="text-xs text-gray-600">
+                                info@fsuniversity.edu.in
+                              </p>
+                            </div>
+                          </a>
                         </div>
-                        <div>
-                          <p className="text-sm font-medium text-gray-900">
-                            Call Us
-                          </p>
-                          <p className="text-xs text-gray-600">
-                            +91-5694-252525
-                          </p>
-                        </div>
-                      </a>
-                      <a
-                        href="mailto:info@fsuniversity.edu.in"
-                        className="flex items-center p-3 bg-white rounded-lg hover:bg-gray-100 transition-colors"
-                      >
-                        <div className="w-10 h-10 bg-[var(--fsu-crimson)] rounded-lg flex items-center justify-center mr-3">
-                          <Mail className="w-5 h-5 text-white" />
-                        </div>
-                        <div>
-                          <p className="text-sm font-medium text-gray-900">
-                            Email Us
-                          </p>
-                          <p className="text-xs text-gray-600">
-                            info@fsuniversity.edu.in
-                          </p>
-                        </div>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </nav>
                 </div>
               </div>
             </div>

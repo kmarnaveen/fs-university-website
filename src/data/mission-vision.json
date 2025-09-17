@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "title": "Vision",
+    "visionStatement": "To be a globally recognized institution of higher learning that transforms lives through innovative education, cutting-edge research, and community engagement, empowering students to become leaders who shape a better future for humanity.",
+    "badge": "Inspiring Excellence Since 2004"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "statements": [
+      "FS University is committed to providing world-class education that combines academic rigor with practical application, fostering critical thinking, creativity, and ethical leadership.",
+      "We strive to create an inclusive learning environment where students from diverse backgrounds can thrive, pursue their passions, and develop the skills necessary to address global challenges.",
+      "Through innovative teaching methodologies, cutting-edge research, and strong industry partnerships, we prepare our graduates to excel in their chosen fields and contribute meaningfully to society."
+    ]
+  },
+  "coreValues": [
+    {
+      "title": "Integrity",
+      "description": "Upholding the highest ethical standards in all our endeavors",
+      "icon": "Heart"
+    },
+    {
+      "title": "Innovation",
+      "description": "Fostering creativity and cutting-edge research",
+      "icon": "Lightbulb"
+    },
+    {
+      "title": "Community",
+      "description": "Building strong bonds within our academic family",
+      "icon": "Users"
+    },
+    {
+      "title": "Excellence",
+      "description": "Pursuing the highest quality in education and research",
+      "icon": "Award"
+    },
+    {
+      "title": "Global Perspective",
+      "description": "Preparing students for a connected world",
+      "icon": "Globe"
+    },
+    {
+      "title": "Lifelong Learning",
+      "description": "Cultivating a passion for continuous growth",
+      "icon": "BookOpen"
+    }
+  ],
+  "cta": {
+    "title": "Ready to Be Part of Our Vision?",
+    "description": "Join a community dedicated to excellence, innovation, and making a positive impact on the world.",
+    "primaryButton": {
+      "text": "Start Your Journey",
+      "href": "/apply"
+    },
+    "secondaryButton": {
+      "text": "Explore Programs",
+      "href": "/programs"
+    }
+  }
+}

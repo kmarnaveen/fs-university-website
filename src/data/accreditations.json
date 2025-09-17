@@ -1,0 +1,160 @@
+{
+  "hero": {
+    "title": "Accreditations & Rankings",
+    "subtitle": "Committed to the Highest Standards of Academic Excellence",
+    "badge": "Trusted • Verified • Recognized"
+  },
+  "accreditations": {
+    "title": "Official Accreditations",
+    "description": "Our programs are recognized and approved by the most prestigious regulatory bodies in India, ensuring quality education and global recognition.",
+    "items": [
+      {
+        "id": "ugc",
+        "name": "University Grants Commission",
+        "acronym": "UGC",
+        "description": "Recognized by UGC under Section 2(f) and 12(B)",
+        "logo": "https://fsu.edu.in/wp-content/uploads/2025/05/UGC_India_Logo.png",
+        "color": "#1E3A8A",
+        "documentLink": "/documents/ugc-recognition.pdf"
+      },
+      {
+        "id": "aicte",
+        "name": "All India Council for Technical Education",
+        "acronym": "AICTE",
+        "description": "Approved for Engineering and Management programs",
+        "logo": "https://fsu.edu.in/wp-content/uploads/2025/05/images.png",
+        "color": "#059669",
+        "documentLink": "/documents/aicte-approval.pdf"
+      },
+      {
+        "id": "bci",
+        "name": "Bar Council of India",
+        "acronym": "BCI",
+        "description": "Approved for Law programs",
+        "logo": "https://fsu.edu.in/wp-content/uploads/2025/03/Bar-Council-of-India-BCI.png",
+        "color": "#DC2626",
+        "documentLink": "/documents/bci-approval.pdf"
+      },
+      {
+        "id": "pci",
+        "name": "Pharmacy Council of India",
+        "acronym": "PCI",
+        "description": "Approved for Pharmacy programs",
+        "logo": "https://fsu.edu.in/wp-content/uploads/2025/03/Pharmacy-Council-of-India-PCI.jpg",
+        "color": "#7C3AED",
+        "documentLink": "/documents/pci-approval.pdf"
+      },
+      {
+        "id": "ncte",
+        "name": "National Council for Teacher Education",
+        "acronym": "NCTE",
+        "description": "Approved for Education programs",
+        "logo": "https://fsu.edu.in/wp-content/uploads/2025/03/National-Council-for-Teacher-Education-NCTE.jpg",
+        "color": "#EA580C",
+        "documentLink": "/documents/ncte-approval.pdf"
+      },
+      {
+        "id": "inc",
+        "name": "Indian Nursing Council",
+        "acronym": "INC",
+        "description": "Approved for Nursing programs",
+        "logo": "https://fsu.edu.in/wp-content/uploads/2025/03/Indian-Nursing-Council-INC.jpg",
+        "color": "#0891B2",
+        "documentLink": "/documents/inc-approval.pdf"
+      },
+      {
+        "id": "ccim",
+        "name": "Central Council of Indian Medicine",
+        "acronym": "CCIM",
+        "description": "Approved for Ayurveda and traditional medicine programs",
+        "logo": "https://fsu.edu.in/wp-content/uploads/2025/03/Central-Council-of-Indian-Medicine.jpg",
+        "color": "#16A34A",
+        "documentLink": "/documents/ccim-approval.pdf"
+      },
+      {
+        "id": "ncism",
+        "name": "National Commission for Indian System of Medicine",
+        "acronym": "NCISM",
+        "description": "Regulatory body for Indian traditional medicine",
+        "logo": "https://fsu.edu.in/wp-content/uploads/2025/03/National-Commission-for-Indian-System-of-Medicine.jpg",
+        "color": "#9333EA",
+        "documentLink": "/documents/ncism-approval.pdf"
+      },
+      {
+        "id": "ayush",
+        "name": "Ministry of Ayush, Government of India",
+        "acronym": "AYUSH",
+        "description": "Ministry approval for traditional medicine programs",
+        "logo": "https://fsu.edu.in/wp-content/uploads/2025/03/Ministry-of-Ayush-Government-of-India.jpg",
+        "color": "#DC2626",
+        "documentLink": "/documents/ayush-approval.pdf"
+      },
+      {
+        "id": "up-state",
+        "name": "UP State Government",
+        "acronym": "UP Govt",
+        "description": "Established by UP State Government Act No. 4 of 2021",
+        "logo": "https://fsu.edu.in/wp-content/uploads/2025/03/UP-State-Government-Act-no.-4-of-2021.png",
+        "color": "#0891B2",
+        "documentLink": "/documents/up-state-act.pdf"
+      },
+      {
+        "id": "up-medical",
+        "name": "UP State Medical Faculty",
+        "acronym": "UP Medical",
+        "description": "Established by UP State Medical Faculty",
+        "logo": "https://fsu.edu.in/wp-content/uploads/2025/03/Established-by-UP-State-Medical-Faculty.jpg",
+        "color": "#7C2D12",
+        "documentLink": "/documents/up-medical-faculty.pdf"
+      }
+    ]
+  },
+  "rankings": {
+    "title": "Rankings & Recognition",
+    "description": "Our commitment to excellence is reflected in our national rankings and recognition from prestigious institutions.",
+    "featured": {
+      "rank": "#1",
+      "title": "Private University in Uttar Pradesh",
+      "source": "Education World Rankings 2024",
+      "category": "Overall Excellence"
+    },
+    "others": [
+      {
+        "rank": "A+",
+        "title": "NAAC Accreditation",
+        "source": "National Assessment and Accreditation Council",
+        "category": "Quality Assurance",
+        "icon": "Star",
+        "color": "#32CD32"
+      },
+      {
+        "rank": "Top 50",
+        "title": "Emerging Universities in India",
+        "source": "NIRF Rankings 2024",
+        "category": "Innovation & Research",
+        "icon": "Award",
+        "color": "#FF6B35"
+      },
+      {
+        "rank": "96%",
+        "title": "Graduate Employability Rate",
+        "source": "FS University Placement Cell 2024",
+        "category": "Career Success",
+        "icon": "CheckCircle",
+        "color": "#4ECDC4"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Excellence You Can Trust",
+    "description": "Join thousands of successful graduates who chose FS University for quality education backed by official recognition and proven results.",
+    "primaryButton": {
+      "text": "Apply Now",
+      "href": "/apply"
+    },
+    "secondaryButton": {
+      "text": "View Programs",
+      "href": "/programs"
+    }
+  }
+}

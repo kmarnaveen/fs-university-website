@@ -75,10 +75,8 @@ interface ProgramData {
     placementStats: {
       year: string;
       placed: number;
-      packages: {
-        highest: string;
-        average: string;
-      };
+      total: number;
+      percentage: string;
     }[];
   };
 
@@ -349,7 +347,7 @@ const ProgramPage: React.FC<ProgramPageProps> = ({ programData }) => {
                         Program Highlights
                       </h3>
                       <div className="grid sm:grid-cols-2 gap-3">
-                        {highlights.map((highlight, index) => (
+                        {highlights?.map((highlight, index) => (
                           <div key={index} className="flex items-start gap-3">
                             <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                             <span className="text-neutral-700 text-sm sm:text-base">
@@ -365,7 +363,7 @@ const ProgramPage: React.FC<ProgramPageProps> = ({ programData }) => {
                             Specializations Available
                           </h3>
                           <div className="flex flex-wrap gap-2">
-                            {specializations.map((spec, index) => (
+                            {specializations?.map((spec, index) => (
                               <Badge
                                 key={index}
                                 variant="secondary"
@@ -423,7 +421,7 @@ const ProgramPage: React.FC<ProgramPageProps> = ({ programData }) => {
                       </CardHeader>
                       <CardContent>
                         <div className="space-y-3">
-                          {facilities.map((facility, index) => (
+                          {facilities?.map((facility, index) => (
                             <div key={index} className="flex items-start gap-3">
                               <Building2 className="w-4 h-4 text-[var(--fsu-gold)] flex-shrink-0 mt-0.5" />
                               <span className="text-sm text-neutral-600">
@@ -466,13 +464,13 @@ const ProgramPage: React.FC<ProgramPageProps> = ({ programData }) => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-6">
-                    {curriculum.map((sem, index) => (
+                    {curriculum?.map((sem, index) => (
                       <div key={index} className="border rounded-lg p-4 sm:p-6">
                         <h3 className="fluid-text-2xl font-semibold text-[var(--fsu-crimson)] mb-4">
                           {sem.semester}
                         </h3>
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                          {sem.subjects.map((subject, subIndex) => (
+                          {sem.subjects?.map((subject, subIndex) => (
                             <div
                               key={subIndex}
                               className="flex items-start gap-2"
@@ -510,7 +508,7 @@ const ProgramPage: React.FC<ProgramPageProps> = ({ programData }) => {
                   </CardHeader>
                   <CardContent>
                     <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
-                      {careerProspects.topRecruiters.map((company, index) => (
+                      {careerProspects.topRecruiters?.map((company, index) => (
                         <div
                           key={index}
                           className="bg-white border border-neutral-200 rounded-lg p-3 sm:p-4 flex items-center justify-center hover:shadow-md transition-shadow min-h-[80px] sm:min-h-[100px]"
@@ -538,7 +536,7 @@ const ProgramPage: React.FC<ProgramPageProps> = ({ programData }) => {
                   </CardHeader>
                   <CardContent>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                      {careerProspects.jobTitles.map((job, index) => (
+                      {careerProspects.jobTitles?.map((job, index) => (
                         <div
                           key={index}
                           className="flex items-center gap-3 p-3 sm:p-4 border rounded-lg hover:shadow-sm transition-shadow"
@@ -572,7 +570,7 @@ const ProgramPage: React.FC<ProgramPageProps> = ({ programData }) => {
                           Academic Requirements
                         </h4>
                         <div className="space-y-3">
-                          {eligibility.academicRequirements.map(
+                          {eligibility.academicRequirements?.map(
                             (req, index) => (
                               <div
                                 key={index}
@@ -667,7 +665,7 @@ const ProgramPage: React.FC<ProgramPageProps> = ({ programData }) => {
                             Scholarships Available
                           </h4>
                           <div className="space-y-3">
-                            {scholarships.map((scholarship, index) => (
+                            {scholarships?.map((scholarship, index) => (
                               <div
                                 key={index}
                                 className="flex items-start gap-3"
@@ -712,44 +710,49 @@ const ProgramPage: React.FC<ProgramPageProps> = ({ programData }) => {
                 </CardHeader>
                 <CardContent>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                    {faculty.map((member, index) => (
-                      <div
-                        key={index}
-                        className="border rounded-lg p-4 sm:p-6 hover:shadow-lg transition-shadow"
-                      >
-                        <div className="text-center mb-4">
-                          <div className="w-20 h-20 sm:w-24 sm:h-24 bg-[var(--fsu-gold)]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <Users className="w-10 h-10 sm:w-12 sm:h-12 text-[var(--fsu-gold)]" />
+                    {faculty &&
+                      faculty.map((member, index) => (
+                        <div
+                          key={index}
+                          className="border rounded-lg p-4 sm:p-6 hover:shadow-lg transition-shadow"
+                        >
+                          <div className="text-center mb-4">
+                            <div className="w-20 h-20 sm:w-24 sm:h-24 bg-[var(--fsu-gold)]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                              <Users className="w-10 h-10 sm:w-12 sm:h-12 text-[var(--fsu-gold)]" />
+                            </div>
+                            <h3 className="text-lg sm:text-xl font-semibold text-[var(--fsu-crimson)]">
+                              {member.name}
+                            </h3>
+                            <p className="text-sm text-neutral-600">
+                              {member.designation}
+                            </p>
                           </div>
-                          <h3 className="text-lg sm:text-xl font-semibold text-[var(--fsu-crimson)]">
-                            {member.name}
-                          </h3>
-                          <p className="text-sm text-neutral-600">
-                            {member.designation}
-                          </p>
+                          <div className="space-y-2 text-sm">
+                            <div>
+                              <span className="font-medium">
+                                Qualifications:
+                              </span>
+                              <span className="text-neutral-600 ml-1 block sm:inline">
+                                {member.qualifications}
+                              </span>
+                            </div>
+                            <div>
+                              <span className="font-medium">
+                                Specialization:
+                              </span>
+                              <span className="text-neutral-600 ml-1 block sm:inline">
+                                {member.specialization}
+                              </span>
+                            </div>
+                            <div>
+                              <span className="font-medium">Experience:</span>
+                              <span className="text-neutral-600 ml-1 block sm:inline">
+                                {member.experience}
+                              </span>
+                            </div>
+                          </div>
                         </div>
-                        <div className="space-y-2 text-sm">
-                          <div>
-                            <span className="font-medium">Qualifications:</span>
-                            <span className="text-neutral-600 ml-1 block sm:inline">
-                              {member.qualifications}
-                            </span>
-                          </div>
-                          <div>
-                            <span className="font-medium">Specialization:</span>
-                            <span className="text-neutral-600 ml-1 block sm:inline">
-                              {member.specialization}
-                            </span>
-                          </div>
-                          <div>
-                            <span className="font-medium">Experience:</span>
-                            <span className="text-neutral-600 ml-1 block sm:inline">
-                              {member.experience}
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
+                      ))}
                   </div>
                 </CardContent>
               </Card>

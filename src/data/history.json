@@ -1,0 +1,125 @@
+{
+  "hero": {
+    "title": "Our Journey",
+    "subtitle": "From a Vision to a Legacy",
+    "badge": "20 Years of Excellence • 2004-2024",
+    "backgroundImage": "/history/founding-vision.jpg"
+  },
+  "timeline": {
+    "title": "Milestones in Our Journey",
+    "description": "Two decades of growth, innovation, and excellence in higher education",
+    "events": [
+      {
+        "year": "2004",
+        "title": "Foundation & Vision",
+        "description": "FS University was established with the vision of providing world-class education in rural Uttar Pradesh, honoring the legacy of Late Shri Fulan Singh Ji.",
+        "details": "The university was founded on 325 acres of lush green campus with state-of-the-art infrastructure, beginning with just 3 schools and 150 students.",
+        "icon": "Building",
+        "image": "/history/foundation-2004.jpg",
+        "color": "#DC2626"
+      },
+      {
+        "year": "2008",
+        "title": "Academic Expansion",
+        "description": "Launched School of Engineering & Technology and School of Management, introducing cutting-edge programs in emerging fields.",
+        "details": "Added 5 new undergraduate programs and established partnerships with industry leaders. Student enrollment reached 1,000.",
+        "icon": "BookOpen",
+        "image": "/history/expansion-2008.jpg",
+        "color": "#7C3AED"
+      },
+      {
+        "year": "2013",
+        "title": "UGC Recognition",
+        "description": "Achieved University Grants Commission recognition under Section 2(f) and 12(B), marking a significant milestone in our growth.",
+        "details": "This recognition opened doors for research funding and enhanced credibility. Established dedicated research centers.",
+        "icon": "Award",
+        "image": "/history/ugc-recognition-2013.jpg",
+        "color": "#059669"
+      },
+      {
+        "year": "2016",
+        "title": "Research Excellence",
+        "description": "Established dedicated research facilities and launched Ph.D. programs across multiple disciplines.",
+        "details": "Built advanced laboratories worth ₹50 crores and signed MoUs with 25+ international universities.",
+        "icon": "Lightbulb",
+        "image": "/history/research-2016.jpg",
+        "color": "#EA580C"
+      },
+      {
+        "year": "2020",
+        "title": "Digital Transformation",
+        "description": "Successfully transitioned to digital learning during the pandemic, ensuring uninterrupted education for all students.",
+        "details": "Implemented comprehensive LMS, virtual labs, and online assessment systems. 100% digital transition achieved in 2 weeks.",
+        "icon": "Globe",
+        "image": "/history/digital-2020.jpg",
+        "color": "#0891B2"
+      },
+      {
+        "year": "2022",
+        "title": "NAAC A+ Accreditation",
+        "description": "Achieved NAAC A+ grade, becoming one of the top-rated private universities in North India.",
+        "details": "Scored 3.6/4.0 CGPA in NAAC assessment, recognizing excellence in teaching, research, and infrastructure.",
+        "icon": "Star",
+        "image": "/history/naac-2022.jpg",
+        "color": "#DC2626"
+      },
+      {
+        "year": "2024",
+        "title": "Global Recognition",
+        "description": "Ranked #1 Private University in UP and achieved 96% placement rate with top-tier companies.",
+        "details": "Over 15,000 alumni working in 50+ countries. Established campuses in Dubai and Singapore.",
+        "icon": "GraduationCap",
+        "image": "/history/global-2024.jpg",
+        "color": "#059669"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Through the Years",
+    "description": "Memorable moments from our two-decade journey",
+    "images": [
+      {
+        "src": "/history/foundation-ceremony.jpg",
+        "alt": "Foundation Ceremony 2004",
+        "caption": "Founding ceremony with Late Shri Fulan Singh Ji"
+      },
+      {
+        "src": "/history/first-graduation.jpg",
+        "alt": "First Graduation Ceremony",
+        "caption": "First batch graduation ceremony in 2008"
+      },
+      {
+        "src": "/history/campus-aerial-view.jpg",
+        "alt": "Campus Aerial View",
+        "caption": "Beautiful 325-acre campus from above"
+      },
+      {
+        "src": "/history/research-labs.jpg",
+        "alt": "Research Laboratories",
+        "caption": "State-of-the-art research facilities"
+      },
+      {
+        "src": "/history/international-students.jpg",
+        "alt": "International Students",
+        "caption": "Diverse student community from across the globe"
+      },
+      {
+        "src": "/history/award-ceremony.jpg",
+        "alt": "Award Ceremony",
+        "caption": "NAAC A+ accreditation celebration"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Be a Part of Our Next Chapter",
+    "description": "Join our legacy of excellence and help us write the future of education. Your journey with FS University starts here.",
+    "primaryButton": {
+      "text": "Join Our Legacy",
+      "href": "/apply"
+    },
+    "secondaryButton": {
+      "text": "Explore Programs",
+      "href": "/programs"
+    }
+  }
+}
