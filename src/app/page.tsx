@@ -12,6 +12,7 @@ import { TestimonialCard } from "@/components/ui/testimonial-card";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { ImageGalleryModal } from "@/components/ui/image-gallery-modal";
 import { AccreditationMarquee } from "@/components/ui/accreditation-marquee";
+import { BrochureDownload } from "@/components/ui/brochure-download";
 import ProgramCard from "@/components/programs/ProgramCard";
 import ApplyCTA from "@/components/fsu-specific/ApplyCTA";
 import {
@@ -29,6 +30,7 @@ import {
   Clock,
   FileText,
   Bell,
+  Download,
 } from "lucide-react";
 
 export default function HomePage() {
@@ -995,6 +997,9 @@ export default function HomePage() {
                   </Link>
                 </Button>
               </div>
+
+              {/* Enhanced Brochure Download with Lead Collection */}
+              <BrochureDownload />
 
               <div className="flex items-center gap-6 pt-4">
                 <div className="flex items-center gap-1">
