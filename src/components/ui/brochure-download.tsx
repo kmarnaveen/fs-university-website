@@ -1,4 +1,10 @@
-import React, { useState, useMemo, useCallback, ChangeEvent } from "react";
+import React, {
+  useState,
+  useMemo,
+  useCallback,
+  ChangeEvent,
+  useEffect,
+} from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -25,6 +31,9 @@ import {
   Shield,
   Clock,
   ThumbsUp,
+  ExternalLink,
+  AlertTriangle,
+  RefreshCw,
 } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
@@ -90,6 +99,15 @@ export const BrochureDownload: React.FC<BrochureDownloadProps> = ({
     course: "Not Selected",
   });
 
+  // Chrome blocking detection states
+  const [isBlocked, setIsBlocked] = useState(false);
+  const [showFallback, setShowFallback] = useState(false);
+  const [blockingDetected, setBlockingDetected] = useState(false);
+
+  // PDF source URL
+  const pdfUrl =
+    "https://fsu.edu.in/wp-content/uploads/2025/03/FSU-Brochure-2025.pdf";
+
   // Memoize the courses array to prevent re-declaration on every render
   const courses = useMemo(
     () => [
@@ -106,6 +124,28 @@ export const BrochureDownload: React.FC<BrochureDownloadProps> = ({
     []
   );
 
+  // Chrome blocking detection effect
+  useEffect(() => {
+    if (modalState === "pdf") {
+      // Detect Chrome blocking after a short delay
+      const timer = setTimeout(() => {
+        // Check if we're likely in Chrome and detect blocking patterns
+        const isChrome =
+          /Chrome/.test(navigator.userAgent) &&
+          /Google Inc/.test(navigator.vendor);
+        if (isChrome) {
+          setBlockingDetected(true);
+          // Show fallback after 3 seconds if user hasn't interacted
+          setTimeout(() => {
+            setShowFallback(true);
+          }, 3000);
+        }
+      }, 1000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [modalState]);
+
   // Use useCallback for handler functions with proper typing
   const handleInputChange = useCallback(
     (field: keyof FormData, value: string): void => {
@@ -113,6 +153,31 @@ export const BrochureDownload: React.FC<BrochureDownloadProps> = ({
     },
     []
   );
+
+  // PDF handling functions
+  const handleDirectDownload = useCallback(() => {
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "FS-University-Brochure-2025.pdf";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }, [pdfUrl]);
+
+  const handleOpenInNewTab = useCallback(() => {
+    window.open(pdfUrl, "_blank", "noopener,noreferrer");
+  }, [pdfUrl]);
+
+  const handleRetryPDFViewer = useCallback(() => {
+    setIsBlocked(false);
+    setShowFallback(false);
+    setBlockingDetected(false);
+    // Force re-render of PDF viewer
+    setModalState("thankyou");
+    setTimeout(() => setModalState("pdf"), 100);
+  }, []);
 
   const handleSubmit = async (
     e: React.FormEvent<HTMLFormElement>
@@ -351,27 +416,136 @@ export const BrochureDownload: React.FC<BrochureDownloadProps> = ({
         </DialogContent>
       </Dialog>
 
-      {/* PDF Viewer Modal */}
+      {/* PDF Viewer Modal with Fallback Options */}
       <Dialog
         open={modalState === "pdf"}
         onOpenChange={(isOpen) => !isOpen && setModalState("closed")}
       >
         <DialogContent className="max-w-4xl h-[90vh] p-0 flex flex-col">
+          <DialogHeader className="sr-only">
+            <DialogTitle>PDF Brochure Viewer</DialogTitle>
+            <DialogDescription>
+              Viewing FS University Brochure 2025 in PDF format
+            </DialogDescription>
+          </DialogHeader>
+
           <div className="absolute top-2 right-2 z-20">
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setModalState("closed")}
               className="bg-black/20 text-white hover:bg-black/50 hover:text-white"
+              aria-label="Close PDF Viewer"
             >
               <X className="w-5 h-5" />
               <span className="sr-only">Close PDF Viewer</span>
             </Button>
           </div>
-          <PDFViewer
-            src="https://fsu.edu.in/wp-content/uploads/2025/03/FSU-Brochure-2025.pdf"
-            title="FS University Brochure 2025"
-          />
+
+          {/* Chrome Blocking Detection Banner */}
+          {blockingDetected && showFallback && (
+            <div className="absolute top-0 left-0 right-0 z-30 bg-amber-50 border-b border-amber-200 p-4">
+              <div className="flex items-center gap-3">
+                <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0" />
+                <div className="flex-1">
+                  <p className="text-sm font-medium text-amber-800">
+                    PDF Viewer Blocked by Browser
+                  </p>
+                  <p className="text-xs text-amber-700">
+                    Your browser may be blocking the PDF viewer. Try the options
+                    below:
+                  </p>
+                </div>
+                <div className="flex gap-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={handleRetryPDFViewer}
+                    className="border-amber-300 text-amber-700 hover:bg-amber-100"
+                  >
+                    <RefreshCw className="h-4 w-4 mr-1" />
+                    Retry
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => setShowFallback(false)}
+                    className="text-amber-700 hover:bg-amber-100"
+                  >
+                    <X className="h-4 w-4" />
+                  </Button>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Alternative PDF Access Methods */}
+          {showFallback ? (
+            <div className="flex-1 flex items-center justify-center p-8">
+              <div className="text-center max-w-md">
+                <FileText className="h-16 w-16 text-[var(--fsu-crimson)] mx-auto mb-6" />
+                <h3 className="text-xl font-semibold text-neutral-900 mb-4">
+                  Unable to Display PDF
+                </h3>
+                <p className="text-neutral-600 mb-6">
+                  Your browser settings are preventing the PDF from loading.
+                  Choose an alternative way to view the brochure:
+                </p>
+
+                <div className="space-y-3">
+                  <Button
+                    onClick={handleOpenInNewTab}
+                    className="w-full bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-crimson)]/90 text-white"
+                  >
+                    <ExternalLink className="h-4 w-4 mr-2" />
+                    Open in New Tab
+                  </Button>
+
+                  <Button
+                    variant="outline"
+                    onClick={handleDirectDownload}
+                    className="w-full border-[var(--fsu-crimson)] text-[var(--fsu-crimson)] hover:bg-[var(--fsu-crimson)] hover:text-white"
+                  >
+                    <Download className="h-4 w-4 mr-2" />
+                    Download PDF (2.5 MB)
+                  </Button>
+
+                  <Button
+                    variant="ghost"
+                    onClick={handleRetryPDFViewer}
+                    className="w-full text-neutral-600 hover:text-neutral-900"
+                  >
+                    <RefreshCw className="h-4 w-4 mr-2" />
+                    Try PDF Viewer Again
+                  </Button>
+                </div>
+
+                <div className="mt-6 p-4 bg-neutral-50 rounded-lg">
+                  <p className="text-xs text-neutral-500">
+                    💡 <strong>Tip:</strong> To enable PDF viewing in browser,
+                    check your browser's PDF settings or disable ad blockers for
+                    this site.
+                  </p>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="flex-1">
+              <PDFViewer
+                src={pdfUrl}
+                title="FS University Brochure 2025"
+                description="Complete guide to programs, admissions, and campus life"
+                onError={() => {
+                  setIsBlocked(true);
+                  setShowFallback(true);
+                }}
+                onLoad={() => {
+                  setIsBlocked(false);
+                  setShowFallback(false);
+                }}
+              />
+            </div>
+          )}
         </DialogContent>
       </Dialog>
     </div>
