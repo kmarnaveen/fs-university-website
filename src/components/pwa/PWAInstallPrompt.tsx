@@ -1,209 +1,127 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Download, X, Smartphone, Monitor } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
+import { usePWAInstall } from "@/hooks/use-pwa-install";
+import {
+  Download,
+  X,
+  Smartphone,
+  Monitor,
+  Share,
+  PlusSquare,
+} from "lucide-react";
 
-interface BeforeInstallPromptEvent extends Event {
-  prompt: () => Promise<void>;
-  userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
-}
-
-declare global {
-  interface WindowEventMap {
-    beforeinstallprompt: BeforeInstallPromptEvent;
-  }
-}
+const IOSInstallInstructions = ({
+  open,
+  onOpenChange,
+}: {
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+}) => (
+  <Dialog open={open} onOpenChange={onOpenChange}>
+    <DialogContent>
+      <DialogHeader>
+        <DialogTitle className="text-2xl font-bold text-center text-[var(--fsu-crimson)]">
+          Install on iOS
+        </DialogTitle>
+        <DialogDescription className="text-center text-neutral-600">
+          Follow these simple steps to add the FS University app to your home
+          screen.
+        </DialogDescription>
+      </DialogHeader>
+      <div className="mt-4 space-y-4 text-center">
+        <p>
+          1. Tap the <Share className="inline h-5 w-5 mx-1" /> button in your
+          Safari toolbar.
+        </p>
+        <p>
+          2. Scroll down and tap on{" "}
+          <PlusSquare className="inline h-5 w-5 mx-1" /> "Add to Home Screen".
+        </p>
+        <p>3. Confirm by tapping "Add" in the top right corner.</p>
+      </div>
+    </DialogContent>
+  </Dialog>
+);
 
 export default function PWAInstallPrompt() {
-  const [deferredPrompt, setDeferredPrompt] =
-    useState<BeforeInstallPromptEvent | null>(null);
-  const [showPrompt, setShowPrompt] = useState(false);
-  const [isIOS, setIsIOS] = useState(false);
-  const [isStandalone, setIsStandalone] = useState(false);
+  const {
+    isPromptVisible,
+    isIOS,
+    handleInstall,
+    handleDismiss,
+    isIOSInstructionsVisible,
+    setIOSInstructionsVisible,
+  } = usePWAInstall();
 
-  useEffect(() => {
-    // Check if iOS
-    const isIOSDevice = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    setIsIOS(isIOSDevice);
-
-    // Check if already installed (standalone mode)
-    const isStandaloneMode =
-      window.matchMedia("(display-mode: standalone)").matches ||
-      (window.navigator as any).standalone ||
-      document.referrer.includes("android-app://");
-    setIsStandalone(isStandaloneMode);
-
-    // Handle install prompt
-    const handleBeforeInstallPrompt = (e: BeforeInstallPromptEvent) => {
-      e.preventDefault();
-      setDeferredPrompt(e);
-
-      // Show prompt after 30 seconds if not already installed
-      if (!isStandaloneMode) {
-        setTimeout(() => {
-          const hasSeenPrompt = localStorage.getItem(
-            "pwa-install-prompt-dismissed"
-          );
-          if (!hasSeenPrompt) {
-            setShowPrompt(true);
-          }
-        }, 30000);
-      }
-    };
-
-    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
-
-    // Auto-show on scroll for mobile (after some engagement)
-    let scrollCount = 0;
-    const handleScroll = () => {
-      scrollCount++;
-      if (
-        scrollCount > 5 &&
-        !isStandaloneMode &&
-        !localStorage.getItem("pwa-install-prompt-dismissed")
-      ) {
-        setShowPrompt(true);
-        window.removeEventListener("scroll", handleScroll);
-      }
-    };
-
-    if (!isStandaloneMode) {
-      window.addEventListener("scroll", handleScroll);
-    }
-
-    return () => {
-      window.removeEventListener(
-        "beforeinstallprompt",
-        handleBeforeInstallPrompt
-      );
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const handleInstallClick = async () => {
-    if (!deferredPrompt) return;
-
-    try {
-      await deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-
-      if (outcome === "accepted") {
-        console.log("User accepted the install prompt");
-        // Track installation if analytics available
-        if (typeof window !== "undefined" && (window as any).gtag) {
-          (window as any).gtag("event", "pwa_install", {
-            event_category: "PWA",
-            event_label: "Install Accepted",
-          });
-        }
-      }
-    } catch (error) {
-      console.error("Install prompt failed:", error);
-    }
-
-    setDeferredPrompt(null);
-    setShowPrompt(false);
-    localStorage.setItem("pwa-install-prompt-dismissed", "true");
-  };
-
-  const handleIOSInstall = () => {
-    // Show iOS install instructions
-    const instructions = `To install FS University app:
-    
-1. Tap the Share button (⬆️) at the bottom of Safari
-2. Scroll down and tap "Add to Home Screen"
-3. Tap "Add" to install the app
-    
-The app will appear on your home screen like a native app!`;
-
-    alert(instructions);
-    setShowPrompt(false);
-    localStorage.setItem("pwa-install-prompt-dismissed", "true");
-  };
-
-  const handleDismiss = () => {
-    setShowPrompt(false);
-    localStorage.setItem("pwa-install-prompt-dismissed", "true");
-    // Track dismissal
-    if (typeof window !== "undefined" && (window as any).gtag) {
-      (window as any).gtag("event", "pwa_install_dismissed", {
-        event_category: "PWA",
-        event_label: "Install Dismissed",
-      });
-    }
-  };
-
-  // Don't show if already installed or user dismissed
-  if (!showPrompt || isStandalone) return null;
+  if (!isPromptVisible) return null;
 
   return (
-    <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-96 bg-white rounded-xl shadow-2xl border border-gray-200 p-4 z-50 animate-slide-up">
-      <button
-        onClick={handleDismiss}
-        className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 transition-colors"
-        aria-label="Close install prompt"
-      >
-        <X className="w-4 h-4" />
-      </button>
+    <>
+      <div className="fixed bottom-4 left-4 right-4 z-50 animate-slide-up rounded-xl border border-gray-200 bg-white p-5 shadow-2xl md:left-auto md:right-4 md:w-96">
+        <button
+          onClick={handleDismiss}
+          className="absolute top-4 right-4 text-gray-400 transition-colors hover:text-gray-600"
+          aria-label="Close install prompt"
+        >
+          <X className="h-4 w-4" />
+        </button>
 
-      <div className="flex items-start gap-4">
-        <div className="w-12 h-12 bg-gradient-to-br from-[var(--fsu-crimson)] to-red-700 rounded-xl flex items-center justify-center shrink-0 shadow-lg">
-          {isIOS ? (
-            <Smartphone className="w-6 h-6 text-white" />
-          ) : (
-            <Download className="w-6 h-6 text-white" />
-          )}
-        </div>
+        <div className="flex items-start gap-4 pr-8">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--fsu-crimson)] to-red-700 shadow-lg">
+            <Download className="h-6 w-6 text-white" />
+          </div>
 
-        <div className="flex-1 min-w-0">
-          <h3 className="font-bold text-gray-900 mb-2 text-lg">
-            Install FS University App
-          </h3>
-          <p className="text-sm text-gray-600 mb-4 leading-relaxed">
-            Get quick access to campus resources, offline viewing, push
-            notifications, and a native app experience.
-          </p>
+          <div className="min-w-0 flex-1">
+            <h3 className="mb-2 text-lg font-bold leading-tight text-gray-900">
+              Install FS University App
+            </h3>
+            <p className="mb-5 text-sm leading-relaxed text-gray-600">
+              Get a faster, native app experience with offline access and
+              notifications.
+            </p>
 
-          <div className="space-y-2">
-            <Button
-              onClick={isIOS ? handleIOSInstall : handleInstallClick}
-              className="w-full bg-gradient-to-r from-[var(--fsu-crimson)] to-red-700 hover:from-red-700 hover:to-[var(--fsu-crimson)] text-white shadow-lg hover:shadow-xl transition-all duration-200"
-            >
-              {isIOS ? (
-                <>
-                  <Smartphone className="mr-2 w-4 h-4" />
-                  Show Install Steps
-                </>
-              ) : (
-                <>
-                  <Download className="mr-2 w-4 h-4" />
-                  Install App
-                </>
-              )}
-            </Button>
-
-            <div className="flex items-center justify-center gap-4 text-xs text-gray-500">
-              <div className="flex items-center gap-1">
-                <Monitor className="w-3 h-3" />
-                <span>Works offline</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <Smartphone className="w-3 h-3" />
-                <span>Native feel</span>
+            <div className="space-y-4">
+              <Button
+                onClick={handleInstall}
+                className="w-full bg-gradient-to-r from-[var(--fsu-crimson)] to-red-700 text-white shadow-lg transition-all duration-200 hover:shadow-xl h-11 font-medium"
+              >
+                {isIOS ? (
+                  <>
+                    <Smartphone className="mr-2 h-4 w-4" /> Show Install Steps
+                  </>
+                ) : (
+                  <>
+                    <Download className="mr-2 h-4 w-4" /> Install App
+                  </>
+                )}
+              </Button>
+              <div className="flex items-center justify-center gap-6 text-xs text-gray-500">
+                <div className="flex items-center gap-1.5">
+                  <Monitor className="h-3 w-3" />
+                  <span>Works Offline</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <Smartphone className="h-3 w-3" />
+                  <span>Native Feel</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="mt-4 p-3 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100">
-        <p className="text-xs text-blue-800 leading-relaxed">
-          <strong>💡 Benefits:</strong> Faster loading, offline access to
-          content, push notifications for important updates, and home screen
-          access.
-        </p>
-      </div>
-    </div>
+      <IOSInstallInstructions
+        open={isIOSInstructionsVisible}
+        onOpenChange={setIOSInstructionsVisible}
+      />
+    </>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -417,12 +418,25 @@ const allPrograms = [
   },
 ];
 
-export default function ProgramsPage() {
+function ProgramsPage() {
+  const searchParams = useSearchParams();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedLevels, setSelectedLevels] = useState<string[]>([]);
   const [selectedSchools, setSelectedSchools] = useState<string[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [showFilters, setShowFilters] = useState(false);
+
+  // Initialize filters based on URL parameters
+  useEffect(() => {
+    const levelParam = searchParams.get("level");
+    if (levelParam) {
+      // Capitalize first letter to match the data format
+      const formattedLevel =
+        levelParam.charAt(0).toUpperCase() + levelParam.slice(1).toLowerCase();
+      setSelectedLevels([formattedLevel]);
+      setShowFilters(true); // Show filters when URL parameter is present
+    }
+  }, [searchParams]);
 
   // Get unique values for filters
   const levels = [...new Set(allPrograms.map((p) => p.level))];
@@ -790,5 +804,19 @@ export default function ProgramsPage() {
         </section>
       </div>
     </div>
+  );
+}
+
+export default function ProgramsPageWrapper() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen flex items-center justify-center">
+          Loading programs...
+        </div>
+      }
+    >
+      <ProgramsPage />
+    </Suspense>
   );
 }

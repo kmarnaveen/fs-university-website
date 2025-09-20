@@ -1,13 +1,14 @@
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { StatsCard } from '@/components/ui/stats-card';
-import { 
-  Users, 
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { motion } from "framer-motion";
+import {
   Award,
   CheckCircle,
-  AlertCircle,
   Download,
   DollarSign,
   Building,
@@ -18,646 +19,572 @@ import {
   Star,
   TrendingUp,
   Shield,
-  FileText
-} from 'lucide-react';
+  FileText,
+  Plus,
+  ClipboardCheck,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
+import EligibilityFeesScholarships from "@/components/admissions/EligibilityFeesScholarships";
 
 export default function AdmissionsPage() {
-  const admissionStats = [
-    { number: "50,000+", label: "Applications", description: "Received annually" },
-    { number: "95%", label: "Success Rate", description: "Graduate employment" },
-    { number: "85%", label: "Scholarship", description: "Students receive aid" },
-    { number: "120+", label: "Countries", description: "International students" }
+  const [currentStep, setCurrentStep] = useState(1);
+  const keyDates = [
+    { event: "Applications Open", date: "Oct 1, 2024", status: "completed" },
+    { event: "Application Deadline", date: "Jun 15, 2025", status: "upcoming" },
+    { event: "Classes Commence", date: "Aug 1, 2025", status: "upcoming" },
   ];
 
-  const programs = [
+  const applicationSteps = [
     {
-      category: "Engineering & Technology",
-      icon: <Building className="w-6 h-6" />,
-      duration: "4 Years",
-      degrees: ["B.Tech", "M.Tech", "PhD"],
-      specializations: ["Computer Science", "Mechanical", "Electrical", "Civil", "Electronics"],
-      fees: "₹2,50,000/year",
-      seats: "2,400"
-    },
-    {
-      category: "Management & Business",
-      icon: <TrendingUp className="w-6 h-6" />,
-      duration: "2-3 Years",
-      degrees: ["MBA", "BBA", "PhD"],
-      specializations: ["Finance", "Marketing", "HR", "Operations", "Strategy"],
-      fees: "₹3,50,000/year",
-      seats: "600"
-    },
-    {
-      category: "Medical & Health Sciences",
-      icon: <Shield className="w-6 h-6" />,
-      duration: "4-6 Years",
-      degrees: ["MBBS", "BDS", "BAMS", "MD", "MS"],
-      specializations: ["General Medicine", "Surgery", "Pediatrics", "Dermatology"],
-      fees: "₹8,50,000/year",
-      seats: "300"
-    },
-    {
-      category: "Arts & Sciences",
-      icon: <BookOpen className="w-6 h-6" />,
-      duration: "3-4 Years",
-      degrees: ["BA", "BSc", "MA", "MSc", "PhD"],
-      specializations: ["Literature", "Physics", "Chemistry", "Mathematics", "Psychology"],
-      fees: "₹1,50,000/year",
-      seats: "1,200"
-    },
-    {
-      category: "Law & Legal Studies",
-      icon: <Award className="w-6 h-6" />,
-      duration: "3-5 Years",
-      degrees: ["LLB", "LLM", "BA LLB"],
-      specializations: ["Corporate Law", "Criminal Law", "International Law"],
-      fees: "₹2,00,000/year",
-      seats: "300"
-    },
-    {
-      category: "Pharmacy",
-      icon: <Star className="w-6 h-6" />,
-      duration: "4 Years",
-      degrees: ["B.Pharm", "M.Pharm", "PharmD"],
-      specializations: ["Pharmaceutics", "Pharmacology", "Clinical Pharmacy"],
-      fees: "₹2,75,000/year",
-      seats: "240"
-    }
-  ];
-
-  const admissionProcess = [
-    {
+      id: 1,
       step: "1",
-      title: "Application Submission",
-      description: "Complete online application form with required documents",
-      deadline: "March 31, 2025",
-      icon: <FileText className="w-6 h-6" />
+      title: "Explore Programs",
+      description:
+        "Discover the wide range of undergraduate, postgraduate, and doctoral programs we offer. Find the perfect course that aligns with your passion and career goals by browsing our detailed program pages.",
+      icon: <BookOpen className="w-6 h-6" />,
+      action: "Explore Our Programs",
+      link: "/programs",
     },
     {
+      id: 2,
       step: "2",
-      title: "Entrance Examination",
-      description: "Appear for FS-SET or accept JEE/NEET/CAT scores",
-      deadline: "April 15, 2025",
-      icon: <BookOpen className="w-6 h-6" />
+      title: "Check Eligibility",
+      description:
+        "Before you apply, it's important to review the specific academic and admission requirements for your chosen program. This ensures you meet all the necessary criteria for a successful application.",
+      icon: <ClipboardCheck className="w-6 h-6" />,
+      action: "View Eligibility Criteria",
+      link: "/admissions/eligibility",
     },
     {
+      id: 3,
       step: "3",
-      title: "Merit List & Counseling",
-      description: "Check merit list and attend counseling sessions",
-      deadline: "May 10, 2025",
-      icon: <Users className="w-6 h-6" />
+      title: "Submit Online Application",
+      description:
+        "Complete your application through our secure online portal. Fill in your personal and academic details, and upload the required documents. Our user-friendly form makes the process quick and straightforward.",
+      icon: <FileText className="w-6 h-6" />,
+      action: "Start Your Application",
+      link: "/apply",
     },
     {
+      id: 4,
       step: "4",
-      title: "Document Verification",
-      description: "Submit original documents for verification",
-      deadline: "May 20, 2025",
-      icon: <CheckCircle className="w-6 h-6" />
+      title: "Receive Offer Letter",
+      description:
+        "Once your application is reviewed and approved by our admissions committee, you will receive an official offer letter. This is the final step in securing your place at FS University.",
+      icon: <Award className="w-6 h-6" />,
+      action: "Admission Guidelines",
+      link: "/admissions/status",
     },
-    {
-      step: "5",
-      title: "Fee Payment & Admission",
-      description: "Pay admission fees and confirm your seat",
-      deadline: "May 31, 2025",
-      icon: <DollarSign className="w-6 h-6" />
-    }
   ];
 
-  const scholarships = [
+  const programLevels = [
     {
-      name: "Merit Scholarship",
-      amount: "Up to 100%",
-      criteria: "Academic excellence (95%+ in 12th)",
-      applicable: "All programs"
+      title: "Undergraduate Programs",
+      description:
+        "Bachelor's degrees across Engineering, Business, Science, Arts, and more",
+      duration: "3-4 Years",
+      startingFrom: "₹1,50,000/year",
+      link: "/programs?level=undergraduate",
+      icon: <Building className="w-8 h-8" />,
     },
     {
-      name: "Sports Scholarship",
-      amount: "Up to 75%",
-      criteria: "State/National level sports achievements",
-      applicable: "All programs"
+      title: "Postgraduate Programs",
+      description:
+        "Master's degrees and specialized programs for career advancement",
+      duration: "2-3 Years",
+      startingFrom: "₹2,50,000/year",
+      link: "/programs?level=postgraduate",
+      icon: <TrendingUp className="w-8 h-8" />,
     },
     {
-      name: "Need-based Aid",
-      amount: "Up to 50%",
-      criteria: "Family income below ₹5 lakhs",
-      applicable: "All programs"
+      title: "Doctoral (Ph.D.) Programs",
+      description:
+        "Research-focused programs for academic and industry leadership",
+      duration: "3-5 Years",
+      startingFrom: "₹1,00,000/year",
+      link: "/programs?level=doctoral",
+      icon: <Star className="w-8 h-8" />,
     },
     {
-      name: "Alumni Legacy",
-      amount: "25%",
-      criteria: "Children of FS University alumni",
-      applicable: "All programs"
+      title: "Diploma Programs",
+      description:
+        "Specialized certificates and industry-focused skill programs",
+      duration: "6 months - 2 Years",
+      startingFrom: "₹75,000/year",
+      link: "/programs?level=diploma",
+      icon: <Shield className="w-8 h-8" />,
     },
-    {
-      name: "Girl Child Scholarship",
-      amount: "20%",
-      criteria: "Female students in Engineering",
-      applicable: "Engineering only"
-    },
-    {
-      name: "Rural Area Scholarship",
-      amount: "30%",
-      criteria: "Students from rural backgrounds",
-      applicable: "All programs"
-    }
   ];
 
-  const importantDates = [
-    { event: "Application Opens", date: "December 1, 2024", status: "completed" },
-    { event: "Application Deadline", date: "March 31, 2025", status: "upcoming" },
-    { event: "FS-SET Exam", date: "April 15, 2025", status: "upcoming" },
-    { event: "Results Declaration", date: "May 1, 2025", status: "upcoming" },
-    { event: "Counseling Begins", date: "May 10, 2025", status: "upcoming" },
-    { event: "Classes Commence", date: "July 15, 2025", status: "upcoming" }
+  const essentialResources = [
+    {
+      title: "Eligibility Criteria",
+      description:
+        "Find detailed academic and admission requirements for all our undergraduate, postgraduate, and doctoral programs.",
+      icon: <CheckCircle className="w-8 h-8" />,
+      link: "/admissions/eligibility",
+    },
+    {
+      title: "Fee Structure",
+      description:
+        "Get a transparent and comprehensive breakdown of tuition, hostel, and other fees for your chosen course.",
+      icon: <DollarSign className="w-8 h-8" />,
+      link: "/admissions/fees",
+    },
+    {
+      title: "Scholarships & Financial Aid",
+      description:
+        "Explore the various merit-based and need-based scholarships available to support your academic journey.",
+      icon: <Award className="w-8 h-8" />,
+      link: "/admissions/scholarships",
+    },
+    {
+      title: "Download Prospectus",
+      description:
+        "Access our complete university brochure for in-depth information on all programs, campus life, and more.",
+      icon: <Download className="w-8 h-8" />,
+      link: "/downloads/prospectus",
+    },
   ];
 
-  const eligibilityRequirements = [
+  const faqs = [
     {
-      program: "Engineering (B.Tech)",
-      qualification: "12th with PCM",
-      percentage: "75%",
-      exam: "JEE Main/FS-SET"
+      question: "What is the application deadline for 2025 admissions?",
+      answer:
+        "The application deadline is June 15, 2025. We recommend applying early to ensure your application is processed on time.",
     },
     {
-      program: "Medical (MBBS)",
-      qualification: "12th with PCB",
-      percentage: "85%",
-      exam: "NEET"
+      question: "Can I apply for multiple programs?",
+      answer:
+        "Yes, you can apply for up to 3 programs in a single application. You'll need to indicate your preference order.",
     },
     {
-      program: "Management (MBA)",
-      qualification: "Bachelor's Degree",
-      percentage: "60%",
-      exam: "CAT/MAT/FS-SET"
+      question: "What documents do I need for my application?",
+      answer:
+        "Required documents include academic transcripts, ID proof, passport-size photographs, entrance exam scores (if applicable), and recommendation letters for postgraduate programs.",
     },
     {
-      program: "Law (LLB)",
-      qualification: "Bachelor's Degree",
-      percentage: "55%",
-      exam: "CLAT/FS-SET"
+      question: "Is there an application fee?",
+      answer:
+        "Yes, the application fee is ₹1,500 for domestic students and $50 for international students. This fee is non-refundable.",
     },
     {
-      program: "Arts/Science",
-      qualification: "12th in relevant stream",
-      percentage: "60%",
-      exam: "FS-SET/Merit"
-    }
+      question: "When will I receive my admission decision?",
+      answer:
+        "Admission decisions are typically communicated within 4-6 weeks of application submission, provided all required documents are received.",
+    },
+    {
+      question: "Do you offer scholarships for international students?",
+      answer:
+        "Yes, we offer various scholarships including merit-based awards, need-based aid, and special scholarships for international students from specific regions.",
+    },
   ];
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[var(--fsu-maroon)] via-[var(--fsu-crimson)] to-[var(--fsu-maroon)] text-white py-20 lg:py-32">
-        <div className="absolute inset-0 bg-black/20"></div>
+      {/* Hero Section - Welcome & Key Info */}
+      <section className="relative text-white py-24 lg:py-40 overflow-hidden">
+        {/* Campus Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/421028WNT-Main-Level-Floor-Plan_1754486912.avif')`,
+          }}
+        ></div>
+        {/* Enhanced Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--fsu-maroon)]/85 via-[var(--fsu-crimson)]/80 to-[var(--fsu-maroon)]/85"></div>
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto">
-            <Badge className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] mb-6">
-              Admissions 2025
-            </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Your Gateway to
-              <span className="block text-[var(--fsu-gold)]">Excellence</span>
+          <div className="text-center max-w-5xl mx-auto">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
+              Admissions 2025:
+              <span className="block text-[var(--fsu-gold)] mt-2">
+                Your Future Starts Here
+              </span>
             </h1>
-            <p className="text-xl md:text-2xl text-neutral-100 leading-relaxed mb-8">
-              Join thousands of students who have transformed their dreams into reality at FS University. Apply now for 2025 admissions.
+            <p className="text-xl md:text-2xl lg:text-3xl text-neutral-100 leading-relaxed mb-16 font-medium">
+              Join thousands of students who have transformed their dreams into
+              reality at FS University.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] hover:bg-[#D4A017] font-semibold"
-                asChild
-              >
-                <Link href="/apply-now">Apply Now</Link>
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-[var(--fsu-crimson)]"
-                asChild
-              >
-                <Link href="/brochure">Download Brochure</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-neutral-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {admissionStats.map((stat, index) => (
-              <StatsCard
-                key={index}
-                number={stat.number}
-                label={stat.label}
-                description={stat.description}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Quick Application Alert */}
-      <section className="py-6 bg-[var(--fsu-gold)]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <AlertCircle className="w-6 h-6 text-[var(--fsu-crimson)]" />
-              <div>
-                <span className="font-bold text-[var(--fsu-crimson)]">
-                  Application Deadline: March 31, 2025
-                </span>
-                <span className="text-[var(--fsu-crimson)] ml-2">
-                  | Only 45 days remaining!
-                </span>
+            {/* Enhanced Key Dates Timeline */}
+            <div className="bg-white/15 backdrop-blur-md rounded-3xl p-8 mb-12 border border-white/20">
+              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-[var(--fsu-gold)] text-center">
+                Important Dates
+              </h3>
+              <div className="grid md:grid-cols-3 gap-8">
+                {keyDates.map((date, index) => (
+                  <div key={index} className="text-center group">
+                    <div
+                      className={`w-8 h-8 rounded-full mx-auto mb-4 transition-all duration-300 group-hover:scale-110 ${
+                        date.status === "completed"
+                          ? "bg-green-400 shadow-green-400/50"
+                          : "bg-[var(--fsu-gold)] shadow-[var(--fsu-gold)]/50"
+                      } shadow-lg`}
+                    ></div>
+                    <div className="font-bold text-white text-lg md:text-xl mb-2">
+                      {date.event}
+                    </div>
+                    <div className="text-neutral-200 text-base md:text-lg font-semibold">
+                      {date.date}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-            <Button 
-              className="bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-maroon)] text-white"
-              asChild
+
+            {/* Primary CTA */}
+            <Button
+              size="lg"
+              className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] hover:bg-[#D4A017] font-semibold text-xl px-12 py-6"
             >
-              <Link href="/apply-now">Apply Today</Link>
+              <Link href="/apply">Apply Now</Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Programs Offered */}
-      <section id="programs" className="py-16 lg:py-24">
+      {/* Application Process - Step-by-Step Guide */}
+      <section className="py-24 lg:py-32 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--fsu-crimson)] mb-4">
-              Programs Offered
+          <div className="text-center mb-24">
+            <div className="inline-flex items-center px-4 py-2 bg-[var(--fsu-crimson)]/10 rounded-full text-[var(--fsu-crimson)] text-sm font-semibold mb-6">
+              Application Process
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--fsu-crimson)] mb-8 tracking-tight">
+              Your Path to Admission
             </h2>
-            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              Choose from our comprehensive range of undergraduate, postgraduate, and doctoral programs.
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-medium">
+              A streamlined, four-step process designed to make your application
+              journey simple and transparent.
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {programs.map((program, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                <CardHeader className="pb-4">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 bg-[var(--fsu-crimson)] rounded-lg flex items-center justify-center text-white">
-                      {program.icon}
+
+          {/* Professional Progress Indicator */}
+          <div className="relative max-w-4xl mx-auto mb-20">
+            <div className="flex items-center justify-between relative">
+              {/* Background Progress Line */}
+              <div className="absolute top-6 left-0 w-full h-[2px] bg-gray-200" />
+              {/* Active Progress Line */}
+              <div
+                className="absolute top-6 left-0 h-[2px] bg-[var(--fsu-crimson)] transition-all duration-700 ease-out"
+                style={{
+                  width: `${
+                    ((currentStep - 1) / (applicationSteps.length - 1)) * 100
+                  }%`,
+                }}
+              />
+
+              {applicationSteps.map((step, index) => (
+                <div
+                  key={step.id}
+                  className="relative flex flex-col items-center z-10"
+                >
+                  <motion.div
+                    className="cursor-pointer group"
+                    onClick={() => setCurrentStep(step.id)}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <div
+                      className={`w-12 h-12 flex items-center justify-center rounded-full border-2 transition-all duration-500 shadow-sm mb-4
+                      ${
+                        currentStep >= step.id
+                          ? "bg-[var(--fsu-crimson)] text-white border-[var(--fsu-crimson)] shadow-[var(--fsu-crimson)]/20"
+                          : "bg-white text-gray-400 border-gray-300 group-hover:border-[var(--fsu-crimson)] group-hover:text-[var(--fsu-crimson)]"
+                      }`}
+                    >
+                      {currentStep > step.id ? (
+                        <CheckCircle className="w-5 h-5" />
+                      ) : (
+                        <span className="text-sm font-semibold">
+                          {step.step}
+                        </span>
+                      )}
                     </div>
-                    <div>
-                      <CardTitle className="text-lg text-[var(--fsu-crimson)]">
-                        {program.category}
-                      </CardTitle>
-                      <Badge className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)]">
+                    <div className="text-center max-w-[120px]">
+                      <span
+                        className={`text-sm font-medium transition-all duration-300 leading-tight block ${
+                          currentStep === step.id
+                            ? "text-[var(--fsu-crimson)]"
+                            : "text-gray-500 group-hover:text-[var(--fsu-crimson)]"
+                        }`}
+                      >
+                        {step.title}
+                      </span>
+                    </div>
+                  </motion.div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Clean Active Step Display */}
+          <div className="max-w-3xl mx-auto">
+            <motion.div
+              key={currentStep}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              {applicationSteps
+                .filter((step) => step.id === currentStep)
+                .map((step) => (
+                  <div
+                    key={step.id}
+                    className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
+                  >
+                    <div className="p-10 lg:p-12">
+                      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
+                        {/* Icon Section */}
+                        <div className="flex-shrink-0">
+                          <div className="w-20 h-20 flex items-center justify-center rounded-2xl bg-gradient-to-br from-[var(--fsu-crimson)] to-[var(--fsu-maroon)] text-white shadow-lg">
+                            <div className="text-2xl">{step.icon}</div>
+                          </div>
+                        </div>
+
+                        {/* Content Section */}
+                        <div className="flex-1 text-center lg:text-left">
+                          <div className="inline-flex items-center px-3 py-1 bg-[var(--fsu-gold)]/10 rounded-full text-[var(--fsu-crimson)] text-sm font-semibold mb-4">
+                            Step {step.step} of {applicationSteps.length}
+                          </div>
+                          <h3 className="text-2xl lg:text-3xl font-bold text-[var(--fsu-crimson)] mb-4 leading-tight">
+                            {step.title}
+                          </h3>
+                          <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-2xl">
+                            {step.description}
+                          </p>
+
+                          {/* Professional Action Button */}
+                          <Button
+                            size="lg"
+                            className="bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-maroon)] text-white font-semibold px-8 py-3 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group"
+                            asChild
+                          >
+                            <Link
+                              href={step.link}
+                              className="inline-flex items-center gap-2"
+                            >
+                              {step.action}
+                              <motion.span className="group-hover:translate-x-1 transition-transform duration-200">
+                                →
+                              </motion.span>
+                            </Link>
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            </motion.div>
+          </div>
+
+          {/* Minimalist Navigation */}
+          <div className="flex justify-center items-center space-x-4 mt-16">
+            <button
+              onClick={() => setCurrentStep(Math.max(1, currentStep - 1))}
+              disabled={currentStep === 1}
+              className={`p-2 rounded-full transition-all duration-200 ${
+                currentStep === 1
+                  ? "text-gray-300 cursor-not-allowed"
+                  : "text-gray-500 hover:text-[var(--fsu-crimson)] hover:bg-gray-100"
+              }`}
+            >
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            <div className="flex space-x-2">
+              {applicationSteps.map((step) => (
+                <button
+                  key={step.id}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    currentStep === step.id
+                      ? "bg-[var(--fsu-crimson)] w-8"
+                      : "bg-gray-300 hover:bg-[var(--fsu-gold)]"
+                  }`}
+                  onClick={() => setCurrentStep(step.id)}
+                />
+              ))}
+            </div>
+
+            <button
+              onClick={() =>
+                setCurrentStep(
+                  Math.min(applicationSteps.length, currentStep + 1)
+                )
+              }
+              disabled={currentStep === applicationSteps.length}
+              className={`p-2 rounded-full transition-all duration-200 ${
+                currentStep === applicationSteps.length
+                  ? "text-gray-300 cursor-not-allowed"
+                  : "text-gray-500 hover:text-[var(--fsu-crimson)] hover:bg-gray-100"
+              }`}
+            >
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Program Levels - Guided Pathways */}
+      <section className="py-20 lg:py-32 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold text-[var(--fsu-crimson)] mb-6">
+              Find Your Program
+            </h2>
+            <p className="text-xl md:text-2xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
+              Explore our comprehensive range of programs designed for students
+              at every academic level.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {programLevels.map((program, index) => (
+              <Card
+                key={index}
+                className="relative p-10 hover:shadow-2xl transition-all duration-500 group overflow-hidden border-2 border-transparent hover:border-[var(--fsu-gold)]/30"
+              >
+                {/* Subtle background gradient */}
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-50/80 via-white to-red-50/30 group-hover:from-red-50/50 group-hover:to-[var(--fsu-gold)]/10 transition-all duration-500"></div>
+
+                <div className="relative flex items-start gap-8">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[var(--fsu-crimson)] to-[var(--fsu-maroon)] rounded-2xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    {program.icon}
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl md:text-3xl font-bold text-[var(--fsu-crimson)] mb-4 group-hover:text-[var(--fsu-maroon)] transition-colors">
+                      {program.title}
+                    </h3>
+                    <p className="text-neutral-600 text-lg mb-6 leading-relaxed">
+                      {program.description}
+                    </p>
+                    <div className="flex flex-wrap gap-4 mb-8">
+                      <Badge className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] text-sm px-4 py-2">
                         {program.duration}
                       </Badge>
-                    </div>
-                  </div>
-                </CardHeader>
-                
-                <CardContent>
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-semibold text-[var(--fsu-crimson)] mb-2">Degrees:</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {program.degrees.map((degree, idx) => (
-                          <Badge key={idx} variant="outline" className="text-xs">
-                            {degree}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <h4 className="font-semibold text-[var(--fsu-crimson)] mb-2">Specializations:</h4>
-                      <p className="text-sm text-neutral-600">
-                        {program.specializations.join(", ")}
-                      </p>
-                    </div>
-                    
-                    <div className="flex justify-between items-center pt-4 border-t">
-                      <div>
-                        <div className="text-sm text-neutral-500">Annual Fees</div>
-                        <div className="font-bold text-[var(--fsu-crimson)]">{program.fees}</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-neutral-500">Seats</div>
-                        <div className="font-bold text-[var(--fsu-crimson)]">{program.seats}</div>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Admission Process */}
-      <section id="admission-process" className="py-16 lg:py-24 bg-neutral-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--fsu-crimson)] mb-4">
-              Admission Process
-            </h2>
-            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              Simple and transparent admission process designed for your convenience.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
-            {admissionProcess.map((process, index) => (
-              <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
-                <div className="w-16 h-16 bg-[var(--fsu-crimson)] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
-                  {process.step}
-                </div>
-                <div className="w-12 h-12 bg-[var(--fsu-gold)] rounded-full flex items-center justify-center text-[var(--fsu-crimson)] mx-auto mb-4">
-                  {process.icon}
-                </div>
-                <h3 className="text-lg font-bold text-[var(--fsu-crimson)] mb-2">
-                  {process.title}
-                </h3>
-                <p className="text-neutral-600 text-sm mb-3">
-                  {process.description}
-                </p>
-                <Badge className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)]">
-                  {process.deadline}
-                </Badge>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Eligibility Requirements */}
-      <section id="eligibility" className="py-16 lg:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--fsu-crimson)] mb-4">
-              Eligibility Requirements
-            </h2>
-            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              Check if you meet the eligibility criteria for your desired program.
-            </p>
-          </div>
-          
-          <div className="overflow-x-auto">
-            <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden">
-              <thead className="bg-[var(--fsu-crimson)] text-white">
-                <tr>
-                  <th className="px-6 py-4 text-left">Program</th>
-                  <th className="px-6 py-4 text-left">Qualification</th>
-                  <th className="px-6 py-4 text-left">Min. Percentage</th>
-                  <th className="px-6 py-4 text-left">Entrance Exam</th>
-                </tr>
-              </thead>
-              <tbody>
-                {eligibilityRequirements.map((req, index) => (
-                  <tr key={index} className={index % 2 === 0 ? 'bg-neutral-50' : 'bg-white'}>
-                    <td className="px-6 py-4 font-semibold text-[var(--fsu-crimson)]">
-                      {req.program}
-                    </td>
-                    <td className="px-6 py-4 text-neutral-700">
-                      {req.qualification}
-                    </td>
-                    <td className="px-6 py-4 text-neutral-700">
-                      {req.percentage}
-                    </td>
-                    <td className="px-6 py-4">
-                      <Badge className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)]">
-                        {req.exam}
-                      </Badge>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Scholarships */}
-      <section id="scholarships" className="py-16 lg:py-24 bg-neutral-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--fsu-crimson)] mb-4">
-              Scholarships & Financial Aid
-            </h2>
-            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              We believe in making quality education accessible. Explore various scholarship opportunities.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {scholarships.map((scholarship, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                <CardHeader className="pb-4">
-                  <div className="flex items-center justify-between">
-                    <CardTitle className="text-lg text-[var(--fsu-crimson)]">
-                      {scholarship.name}
-                    </CardTitle>
-                    <Badge className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] font-bold">
-                      {scholarship.amount}
-                    </Badge>
-                  </div>
-                </CardHeader>
-                
-                <CardContent>
-                  <div className="space-y-3">
-                    <div>
-                      <h4 className="font-semibold text-[var(--fsu-crimson)] mb-1">Criteria:</h4>
-                      <p className="text-neutral-600 text-sm">
-                        {scholarship.criteria}
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-[var(--fsu-crimson)] mb-1">Applicable to:</h4>
-                      <Badge variant="outline">
-                        {scholarship.applicable}
+                      <Badge
+                        variant="outline"
+                        className="border-[var(--fsu-crimson)] text-[var(--fsu-crimson)] text-sm px-4 py-2"
+                      >
+                        Starting from {program.startingFrom}
                       </Badge>
                     </div>
+                    <Button
+                      size="lg"
+                      className={`font-semibold transition-all duration-300 ${
+                        index === 0 || index === 1
+                          ? "bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-maroon)] text-white shadow-lg hover:shadow-xl"
+                          : "bg-transparent border-2 border-[var(--fsu-gold)] text-[var(--fsu-crimson)] hover:bg-[var(--fsu-gold)] hover:text-[var(--fsu-crimson)]"
+                      }`}
+                      asChild
+                    >
+                      <Link href={program.link}>
+                        Explore {program.title.split(" ")[0]} Programs →
+                      </Link>
+                    </Button>
                   </div>
-                </CardContent>
+                </div>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Important Dates */}
-      <section id="important-dates" className="py-16 lg:py-24">
+      {/* Unified Eligibility, Fees & Scholarships Section */}
+      <EligibilityFeesScholarships />
+
+      {/* FAQ Section */}
+      <section className="py-20 lg:py-32 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--fsu-crimson)] mb-4">
-              Important Dates
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold text-[var(--fsu-crimson)] mb-6">
+              Frequently Asked Questions
             </h2>
-            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              Mark your calendar with these crucial admission dates.
+            <p className="text-xl md:text-2xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
+              Get answers to the most commonly asked questions about admissions.
             </p>
           </div>
-          
+
           <div className="max-w-4xl mx-auto">
-            <Card className="p-8">
-              <div className="space-y-6">
-                {importantDates.map((date, index) => (
-                  <div key={index} className={`flex items-center justify-between p-4 rounded-lg ${
-                    date.status === 'completed' ? 'bg-green-50 border border-green-200' : 'bg-orange-50 border border-orange-200'
-                  }`}>
-                    <div className="flex items-center gap-4">
-                      <div className={`w-4 h-4 rounded-full ${
-                        date.status === 'completed' ? 'bg-green-500' : 'bg-orange-500'
-                      }`}></div>
-                      <div>
-                        <h3 className="font-semibold text-[var(--fsu-crimson)]">
-                          {date.event}
-                        </h3>
-                        <p className="text-neutral-600 text-sm">
-                          {date.date}
-                        </p>
-                      </div>
-                    </div>
-                    <Badge className={
-                      date.status === 'completed' 
-                        ? 'bg-green-500 text-white'
-                        : 'bg-orange-500 text-white'
-                    }>
-                      {date.status === 'completed' ? 'Completed' : 'Upcoming'}
-                    </Badge>
-                  </div>
-                ))}
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Application Support */}
-      <section className="py-16 lg:py-24 bg-neutral-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--fsu-crimson)] mb-4">
-              Need Help with Your Application?
-            </h2>
-            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              Our admissions team is here to support you throughout the process.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-[var(--fsu-crimson)] rounded-full flex items-center justify-center text-white mx-auto mb-4">
-                <Phone className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-[var(--fsu-crimson)] mb-2">
-                Call Us
-              </h3>
-              <p className="text-neutral-600 mb-4">
-                Speak with our admissions counselors
-              </p>
-              <Button variant="outline" className="border-[var(--fsu-crimson)] text-[var(--fsu-crimson)]">
-                +91-1234567890
-              </Button>
-            </Card>
-            
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-[var(--fsu-gold)] rounded-full flex items-center justify-center text-[var(--fsu-crimson)] mx-auto mb-4">
-                <Mail className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-[var(--fsu-crimson)] mb-2">
-                Email Us
-              </h3>
-              <p className="text-neutral-600 mb-4">
-                Get detailed information via email
-              </p>
-              <Button variant="outline" className="border-[var(--fsu-crimson)] text-[var(--fsu-crimson)]">
-                admissions@fsu.ac.in
-              </Button>
-            </Card>
-            
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-[var(--fsu-crimson)] rounded-full flex items-center justify-center text-white mx-auto mb-4">
-                <MapPin className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-[var(--fsu-crimson)] mb-2">
-                Visit Us
-              </h3>
-              <p className="text-neutral-600 mb-4">
-                Schedule a campus visit
-              </p>
-              <Button variant="outline" className="border-[var(--fsu-crimson)] text-[var(--fsu-crimson)]">
-                Book Visit
-              </Button>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Downloads Section */}
-      <section className="py-16 lg:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--fsu-crimson)] mb-4">
-              Download Resources
-            </h2>
-            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              Access important documents and forms for your admission process.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { name: "University Brochure", size: "PDF, 2.5 MB" },
-              { name: "Application Form", size: "PDF, 450 KB" },
-              { name: "Fee Structure", size: "PDF, 320 KB" },
-              { name: "Scholarship Guide", size: "PDF, 1.2 MB" }
-            ].map((resource, index) => (
-              <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
-                <div className="w-16 h-16 bg-[var(--fsu-gold)] rounded-full flex items-center justify-center text-[var(--fsu-crimson)] mx-auto mb-4">
-                  <Download className="w-8 h-8" />
-                </div>
-                <h3 className="text-lg font-bold text-[var(--fsu-crimson)] mb-2">
-                  {resource.name}
-                </h3>
-                <p className="text-neutral-600 text-sm mb-4">
-                  {resource.size}
-                </p>
-                <Button 
-                  className="bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-maroon)] w-full"
-                  size="sm"
+            <div className="space-y-6">
+              {faqs.map((faq, index) => (
+                <Card
+                  key={index}
+                  className="overflow-hidden border-2 border-gray-100 hover:border-[var(--fsu-gold)]/30 transition-colors"
                 >
-                  Download
-                </Button>
-              </Card>
-            ))}
+                  <details className="group">
+                    <summary className="flex items-center justify-between p-8 cursor-pointer hover:bg-red-50/50 transition-colors">
+                      <h3 className="text-xl font-semibold text-[var(--fsu-crimson)] pr-4">
+                        {faq.question}
+                      </h3>
+                      <div className="w-8 h-8 text-[var(--fsu-crimson)] transition-transform group-open:rotate-45 flex items-center justify-center">
+                        <Plus className="w-6 h-6" />
+                      </div>
+                    </summary>
+                    <div className="px-8 pb-8">
+                      <p className="text-neutral-600 text-lg leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  </details>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-16 lg:py-24 bg-gradient-to-r from-[var(--fsu-crimson)] to-[var(--fsu-maroon)] text-white">
+      {/* Final Call-to-Action */}
+      <section className="py-20 lg:py-32 bg-gradient-to-r from-[var(--fsu-crimson)] to-[var(--fsu-maroon)] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Begin Your Journey?
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Ready to Join Us?
           </h2>
-          <p className="text-xl text-neutral-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of successful alumni who started their journey at FS University. Your future begins here.
+          <p className="text-xl md:text-2xl text-neutral-100 mb-12 max-w-3xl mx-auto leading-relaxed">
+            Our admissions team is here to help you every step of the way. Start
+            your application today or get in touch for personalized guidance.
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] hover:bg-[#D4A017] font-semibold"
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button
+              size="lg"
+              className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] hover:bg-[#D4A017] font-semibold text-xl px-12 py-6"
               asChild
             >
-              <Link href="/apply-now">Start Application</Link>
+              <Link href="/apply">Apply Now</Link>
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-[var(--fsu-crimson)]"
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-white text-white hover:bg-white hover:text-[var(--fsu-crimson)] text-xl px-12 py-6"
               asChild
             >
-              <Link href="/contact">Get Support</Link>
+              <Link href="/contact">Contact Admissions</Link>
             </Button>
           </div>
         </div>
