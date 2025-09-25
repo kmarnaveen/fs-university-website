@@ -3,6 +3,14 @@ import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import {
+  Users,
+  GraduationCap,
+  Award,
+  BookOpen,
+  TrendingUp,
+  Building2,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Schools & Faculties | FS University",
@@ -101,14 +109,20 @@ export default function SchoolsPage() {
       facultyCount: "30",
     },
     {
-      id: "commerce",
-      name: "School of Commerce & Finance",
-      tagline: "Excellence in Financial Education",
+      id: "business",
+      name: "School of Business",
+      tagline: "Excellence in Business Education",
       description:
-        "Comprehensive commerce education with focus on finance, accounting, digital commerce, and business analytics.",
+        "Comprehensive business education with focus on finance, accounting, digital commerce, and business analytics.",
       image:
         "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=400&fit=crop",
-      programs: ["B.Com"],
+      programs: [
+        "B.Com Finance",
+        "B.Com Accounting",
+        "B.Com Digital Commerce",
+        "B.Com Banking",
+        "B.Com Taxation",
+      ],
       departments: [
         "Accounting & Finance",
         "Business Economics",
@@ -116,29 +130,9 @@ export default function SchoolsPage() {
         "Digital Commerce",
         "Taxation",
       ],
-      href: "/schools/commerce",
+      href: "/schools/business",
       studentCount: "1,600+",
       facultyCount: "65",
-    },
-    {
-      id: "business",
-      name: "School of Business Management & Entrepreneurship",
-      tagline: "Shaping Future Business Leaders",
-      description:
-        "Comprehensive business education with focus on entrepreneurship, digital transformation, and global business perspectives.",
-      image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=400&fit=crop",
-      programs: ["BBA", "MBA", "PhD Management"],
-      departments: [
-        "Finance",
-        "Marketing",
-        "Human Resources",
-        "Operations",
-        "Entrepreneurship",
-      ],
-      href: "/schools/business",
-      studentCount: "2,500+",
-      facultyCount: "80",
     },
     {
       id: "arts",
@@ -204,19 +198,26 @@ export default function SchoolsPage() {
       name: "School of Pharmacy",
       tagline: "Advancing Healthcare Through Pharmaceutical Sciences",
       description:
-        "Comprehensive pharmaceutical education with modern labs, drug development research, and industry partnerships.",
+        "Comprehensive pharmaceutical education with drug development research, clinical pharmacy, and industry partnerships.",
       image:
         "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=600&h=400&fit=crop",
-      programs: ["D.Pharm", "PhD Pharmacy"],
+      programs: [
+        "D.Pharm",
+        "B.Pharm",
+        "M.Pharm",
+        "Pharm.D",
+        "Ph.D Pharmaceutical Sciences",
+      ],
       departments: [
-        "Pharmacology",
         "Pharmaceutical Chemistry",
-        "Pharmacognosy",
+        "Pharmacology & Toxicology",
+        "Pharmaceutics & Drug Delivery",
         "Clinical Pharmacy",
+        "Pharmaceutical Biotechnology",
       ],
       href: "/schools/pharmacy",
-      studentCount: "800+",
-      facultyCount: "35",
+      studentCount: "910+",
+      facultyCount: "46",
     },
   ];
 
@@ -243,6 +244,58 @@ export default function SchoolsPage() {
         </div>
       </section>
 
+      {/* University Stats */}
+      <section className="py-16 bg-white border-b">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="group">
+              <div className="p-4 bg-[var(--fsu-gold)]/10 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:bg-[var(--fsu-gold)]/20 transition-colors">
+                <Building2 className="w-8 h-8 text-[var(--fsu-crimson)]" />
+              </div>
+              <div className="text-3xl md:text-4xl font-bold text-[var(--fsu-crimson)] mb-2">
+                9
+              </div>
+              <div className="text-sm text-neutral-600 font-medium">
+                Academic Schools
+              </div>
+            </div>
+            <div className="group">
+              <div className="p-4 bg-[var(--fsu-gold)]/10 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:bg-[var(--fsu-gold)]/20 transition-colors">
+                <Users className="w-8 h-8 text-[var(--fsu-crimson)]" />
+              </div>
+              <div className="text-3xl md:text-4xl font-bold text-[var(--fsu-crimson)] mb-2">
+                13,610+
+              </div>
+              <div className="text-sm text-neutral-600 font-medium">
+                Total Students
+              </div>
+            </div>
+            <div className="group">
+              <div className="p-4 bg-[var(--fsu-gold)]/10 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:bg-[var(--fsu-gold)]/20 transition-colors">
+                <GraduationCap className="w-8 h-8 text-[var(--fsu-crimson)]" />
+              </div>
+              <div className="text-3xl md:text-4xl font-bold text-[var(--fsu-crimson)] mb-2">
+                521
+              </div>
+              <div className="text-sm text-neutral-600 font-medium">
+                Expert Faculty
+              </div>
+            </div>
+            <div className="group">
+              <div className="p-4 bg-[var(--fsu-gold)]/10 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:bg-[var(--fsu-gold)]/20 transition-colors">
+                <Award className="w-8 h-8 text-[var(--fsu-crimson)]" />
+              </div>
+              <div className="text-3xl md:text-4xl font-bold text-[var(--fsu-crimson)] mb-2">
+                95%
+              </div>
+              <div className="text-sm text-neutral-600 font-medium">
+                Average Placement
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Schools Grid */}
       <section className="py-16 lg:py-24 bg-neutral-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -250,11 +303,36 @@ export default function SchoolsPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--fsu-crimson)] mb-6">
               Our Academic Schools
             </h2>
-            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+            <p className="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
               Each school is dedicated to excellence in education, research, and
               service, providing students with comprehensive learning
               experiences that prepare them for global leadership.
             </p>
+
+            {/* Quick Navigation */}
+            <div className="flex flex-wrap justify-center gap-3 mb-8">
+              <Badge className="bg-[var(--fsu-crimson)] text-white px-4 py-2 text-sm hover:bg-[var(--fsu-maroon)] cursor-pointer">
+                All Schools
+              </Badge>
+              <Badge
+                variant="outline"
+                className="border-[var(--fsu-gold)] text-[var(--fsu-crimson)] px-4 py-2 text-sm hover:bg-[var(--fsu-gold)]/10 cursor-pointer"
+              >
+                STEM Fields
+              </Badge>
+              <Badge
+                variant="outline"
+                className="border-[var(--fsu-gold)] text-[var(--fsu-crimson)] px-4 py-2 text-sm hover:bg-[var(--fsu-gold)]/10 cursor-pointer"
+              >
+                Liberal Arts
+              </Badge>
+              <Badge
+                variant="outline"
+                className="border-[var(--fsu-gold)] text-[var(--fsu-crimson)] px-4 py-2 text-sm hover:bg-[var(--fsu-gold)]/10 cursor-pointer"
+              >
+                Professional
+              </Badge>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -361,6 +439,106 @@ export default function SchoolsPage() {
                     </Button>
                   </Link>
                 </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Popular Programs Section */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--fsu-crimson)] mb-6">
+              Popular Programs
+            </h2>
+            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+              Discover our most sought-after programs across different schools
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                program: "B.Tech Computer Science",
+                school: "Engineering",
+                students: "800+",
+                icon: "💻",
+              },
+              {
+                program: "B.Com Finance",
+                school: "Business",
+                students: "600+",
+                icon: "💼",
+              },
+              {
+                program: "B.Sc Nursing",
+                school: "Nursing",
+                students: "350+",
+                icon: "🏥",
+              },
+              { program: "LL.B", school: "Law", students: "300+", icon: "⚖️" },
+            ].map((program, index) => (
+              <Card
+                key={index}
+                className="text-center p-6 border-2 border-[var(--fsu-gold)]/20 hover:border-[var(--fsu-gold)]/50 transition-all"
+              >
+                <div className="text-4xl mb-4">{program.icon}</div>
+                <h3 className="text-lg font-bold text-[var(--fsu-crimson)] mb-2">
+                  {program.program}
+                </h3>
+                <p className="text-sm text-neutral-600 mb-2">
+                  School of {program.school}
+                </p>
+                <Badge variant="secondary" className="text-xs">
+                  {program.students} enrolled
+                </Badge>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-16 lg:py-24 bg-neutral-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--fsu-crimson)] mb-6">
+              Why Choose FS University?
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: <BookOpen className="w-12 h-12 text-[var(--fsu-gold)]" />,
+                title: "Industry-Relevant Curriculum",
+                description:
+                  "Updated curricula designed with industry input to ensure graduates are job-ready",
+              },
+              {
+                icon: <Users className="w-12 h-12 text-[var(--fsu-gold)]" />,
+                title: "Expert Faculty",
+                description:
+                  "Learn from experienced professors and industry professionals with real-world expertise",
+              },
+              {
+                icon: (
+                  <TrendingUp className="w-12 h-12 text-[var(--fsu-gold)]" />
+                ),
+                title: "High Placement Rate",
+                description:
+                  "95% average placement rate across all schools with top companies recruiting our graduates",
+              },
+            ].map((feature, index) => (
+              <Card key={index} className="text-center p-8 border-0 shadow-lg">
+                <div className="mb-6 flex justify-center">{feature.icon}</div>
+                <h3 className="text-xl font-bold text-[var(--fsu-crimson)] mb-4">
+                  {feature.title}
+                </h3>
+                <p className="text-neutral-600 leading-relaxed">
+                  {feature.description}
+                </p>
               </Card>
             ))}
           </div>

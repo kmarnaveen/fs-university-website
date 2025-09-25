@@ -25,7 +25,6 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-import EligibilityFeesScholarships from "@/components/admissions/EligibilityFeesScholarships";
 
 export default function AdmissionsPage() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -73,8 +72,8 @@ export default function AdmissionsPage() {
       description:
         "Once your application is reviewed and approved by our admissions committee, you will receive an official offer letter. This is the final step in securing your place at FS University.",
       icon: <Award className="w-6 h-6" />,
-      action: "Admission Guidelines",
-      link: "/admissions/status",
+      action: "Contact Admissions",
+      link: "/contact",
     },
   ];
 
@@ -117,37 +116,6 @@ export default function AdmissionsPage() {
     },
   ];
 
-  const essentialResources = [
-    {
-      title: "Eligibility Criteria",
-      description:
-        "Find detailed academic and admission requirements for all our undergraduate, postgraduate, and doctoral programs.",
-      icon: <CheckCircle className="w-8 h-8" />,
-      link: "/admissions/eligibility",
-    },
-    {
-      title: "Fee Structure",
-      description:
-        "Get a transparent and comprehensive breakdown of tuition, hostel, and other fees for your chosen course.",
-      icon: <DollarSign className="w-8 h-8" />,
-      link: "/admissions/fees",
-    },
-    {
-      title: "Scholarships & Financial Aid",
-      description:
-        "Explore the various merit-based and need-based scholarships available to support your academic journey.",
-      icon: <Award className="w-8 h-8" />,
-      link: "/admissions/scholarships",
-    },
-    {
-      title: "Download Prospectus",
-      description:
-        "Access our complete university brochure for in-depth information on all programs, campus life, and more.",
-      icon: <Download className="w-8 h-8" />,
-      link: "/downloads/prospectus",
-    },
-  ];
-
   const faqs = [
     {
       question: "What is the application deadline for 2025 admissions?",
@@ -183,69 +151,53 @@ export default function AdmissionsPage() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Welcome & Key Info */}
-      <section className="relative text-white py-24 lg:py-40 overflow-hidden">
-        {/* Campus Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('/421028WNT-Main-Level-Floor-Plan_1754486912.avif')`,
-          }}
-        ></div>
-        {/* Enhanced Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--fsu-maroon)]/85 via-[var(--fsu-crimson)]/80 to-[var(--fsu-maroon)]/85"></div>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-[var(--fsu-maroon)] via-[var(--fsu-crimson)] to-[var(--fsu-maroon)] text-white py-20 lg:py-32">
+        <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-5xl mx-auto">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
-              Admissions 2025:
-              <span className="block text-[var(--fsu-gold)] mt-2">
-                Your Future Starts Here
-              </span>
+          <div className="text-center max-w-4xl mx-auto">
+            <Badge className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] mb-6">
+              <Building className="w-4 h-4 mr-2" />
+              Admissions 2025
+            </Badge>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Your Future Starts
+              <span className="block text-[var(--fsu-gold)]">Here</span>
             </h1>
-            <p className="text-xl md:text-2xl lg:text-3xl text-neutral-100 leading-relaxed mb-16 font-medium">
+            <p className="text-xl md:text-2xl text-neutral-100 leading-relaxed mb-8">
               Join thousands of students who have transformed their dreams into
               reality at FS University.
             </p>
-
-            {/* Enhanced Key Dates Timeline */}
-            <div className="bg-white/15 backdrop-blur-md rounded-3xl p-8 mb-12 border border-white/20">
-              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-[var(--fsu-gold)] text-center">
-                Important Dates
-              </h3>
-              <div className="grid md:grid-cols-3 gap-8">
-                {keyDates.map((date, index) => (
-                  <div key={index} className="text-center group">
-                    <div
-                      className={`w-8 h-8 rounded-full mx-auto mb-4 transition-all duration-300 group-hover:scale-110 ${
-                        date.status === "completed"
-                          ? "bg-green-400 shadow-green-400/50"
-                          : "bg-[var(--fsu-gold)] shadow-[var(--fsu-gold)]/50"
-                      } shadow-lg`}
-                    ></div>
-                    <div className="font-bold text-white text-lg md:text-xl mb-2">
-                      {date.event}
-                    </div>
-                    <div className="text-neutral-200 text-base md:text-lg font-semibold">
-                      {date.date}
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                size="lg"
+                className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] hover:bg-[#D4A017] font-semibold"
+                asChild
+              >
+                <Link href="/apply">Apply Now</Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-[var(--fsu-crimson)]"
+                onClick={() => {
+                  document
+                    .querySelector("#application-process")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Application Process
+              </Button>
             </div>
-
-            {/* Primary CTA */}
-            <Button
-              size="lg"
-              className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] hover:bg-[#D4A017] font-semibold text-xl px-12 py-6"
-            >
-              <Link href="/apply">Apply Now</Link>
-            </Button>
           </div>
         </div>
       </section>
 
       {/* Application Process - Step-by-Step Guide */}
-      <section className="py-24 lg:py-32 bg-gradient-to-b from-gray-50 to-white">
+      <section
+        id="application-process"
+        className="py-24 lg:py-32 bg-gradient-to-b from-gray-50 to-white"
+      >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-24">
             <div className="inline-flex items-center px-4 py-2 bg-[var(--fsu-crimson)]/10 rounded-full text-[var(--fsu-crimson)] text-sm font-semibold mb-6">
@@ -515,8 +467,97 @@ export default function AdmissionsPage() {
         </div>
       </section>
 
-      {/* Unified Eligibility, Fees & Scholarships Section */}
-      <EligibilityFeesScholarships />
+      {/* Essential Information Section */}
+      <section className="py-20 lg:py-32 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold text-[var(--fsu-crimson)] mb-6">
+              Essential Information
+            </h2>
+            <p className="text-xl md:text-2xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
+              Everything you need to know about fees, eligibility, and financial
+              support.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
+            <Card className="relative p-10 hover:shadow-2xl transition-all duration-500 group overflow-hidden border-2 border-transparent hover:border-[var(--fsu-gold)]/30">
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-50/80 via-white to-red-50/30 group-hover:from-red-50/50 group-hover:to-[var(--fsu-gold)]/10 transition-all duration-500"></div>
+
+              <div className="relative text-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-[var(--fsu-crimson)] to-[var(--fsu-maroon)] rounded-2xl flex items-center justify-center text-white mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <CheckCircle className="w-10 h-10" />
+                </div>
+                <h3 className="text-2xl font-bold text-[var(--fsu-crimson)] mb-4 group-hover:text-[var(--fsu-maroon)] transition-colors">
+                  Eligibility Criteria
+                </h3>
+                <p className="text-neutral-600 text-lg mb-8 leading-relaxed">
+                  Check detailed academic and admission requirements for all
+                  programs.
+                </p>
+                <Button
+                  size="lg"
+                  className="bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-maroon)] text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  asChild
+                >
+                  <Link href="/admissions/eligibility">
+                    View Requirements →
+                  </Link>
+                </Button>
+              </div>
+            </Card>
+
+            <Card className="relative p-10 hover:shadow-2xl transition-all duration-500 group overflow-hidden border-2 border-transparent hover:border-[var(--fsu-gold)]/30">
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-50/80 via-white to-red-50/30 group-hover:from-red-50/50 group-hover:to-[var(--fsu-gold)]/10 transition-all duration-500"></div>
+
+              <div className="relative text-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-[var(--fsu-gold)] to-[#D4A017] rounded-2xl flex items-center justify-center text-white mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <DollarSign className="w-10 h-10" />
+                </div>
+                <h3 className="text-2xl font-bold text-[var(--fsu-crimson)] mb-4 group-hover:text-[var(--fsu-maroon)] transition-colors">
+                  Fee Structure
+                </h3>
+                <p className="text-neutral-600 text-lg mb-8 leading-relaxed">
+                  Get transparent breakdown of tuition, hostel, and other fees.
+                </p>
+                <Button
+                  size="lg"
+                  className="bg-[var(--fsu-gold)] hover:bg-[#D4A017] text-[var(--fsu-crimson)] font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  asChild
+                >
+                  <Link href="/admissions/fees">View Fee Details →</Link>
+                </Button>
+              </div>
+            </Card>
+
+            <Card className="relative p-10 hover:shadow-2xl transition-all duration-500 group overflow-hidden border-2 border-transparent hover:border-[var(--fsu-gold)]/30">
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-50/80 via-white to-red-50/30 group-hover:from-red-50/50 group-hover:to-[var(--fsu-gold)]/10 transition-all duration-500"></div>
+
+              <div className="relative text-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-[var(--fsu-crimson)] to-[var(--fsu-maroon)] rounded-2xl flex items-center justify-center text-white mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <Award className="w-10 h-10" />
+                </div>
+                <h3 className="text-2xl font-bold text-[var(--fsu-crimson)] mb-4 group-hover:text-[var(--fsu-maroon)] transition-colors">
+                  Scholarships
+                </h3>
+                <p className="text-neutral-600 text-lg mb-8 leading-relaxed">
+                  Explore merit-based and need-based financial aid
+                  opportunities.
+                </p>
+                <Button
+                  size="lg"
+                  className="bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-maroon)] text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  asChild
+                >
+                  <Link href="/admissions/scholarships">
+                    Explore Scholarships →
+                  </Link>
+                </Button>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ Section */}
       <section className="py-20 lg:py-32 bg-white">

@@ -37,29 +37,36 @@ export default function MissionVisionPage() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section with Vision */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Video/Image */}
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-[var(--fsu-maroon)] via-[var(--fsu-crimson)] to-[var(--fsu-maroon)]" />
-          <div className="absolute inset-0 bg-black/40" />
-          {/* Pattern overlay for texture */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0 bg-[url('/patterns/dots.svg')] bg-repeat"></div>
-          </div>
-        </div>
-
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <div
-            className={`transition-all duration-1000 transform ${
-              isVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-10 opacity-0"
-            }`}
-          >
-            {/* Back Button */}
-            <div className="mb-8">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-[var(--fsu-maroon)] via-[var(--fsu-crimson)] to-[var(--fsu-maroon)] text-white py-20 lg:py-32">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <Badge className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] mb-6">
+              <Eye className="w-4 h-4 mr-2" />
+              {missionVisionData.hero.badge}
+            </Badge>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              {missionVisionData.hero.title}
+              <span className="block text-[var(--fsu-gold)]">& Mission</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-neutral-100 leading-relaxed mb-8">
+              {missionVisionData.hero.visionStatement}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
+                size="lg"
+                className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] hover:bg-[#D4A017] font-semibold"
+                onClick={() => {
+                  document
+                    .querySelector("#mission-section")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Explore Our Mission
+              </Button>
+              <Button
+                size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-[var(--fsu-crimson)]"
                 asChild
@@ -70,42 +77,12 @@ export default function MissionVisionPage() {
                 </Link>
               </Button>
             </div>
-
-            {/* Vision Icon */}
-            <div className="mb-8">
-              <div className="w-24 h-24 mx-auto bg-[var(--fsu-gold)] rounded-full flex items-center justify-center">
-                <Eye className="w-12 h-12 text-[var(--fsu-crimson)]" />
-              </div>
-            </div>
-
-            {/* Vision Statement */}
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-8 tracking-tight">
-              {missionVisionData.hero.title}
-            </h1>
-
-            <div className="max-w-4xl mx-auto">
-              <p className="text-xl sm:text-2xl lg:text-3xl leading-relaxed font-light mb-8">
-                {missionVisionData.hero.visionStatement}
-              </p>
-
-              <Badge className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] text-lg px-6 py-2">
-                {missionVisionData.hero.badge}
-              </Badge>
-            </div>
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-          <div className="flex flex-col items-center">
-            <span className="text-sm mb-2">Discover Our Mission</span>
-            <div className="w-1 h-8 bg-white/50 rounded-full"></div>
           </div>
         </div>
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 lg:py-32 bg-white">
+      <section id="mission-section" className="py-20 lg:py-32 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-start">

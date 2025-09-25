@@ -42,67 +42,55 @@ export default function HistoryPage() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section with Archival Image */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src={historyData.hero.backgroundImage}
-            alt="FS University Historical Foundation"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80" />
-        </div>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-[var(--fsu-maroon)] via-[var(--fsu-crimson)] to-[var(--fsu-maroon)] text-white py-20 lg:py-32">
+        <div className="absolute inset-0 bg-black/20"></div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <div
-              className={`transition-all duration-1000 transform ${
-                isVisible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-10 opacity-0"
-              }`}
-            >
-              {/* Back Button */}
-              <div className="mb-8">
-                <Button
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-[var(--fsu-crimson)]"
-                  asChild
-                >
-                  <Link href="/about">
-                    <ArrowLeft className="w-4 h-4 mr-2" />
-                    Back to About
-                  </Link>
-                </Button>
-              </div>
-
-              {/* Header Icon */}
-              <div className="mb-8">
-                <div className="w-24 h-24 mx-auto bg-[var(--fsu-gold)] rounded-full flex items-center justify-center">
-                  <Calendar className="w-12 h-12 text-[var(--fsu-crimson)]" />
-                </div>
-              </div>
-
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                {historyData.hero.title}
-              </h1>
-              <p className="text-xl sm:text-2xl text-neutral-100 leading-relaxed mb-8">
-                {historyData.hero.subtitle}
-              </p>
-
-              <Badge className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] text-lg px-6 py-2">
-                {historyData.hero.badge}
-              </Badge>
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <Badge className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] mb-6">
+              <Calendar className="w-4 h-4 mr-2" />
+              {historyData.hero.badge}
+            </Badge>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              {historyData.hero.title}
+              <span className="block text-[var(--fsu-gold)]">2003-2025</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-neutral-100 leading-relaxed mb-8">
+              {historyData.hero.subtitle} - Discover the milestones,
+              achievements, and transformative moments that shaped our
+              university.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                size="lg"
+                className="bg-[var(--fsu-gold)] text-[var(--fsu-crimson)] hover:bg-[#D4A017] font-semibold"
+                onClick={() => {
+                  document
+                    .getElementById("timeline-section")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Explore Timeline
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-[var(--fsu-crimson)]"
+                asChild
+              >
+                <Link href="/about">
+                  <ArrowLeft className="w-4 h-4 mr-2" />
+                  Back to About
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Interactive Timeline */}
-      <section className="py-20 lg:py-32 bg-white">
+      <section id="timeline-section" className="py-20 lg:py-32 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             {/* Section Header */}

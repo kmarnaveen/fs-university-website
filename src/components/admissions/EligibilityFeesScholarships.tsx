@@ -19,7 +19,9 @@ import {
 
 export default function EligibilityFeesScholarships() {
   const [activeTab, setActiveTab] = useState("eligibility");
-  const [selectedLevel, setSelectedLevel] = useState("");
+  const [selectedLevel, setSelectedLevel] = useState<
+    keyof typeof programLevels | ""
+  >("");
   const [selectedProgram, setSelectedProgram] = useState("");
   const [selectedFeeProgram, setSelectedFeeProgram] = useState("");
 
@@ -45,7 +47,7 @@ export default function EligibilityFeesScholarships() {
     undergraduate: ["B.Tech", "B.Sc", "BBA", "B.Com", "BA"],
     postgraduate: ["M.Tech", "MBA", "M.Sc", "M.Com", "MA"],
     doctoral: ["Ph.D. Engineering", "Ph.D. Science", "Ph.D. Management"],
-  };
+  } as const;
 
   const eligibilityData = {
     "B.Tech": {
@@ -66,7 +68,7 @@ export default function EligibilityFeesScholarships() {
       "Entrance Exam": "GATE / University Entrance Test",
       Specialization: "Must match with undergraduate specialization",
     },
-  };
+  } as const;
 
   const feeStructure = {
     "B.Tech": {
@@ -90,7 +92,10 @@ export default function EligibilityFeesScholarships() {
       "Security Deposit (Refundable)": "₹25,000",
       "Total Annual Fee": "₹1,70,000 + Hostel",
     },
-  };
+  } as const;
+
+  type FeeProgram = keyof typeof feeStructure;
+  type EligibilityProgram = keyof typeof eligibilityData;
 
   const scholarships = [
     {
@@ -138,7 +143,10 @@ export default function EligibilityFeesScholarships() {
   ];
 
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-b from-white to-gray-50">
+    <section
+      id="eligibility-fees-scholarships"
+      className="py-20 lg:py-32 bg-gradient-to-b from-white to-gray-50"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-center mb-16">
@@ -208,7 +216,9 @@ export default function EligibilityFeesScholarships() {
                         <select
                           value={selectedLevel}
                           onChange={(e) => {
-                            setSelectedLevel(e.target.value);
+                            setSelectedLevel(
+                              e.target.value as keyof typeof programLevels | ""
+                            );
                             setSelectedProgram("");
                           }}
                           className="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[var(--fsu-crimson)] focus:border-transparent"
@@ -243,7 +253,7 @@ export default function EligibilityFeesScholarships() {
                 </Card>
 
                 {/* Results Display */}
-                {selectedProgram && eligibilityData[selectedProgram] && (
+                {selectedProgram && selectedProgram in eligibilityData && (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -271,7 +281,9 @@ export default function EligibilityFeesScholarships() {
                             </thead>
                             <tbody>
                               {Object.entries(
-                                eligibilityData[selectedProgram]
+                                eligibilityData[
+                                  selectedProgram as EligibilityProgram
+                                ]
                               ).map(([req, detail]) => (
                                 <tr
                                   key={req}
@@ -329,7 +341,7 @@ export default function EligibilityFeesScholarships() {
                 </Card>
 
                 {/* Fee Breakdown */}
-                {selectedFeeProgram && feeStructure[selectedFeeProgram] && (
+                {selectedFeeProgram && selectedFeeProgram in feeStructure && (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -357,7 +369,7 @@ export default function EligibilityFeesScholarships() {
                             </thead>
                             <tbody>
                               {Object.entries(
-                                feeStructure[selectedFeeProgram]
+                                feeStructure[selectedFeeProgram as FeeProgram]
                               ).map(([component, amount]) => (
                                 <tr
                                   key={component}
@@ -428,7 +440,7 @@ export default function EligibilityFeesScholarships() {
                             className="w-full bg-[var(--fsu-crimson)] hover:bg-[var(--fsu-maroon)] text-white"
                             asChild
                           >
-                            <Link href="/admissions/scholarships">
+                            <Link href="/downloads/prospectus">
                               Learn More & Apply
                             </Link>
                           </Button>
